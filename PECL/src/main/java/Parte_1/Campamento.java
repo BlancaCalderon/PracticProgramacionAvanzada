@@ -571,7 +571,6 @@ public class Campamento {
                     childEnSoga.sacar(c.getCId());
                     if(equiA.contains(c))   //Si niño esta en el equipo A
                     {
-                        log.escribir(" Niño " + c.getCId() + " ha ganado competición soga\n"); //Escribe estado del niño en archivo
                         equipoA.sacar(c.getCId());  //sacamos  niño de equipo A
                         equiA.remove(c);    //Sacamos al niño de su respectivoa array
                         if(equiA.isEmpty() && equiB.isEmpty())  //Si equipos estan vacios ha terminado la actividad
@@ -581,10 +580,12 @@ public class Campamento {
                         numA--;         //Disminuimos número de jugadores en equipo
                         if(ganador == 0)    //Equipo A ha ganado
                         {
+                          log.escribir(" Niño " + c.getCId() + " ha ganado competición soga\n"); //Escribe estado del niño en archivo
                           c.sumar(2); //Se suma dos a equipo ganador
                         }
                         else
                         {
+                            log.escribir(" Niño " + c.getCId() + " ha perdido competición soga\n"); //Escribe estado del niño en archivo
                             c.sumar(1); //Equipo A no ha ganadp
                         }
                         
@@ -594,7 +595,6 @@ public class Campamento {
                     }
                     else    //Si niño estaba en el equipo B
                     {
-                        log.escribir(" Niño " + c.getCId() + " ha perdido competición soga\n"); //Escribe estado del niño en archivo
                         equipoB.sacar(c.getCId());  //sacamos niño de equipo B
                         equiB.remove(c);    //Saca a niño del array correspondiente
                         if(equiA.isEmpty() && equiB.isEmpty())  //Si equipos estan vacios ha terminado la actividad
@@ -604,10 +604,12 @@ public class Campamento {
                         numB--;             //Disminuimos número de jugadores en equipo B
                         if(ganador == 1)    //Equipo B ha ganado
                         {
-                          c.sumar(2); //Se suma dos a equipo ganador
+                            log.escribir(" Niño " + c.getCId() + " ha ganado competición soga\n"); //Escribe estado del niño en archivo
+                            c.sumar(2); //Se suma dos a equipo ganador
                         }
                         else
                         {
+                            log.escribir(" Niño " + c.getCId() + " ha perdido competición soga\n"); //Escribe estado del niño en archivo
                             c.sumar(1); //Equipo B ha perdido
                         }
                         numJugadores--; //Disminuye numero de jugadores
