@@ -17,9 +17,6 @@ public class Servidor {
     public static void main(String[] args) {
         ServerSocket servidor;
         Socket conexion;
-        DataOutputStream salida;
-        DataInputStream entrada;
-        int num = 0;
         try
         {
             servidor = new ServerSocket(5000); // Creamos un ServerSocket en el puerto 5000
@@ -29,7 +26,7 @@ public class Servidor {
                 conexion = servidor.accept();     // Esperamos una conexión
                 Hilo h = new Hilo (conexion);   //Crea hilo para poder recibir conexiones de varios clientes
                 h.start();
-                servidor.close();                          // Y cerramos la conexión
+                servidor.close();                          //Cierra la conexión
             }
         } catch (IOException e) {}
     }             

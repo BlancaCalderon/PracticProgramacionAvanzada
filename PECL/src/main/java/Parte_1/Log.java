@@ -22,7 +22,7 @@ public class Log
         this.log = l;
         try
         {
-            this.log = new FileWriter("evolucionCampamento.txt",true); //Crea objeto file(true es para no reescribir si no añadir)
+            this.log = new FileWriter("evolucionCampamento.txt"); //Crea objeto file
         }catch(IOException ioe){}
     }
     

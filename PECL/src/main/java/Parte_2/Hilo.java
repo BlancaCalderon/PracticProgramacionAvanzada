@@ -13,9 +13,8 @@ import java.net.Socket;
 public class Hilo extends Thread {
     private int num;
     private Socket conexion;
-    private DataOutputStream salida;
-    private DataInputStream entrada;
 
+    //Constructor
     public Hilo(Socket conexion) {
         this.conexion = conexion;
     }
@@ -23,7 +22,7 @@ public class Hilo extends Thread {
     public void run()
     {
         num++;
-        System.out.println("Conexión nº "+ num +" desde: "+ conexion.getInetAddress().getHostName());
+        System.out.println("Conexión nº "+ num +" desde: "+ conexion.getInetAddress().getHostName());   //Imprime en pantalal con quien nos hemos conectado
         try
         {
             //Muestra la interfaz que se usará para que cliente haga consultas
@@ -35,7 +34,7 @@ public class Hilo extends Thread {
                        in.setVisible(true);
                     }
                  });
-            conexion.close(); // Y cerramos la conexión
+            conexion.close(); //Cierra la consexión cone l cliente
         } catch (IOException e) {}
     }
 }

@@ -216,7 +216,7 @@ public class Campamento {
     public void soga(Monitor m, int n)
     {
         esperaSoga.release(100);    //libera permisos para que puedan entrar niños cuando monitor vuelve del descanso
-        for (int i = 0; i <100; i++) //Bucle controla que cuando monitor haga 10 veces esta actividad se vaya al descanso
+        for (int i = 0; i <10; i++) //Bucle controla que cuando monitor haga 10 veces esta actividad se vaya al descanso
         {
          detener.comprobar();  //Ejecución se detendrá en este punto si se indica
             try
@@ -361,6 +361,14 @@ public class Campamento {
         accederActividad(c,n);  //Llama a función acceder a actividad (la primera vez siempre mismo orden)
     }
     
+    //Método por el que niño sale del campamento
+    public void salir(Child c)
+    {
+        log.escribir("Niño " + c.getCId() + "sale del campamento\n"); //Escribe estado del niño en archivo log
+        semaforoAforo.release(); //Libera permiso del niños sobre aforo del campamento
+    }
+    
+    
     //Método niños accedan a actividad correspondiente
      public void accederActividad(Child c, int n)
     {
@@ -368,7 +376,7 @@ public class Campamento {
       n++; //Sumamos uno para conseguin numeros del 1 al
       if(c.getContActividades() == 15)    //Si niños realiza 15 actividades sale del campamento
       {
-          log.escribir(" Niño " + c.getCId() + " sale del campamento\n");   //Escribe estado del niño en archivo
+          salir(c); //Llama a función para sacar a niño del campamento
       }
       else  //Al niño todavia le faltan actividades por hacer
       {
@@ -402,7 +410,7 @@ public class Campamento {
               }
               else  //Si ha realizado menos de tres actividades
               {
-                log.escribir(" Niño " + c.getCId() + " selecciona siguiente actividad\n"); //Escribe estado del niño en archivo
+                log.escribir(" Niño " + c.getCId() + " no tiene suficiente actividades para acceder a merienda por lo que selecciona siguiente actividad\n"); //Escribe estado del niño en archivo
                 accederActividad(c , n++ % 3);  //Accede a actividad distinta
               } //Si ha hecho menos de tres actividades vuelve a llamar a la función paar elegir otra
               break;
@@ -414,7 +422,6 @@ public class Campamento {
     public void merienda(Child c, int n) throws InterruptedException
     {
         detener.comprobar();   //Ejecución se detendrá en este punto
-        esperaMer.acquire();    //Adquiere permiso si monitor en actividad
         merendando.meter(c.getCId()); //Introduce niños en lista de merendando
         log.escribir(" Niño " + c.getCId() + " coge plato limpio\n"); //Escribe estado del niño en archivo
         servir.acquire();   //Si no hay platos limpios se bloquea
@@ -509,7 +516,6 @@ public class Campamento {
                     siguiente.acquire();    //Hacen que se vayan niños de la actividad de uno en uno
                     if(equiA.contains(c))   //Si niño esta en el equipo A
                     {
-                        log.escribir(" Niño " + c.getCId() + " ha ganado competición soga\n"); //Escribe estado del niño en archivo
                         equiA.remove(c);    //Sacamos al niño de su respectivoa array
                         if(equiA.isEmpty() && equiB.isEmpty())  //Si equipos estan vacios ha terminado la actividad
                         {
@@ -519,10 +525,12 @@ public class Campamento {
                         if(ganador == 0)    //Equipo A ha ganado
                         {
                           c.sumar(2); //Se suma dos a equipo ganador
+                          log.escribir(" Niño " + c.getCId() + " ha ganado competición soga\n"); //Escribe estado del niño en archivo
                         }
                         else
                         {
-                            c.sumar(1); //Equipo A no ha ganadp
+                            c.sumar(1); //Equipo A no ha ganado
+                            log.escribir(" Niño " + c.getCId() + " ha perdido competición soga\n"); //Escribe estado del niño en archivo
                         }
                         
                         numJugadores--; //Disminuye numero de jugadores
@@ -532,7 +540,6 @@ public class Campamento {
                     }
                     else    //Si niño estaba en el equipo B
                     {
-                        log.escribir(" Niño " + c.getCId() + " ha perdido competición soga\n"); //Escribe estado del niño en archivo
                         equiB.remove(c);    //Saca a niño del array correspondiente
                         if(equiA.isEmpty() && equiB.isEmpty())  //Si equipos estan vacios ha terminado la actividad
                         {
@@ -542,10 +549,12 @@ public class Campamento {
                         if(ganador == 1)    //Equipo B ha ganado
                         {
                           c.sumar(2); //Se suma dos a equipo ganador
+                          log.escribir(" Niño " + c.getCId() + " ha ganado competición soga\n"); //Escribe estado del niño en archivo
                         }
                         else
                         {
                             c.sumar(1); //Equipo B ha perdido
+                            log.escribir(" Niño " + c.getCId() + " ha perdido competición soga\n"); //Escribe estado del niño en archivo
                         }
                         numJugadores--; //Disminuye numero de jugadores
                         colaSoga.sacar(c.getCId()); //Saca a niño de la lista de soga

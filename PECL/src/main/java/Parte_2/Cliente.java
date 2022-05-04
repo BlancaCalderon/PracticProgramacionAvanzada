@@ -14,9 +14,6 @@ public class Cliente {
      */
     public static void main(String[] args) {
         Socket cliente;
-        DataInputStream entrada;
-        DataOutputStream salida;
-        String mensaje, respuesta;
         try
         {
             cliente = new Socket(InetAddress.getLocalHost(),5000);   //Creamos el socket para conectarnos al puerto 5000 del servidor
