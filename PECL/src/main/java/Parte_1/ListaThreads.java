@@ -3,6 +3,7 @@
 package Parte_1;
 
 import java.util.ArrayList;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 /**
@@ -12,13 +13,21 @@ import javax.swing.JTextField;
 public class ListaThreads {
     //Inicializo variables
     ArrayList<String> lista;    //Array que contiene elementos a mostrar
-    JTextField tf;  //Espacio dónde se mostrará la información de la lista
+    JTextField tf;  //Text field dónde se mostrará la información de la lista
+    JTextArea ta;   //Text area dónde se mostrará la información de la lista
     
-    //Constructir
+    //Constructor para JTextField
     public ListaThreads(JTextField tf)
     {
         lista=new ArrayList<String>();
         this.tf=tf;
+    }
+    
+    //Constructor para jtestArea
+    public ListaThreads (JTextArea ta)
+    {
+        lista = new ArrayList <>();
+        this.ta = ta;
     }
     
     //Método para introducir elemento en a lista
@@ -50,6 +59,8 @@ public class ListaThreads {
         {
            contenido = contenido + lista.get(i) + " ";    //Se guarda contenido de la lista a mostrar
         }
-        tf.setText(contenido);  //Se escribe contenido en hueco correspondiente en interfaz
+        if(tf != null)    tf.setText(contenido);  //Se escribe contenido en hueco correspondiente en interfaz
+        else if(ta != null)         ta.setText(contenido);  
+        
     }
 }

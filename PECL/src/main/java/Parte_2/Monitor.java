@@ -1,8 +1,7 @@
 /*Clase hilo monitor cuyso atributos son identificador, campamento, contador de actividades y clase detener 
  */
-package Parte_2;;
+package Parte_2;
 
-import Parte_1.*;
 
 /**
  *
@@ -52,7 +51,7 @@ public class Monitor extends Thread{
     public void run()
     {
         detener.comprobar();    //Punto de detención del programa
-        camp.entrar(this); //Entra en el campamento si hay hueco; y sino espera en la cola
+        camp.entrar(this);
     }
     
 }

@@ -2,6 +2,7 @@
  */
 package Parte_2;
 
+import Parte_2.*;
 import Parte_1.*;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -34,7 +35,6 @@ public class Log
         {
             log.write(fecha.format(LocalDateTime.now()) + texto);   //Escribe fecha y hora actual y el texto especificado 
             log.flush();    //Guardo lo escrito en el fichero
-            //log.close();
         }catch(IOException ioe){}
     }
     

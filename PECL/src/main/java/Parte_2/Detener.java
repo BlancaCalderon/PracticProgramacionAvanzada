@@ -2,6 +2,7 @@
  */
 package Parte_2;
 
+import Parte_2.*;
 import Parte_1.*;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

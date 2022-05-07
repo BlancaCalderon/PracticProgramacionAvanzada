@@ -2,9 +2,6 @@
  */
 package Parte_2;
 
-import Parte_1.*;
-import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  *

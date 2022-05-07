@@ -3,10 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Parte_1;
+package Parte_2;
 
 import java.awt.Image;
+import java.io.IOException;
 import static java.lang.Thread.sleep;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
@@ -16,7 +19,7 @@ import javax.swing.JLabel;
  *
  * @author blanf
  */
-public class Interfaz extends javax.swing.JFrame {
+public class InterfazServidor extends javax.swing.JFrame {
 
     /**
      * Creates new form NewJFrame
@@ -28,7 +31,10 @@ public class Interfaz extends javax.swing.JFrame {
     Child c;
     String id;
     ImageIcon imagen, icono;
-    public Interfaz() {
+    ServerSocket servidor;
+    Socket conexion;
+    
+    public InterfazServidor() {
         initComponents();
         colocarLogo(fondo,"C:\\Users\\blanf\\OneDrive\\Documentos\\NetBeansProjects\\PECL\\src\\main\\resources\\imagenes\\bosque.jpg");
         this.setLocationRelativeTo(null);
@@ -72,13 +78,26 @@ public class Interfaz extends javax.swing.JFrame {
 
                         sleep(1000 + (int) (2000 * Math.random()));    //Niños se crean cada 1 - 3 segundos
                     } catch (InterruptedException ex) {
-                        Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
+                        Logger.getLogger(InterfazServidor.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
             }
         }).start(); 
-        
+    
+        try
+        {
+            servidor = new ServerSocket(5005); // Creamos un ServerSocket en el puerto 5000
+            System.out.println("Servidor Arrancado....");   
+            while (true)
+            {
+                conexion = servidor.accept();     // Esperamos una conexión
+                Hilo h = new Hilo (conexion, camp);   //Crea hilo para poder recibir conexiones de varios clientes
+                h.start();
+                servidor.close();                          //Cierra la conexión
+            }
+        } catch (IOException e) {}
     }
+   
     //Método para colocar imagen de fondo en la interfaz
     private void colocarLogo (JLabel etiqueta, String imagen) 
     {
@@ -596,7 +615,7 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
         getContentPane().add(botonPausar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 630, 140, 50));
-        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 690));
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 1020, 690));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -606,7 +625,7 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_botonPausarActionPerformed
 
     private void botonReanudarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonReanudarActionPerformed
-        deten.reanudar();   //Reanuda ejecución
+        deten.reanudar();   //Reanuda ejecución del programa
     }//GEN-LAST:event_botonReanudarActionPerformed
 
     /**
@@ -626,14 +645,42 @@ public class Interfaz extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazServidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazServidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazServidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazServidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -642,7 +689,7 @@ public class Interfaz extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Interfaz().setVisible(true);
+                new InterfazServidor().setVisible(true);
             }
         });
     }
