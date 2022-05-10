@@ -5,6 +5,8 @@ package Parte_1;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -23,10 +25,14 @@ public class Detener {
             cerrojo.lock();
             while(detenido)  //Mientras la ejecución este detenida
             {
-                try
+                try 
                 {
                     parar.await();  //Hilo espera hasta que se reanude ejecución
-                } catch(InterruptedException ie){ }
+                } 
+                catch (InterruptedException ex) 
+                {
+                    Logger.getLogger(Detener.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         }
         finally

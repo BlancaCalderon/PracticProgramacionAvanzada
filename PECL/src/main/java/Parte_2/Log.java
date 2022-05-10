@@ -8,6 +8,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -21,29 +23,44 @@ public class Log
 
     /*Constructor de la clase*/
     public Log(FileWriter l) {
-        this.log = l;
-        try
+        try 
         {
+            this.log = l;
             this.log = new FileWriter("evolucionCampamento.txt"); //Crea objeto file
-        }catch(IOException ioe){}
+        } 
+        catch (IOException ex) 
+        {
+            Logger.getLogger(Log.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
     
     //Método para escribir en archivo log
     public synchronized void escribir(String texto) 
     {
-        try
+        
+        try 
         {
-            log.write(fecha.format(LocalDateTime.now()) + texto);   //Escribe fecha y hora actual y el texto especificado 
+            log.write(fecha.format(LocalDateTime.now()) + texto);   //Escribe fecha y hora actual y el texto especificado
             log.flush();    //Guardo lo escrito en el fichero
-        }catch(IOException ioe){}
+        } 
+        catch (IOException ex) 
+        {
+            Logger.getLogger(Log.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
     //Método para cerrar archivo
     public synchronized void cerrar()
     {
-       try
+        try 
         {
             log.close();  //Cierro el archivo log
-        }catch(IOException ioe){} 
+        } 
+        catch (IOException ex) 
+        {
+            Logger.getLogger(Log.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
 }

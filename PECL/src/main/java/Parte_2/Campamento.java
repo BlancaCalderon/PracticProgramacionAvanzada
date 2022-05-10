@@ -503,7 +503,7 @@ public class Campamento {
     {
         detener.comprobar();   //Punto donde se detendrá funcionaientod el program
         dentro.sacar(c.getCId()); //Saca a niño del campamento
-        log.escribir("Niño " + c.getCId() + "sale del campamento\n"); //Escribe estado del niño en archivo log
+        log.escribir("Niño " + c.getCId() + " sale del campamento\n"); //Escribe estado del niño en archivo log
         niños.remove(c);   //saca niño que sale de la lista de niños en campamento
         semaforoAforo.release(); //Libera permiso del niños sobre aforo del campamento
     }
@@ -842,10 +842,11 @@ public class Campamento {
     }
     
     //Método para consultar número de actividades que ha realizado un niño
-    public synchronized int consultarNiño(String id)
+    public int consultarNiño(String id)
     {
         for(int i = 0; i < niños.size(); i++)   //Bucle recorre niños creados paar determianar de que niño es el id que buscamos
         {
+            System.out.println(id);
             if(niños.get(i).getCId().equals(id)) //Comprueba si el id corresponde a niño
             {
                 return niños.get(i).getContActividades();   //devuelve actividades realizadas por el niño

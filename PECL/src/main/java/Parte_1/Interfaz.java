@@ -161,6 +161,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(102, 51, 0));
 
+        colaEsperaIzq.setEditable(false);
         colaEsperaIzq.setColumns(20);
         colaEsperaIzq.setRows(5);
         jScrollPane2.setViewportView(colaEsperaIzq);
@@ -219,6 +220,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(102, 51, 0));
 
+        colaEsperaDer.setEditable(false);
         colaEsperaDer.setColumns(20);
         colaEsperaDer.setRows(5);
         jScrollPane1.setViewportView(colaEsperaDer);
@@ -253,6 +255,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(102, 51, 0));
 
+        dentro.setEditable(false);
         dentro.setColumns(20);
         dentro.setRows(5);
         jScrollPane3.setViewportView(dentro);
@@ -291,6 +294,9 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 204, 0));
         jLabel2.setText("SOGA");
 
+        monitorSoga.setEditable(false);
+
+        hilosEntran.setEditable(false);
         hilosEntran.setColumns(20);
         hilosEntran.setRows(5);
         hilosEntran.setText("\n");
@@ -300,10 +306,12 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 204, 0));
         jLabel4.setText("MONITOR");
 
+        equipoA.setEditable(false);
         equipoA.setColumns(20);
         equipoA.setRows(5);
         jScrollPane5.setViewportView(equipoA);
 
+        equipoB.setEditable(false);
         equipoB.setColumns(20);
         equipoB.setRows(5);
         jScrollPane6.setViewportView(equipoB);
@@ -375,9 +383,18 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(0, 204, 0));
         jLabel3.setText("TIROLINA");
 
+        colaEsperaTirolina.setEditable(false);
         colaEsperaTirolina.setColumns(20);
         colaEsperaTirolina.setRows(5);
         jScrollPane7.setViewportView(colaEsperaTirolina);
+
+        monitorTir.setEditable(false);
+
+        childEnFinal.setEditable(false);
+
+        childPreparacion.setEditable(false);
+
+        childEnTirolina.setEditable(false);
 
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 204, 0));
@@ -457,9 +474,12 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel11.setForeground(new java.awt.Color(0, 204, 0));
         jLabel11.setText("ZONA COMUN");
 
+        childZC.setEditable(false);
         childZC.setColumns(20);
         childZC.setRows(5);
         jScrollPane8.setViewportView(childZC);
+
+        monitoresZC.setEditable(false);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -493,6 +513,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jPanel8.setBackground(new java.awt.Color(102, 51, 0));
 
+        colaEntradaMerendero.setEditable(false);
         colaEntradaMerendero.setColumns(20);
         colaEntradaMerendero.setRows(5);
         jScrollPane9.setViewportView(colaEntradaMerendero);
@@ -501,6 +522,13 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel13.setForeground(new java.awt.Color(0, 204, 0));
         jLabel13.setText("MERENDERO");
 
+        monitoresMerendero.setEditable(false);
+
+        bandejasSucias.setEditable(false);
+
+        bandejasLimpias.setEditable(false);
+
+        childMerendando.setEditable(false);
         childMerendando.setColumns(20);
         childMerendando.setRows(5);
         jScrollPane10.setViewportView(childMerendando);

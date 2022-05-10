@@ -1,547 +1,1847 @@
-07/05/2022 21:14:47 Niño N00001 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:14:48 Monitor M2 abre puerta izquierda
-07/05/2022 21:14:48 Monitor M2 accede a actividad tirolina
-07/05/2022 21:14:48 Monitor M4 entra por la puerta izquierda
-07/05/2022 21:14:48 Monitor M4 accede a actividad merienda
-07/05/2022 21:14:48 Niño N00001 entra al campamento por la puerta izquierda 
-07/05/2022 21:14:48 Niño N00001 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:14:48 Niño N00001 accede a la actividad tirolina
-07/05/2022 21:14:48 Niño N00001 se prepara para tirarse en la tirolina
-07/05/2022 21:14:48 Niño N00002 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:14:48 Niño N00002 entra al campamento por la puerta izquierda 
-07/05/2022 21:14:48 Niño N00002 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:14:48 Monitor M1 abre puerta derecha
-07/05/2022 21:14:48 Monitor M1 accede a actividad soga
-07/05/2022 21:14:48 Monitor M3 entra por la puerta derecha
-07/05/2022 21:14:48 Monitor M3 accede a actividad merienda
-07/05/2022 21:14:49 Niño N00001 se tira por la tirolina
-07/05/2022 21:14:50 Niño N00003 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:14:50 Niño N00003 entra al campamento por la puerta izquierda 
-07/05/2022 21:14:50 Niño N00003 selecciona siguiente actividad
-07/05/2022 21:14:50 Niño N00003 selecciona siguiente actividad
-07/05/2022 21:14:50 Niño N00003 accede a la actividad soga
-07/05/2022 21:14:52 Monitor M4 limpia bandeja
-07/05/2022 21:14:52 Niño N00004 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:14:52 Niño N00004 entra al campamento por la puerta izquierda 
-07/05/2022 21:14:52 Niño N00004 accede a la actividad soga
-07/05/2022 21:14:52 Niño N00001 llega al final de la tirolina
-07/05/2022 21:14:53 Monitor M3 limpia bandeja
-07/05/2022 21:14:53 Niño N00001 se baja de la tirolina
-07/05/2022 21:14:53 Niño N00001 se va a la zona comun
-07/05/2022 21:14:53 Niño N00002 accede a la actividad tirolina
-07/05/2022 21:14:53 Niño N00001 accede a la zona comun
-07/05/2022 21:14:53 Niño N00002 se prepara para tirarse en la tirolina
-07/05/2022 21:14:54 Niño N00002 se tira por la tirolina
-07/05/2022 21:14:55 Niño N00005 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:14:55 Niño N00005 entra al campamento por la puerta izquierda 
-07/05/2022 21:14:55 Niño N00005 selecciona siguiente actividad
-07/05/2022 21:14:55 Niño N00005 selecciona siguiente actividad
-07/05/2022 21:14:55 Niño N00005 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:14:56 Monitor M4 limpia bandeja
-07/05/2022 21:14:56 Niño N00001 selecciona siguiente actividad
-07/05/2022 21:14:56 Niño N00001 selecciona siguiente actividad
-07/05/2022 21:14:56 Niño N00001 accede a la actividad soga
-07/05/2022 21:14:57 Niño N00006 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:14:57 Niño N00006 entra al campamento por la puerta izquierda 
-07/05/2022 21:14:57 Niño N00006 accede a la actividad soga
-07/05/2022 21:14:57 Monitor M3 limpia bandeja
-07/05/2022 21:14:58 Niño N00002 llega al final de la tirolina
-07/05/2022 21:14:58 Niño N00002 se baja de la tirolina
-07/05/2022 21:14:58 Niño N00002 se va a la zona comun
-07/05/2022 21:14:58 Niño N00002 accede a la zona comun
-07/05/2022 21:14:58 Niño N00005 accede a la actividad tirolina
-07/05/2022 21:14:58 Niño N00005 se prepara para tirarse en la tirolina
-07/05/2022 21:14:59 Niño N00005 se tira por la tirolina
-07/05/2022 21:15:00 Monitor M4 limpia bandeja
-07/05/2022 21:15:00 Niño N00007 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:00 Niño N00007 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:00 Niño N00007 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:01 Niño N00002 selecciona siguiente actividad
-07/05/2022 21:15:01 Niño N00002 accede a la actividad soga
-07/05/2022 21:15:02 Monitor M3 limpia bandeja
-07/05/2022 21:15:02 Niño N00008 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:02 Niño N00008 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:02 Niño N00008 selecciona siguiente actividad
-07/05/2022 21:15:02 Niño N00008 selecciona siguiente actividad
-07/05/2022 21:15:02 Niño N00008 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:03 Niño N00005 llega al final de la tirolina
-07/05/2022 21:15:04 Niño N00005 se baja de la tirolina
-07/05/2022 21:15:04 Niño N00005 se va a la zona comun
-07/05/2022 21:15:04 Niño N00005 accede a la zona comun
-07/05/2022 21:15:04 Niño N00007 accede a la actividad tirolina
-07/05/2022 21:15:04 Niño N00007 se prepara para tirarse en la tirolina
-07/05/2022 21:15:04 Monitor M4 limpia bandeja
-07/05/2022 21:15:05 Niño N00007 se tira por la tirolina
-07/05/2022 21:15:05 Niño N00009 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:05 Niño N00009 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:05 Niño N00009 accede a la actividad soga
-07/05/2022 21:15:05 Monitor M3 limpia bandeja
-07/05/2022 21:15:06 Niño N00005 selecciona siguiente actividad
-07/05/2022 21:15:06 Niño N00005 accede a la actividad soga
-07/05/2022 21:15:07 Niño N00010 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:07 Niño N00010 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:07 Niño N00010 selecciona siguiente actividad
-07/05/2022 21:15:07 Niño N00010 accede a la actividad soga
-07/05/2022 21:15:08 Monitor M4 limpia bandeja
-07/05/2022 21:15:08 Niño N00007 llega al final de la tirolina
-07/05/2022 21:15:09 Monitor M3 limpia bandeja
-07/05/2022 21:15:09 Niño N00007 se baja de la tirolina
-07/05/2022 21:15:09 Niño N00007 se va a la zona comun
-07/05/2022 21:15:09 Niño N00007 accede a la zona comun
-07/05/2022 21:15:09 Niño N00008 accede a la actividad tirolina
-07/05/2022 21:15:09 Niño N00008 se prepara para tirarse en la tirolina
-07/05/2022 21:15:09 Niño N00011 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:09 Niño N00011 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:09 Niño N00011 selecciona siguiente actividad
-07/05/2022 21:15:09 Niño N00011 accede a la actividad soga
-07/05/2022 21:15:10 Niño N00008 se tira por la tirolina
-07/05/2022 21:15:11 Monitor M4 limpia bandeja
-07/05/2022 21:15:12 Niño N00012 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:12 Niño N00012 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:12 Niño N00012 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:12 Niño N00007 selecciona siguiente actividad
-07/05/2022 21:15:12 Niño N00007 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:13 Monitor M3 limpia bandeja
-07/05/2022 21:15:14 Niño N00008 llega al final de la tirolina
-07/05/2022 21:15:14 Niño N00013 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:15:14 Niño N00013 entra al campamento por la puerta derecha 
-07/05/2022 21:15:14 Niño N00013 selecciona siguiente actividad
-07/05/2022 21:15:14 Niño N00013 selecciona siguiente actividad
-07/05/2022 21:15:14 Niño N00013 accede a la actividad soga
-07/05/2022 21:15:14 Niño N00003 se mete en el equipo B
-07/05/2022 21:15:14 Niño N00004 se mete en el equipo B
-07/05/2022 21:15:14 Niño N00001 se mete en el equipo B
-07/05/2022 21:15:14 Niño N00006 se mete en el equipo B
-07/05/2022 21:15:14 Niño N00002 se mete en el quipo A
-07/05/2022 21:15:14 Niño N00009 se mete en el equipo B
-07/05/2022 21:15:14 Niño N00005 se mete en el quipo A
-07/05/2022 21:15:14 Niño N00010 se mete en el quipo A
-07/05/2022 21:15:14 Niño N00011 se mete en el quipo A
-07/05/2022 21:15:14 Niño N00013 se mete en el quipo A
-07/05/2022 21:15:14 Monitor ha formado equipos
-07/05/2022 21:15:14 Niño N00008 se baja de la tirolina
-07/05/2022 21:15:14 Niño N00008 se va a la zona comun
-07/05/2022 21:15:14 Niño N00008 accede a la zona comun
-07/05/2022 21:15:14 Niño N00012 accede a la actividad tirolina
-07/05/2022 21:15:14 Niño N00012 se prepara para tirarse en la tirolina
-07/05/2022 21:15:15 Niño N00012 se tira por la tirolina
-07/05/2022 21:15:16 Niño N00014 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:16 Niño N00014 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:16 Niño N00014 accede a la actividad soga
-07/05/2022 21:15:16 Niño N00014 selecciona otra actividad ya que no hay hueco en actividad soga
-07/05/2022 21:15:16 Niño N00014 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:16 Monitor M4 limpia bandeja
-07/05/2022 21:15:17 Niño N00015 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:17 Niño N00015 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:17 Niño N00015 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:17 Niño N00008 selecciona siguiente actividad
-07/05/2022 21:15:17 Niño N00008 accede a la actividad soga
-07/05/2022 21:15:17 Niño N00008 selecciona otra actividad ya que no hay hueco en actividad soga
-07/05/2022 21:15:17 Niño N00008 accede a la actividad soga
-07/05/2022 21:15:17 Niño N00008 selecciona otra actividad ya que no hay hueco en actividad soga
-07/05/2022 21:15:17 Niño N00008 selecciona siguiente actividad
-07/05/2022 21:15:17 Niño N00008 accede a la actividad soga
-07/05/2022 21:15:17 Niño N00008 selecciona otra actividad ya que no hay hueco en actividad soga
-07/05/2022 21:15:17 Niño N00008 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:17 Monitor M3 limpia bandeja
-07/05/2022 21:15:19 Monitor M4 limpia bandeja
-07/05/2022 21:15:19 Niño N00016 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:15:19 Niño N00016 entra al campamento por la puerta derecha 
-07/05/2022 21:15:19 Niño N00016 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:19 Niño N00012 llega al final de la tirolina
-07/05/2022 21:15:19 Niño N00012 se baja de la tirolina
-07/05/2022 21:15:19 Niño N00012 se va a la zona comun
-07/05/2022 21:15:19 Niño N00012 accede a la zona comun
-07/05/2022 21:15:19 Niño N00007 accede a la actividad tirolina
-07/05/2022 21:15:19 Niño N00007 se prepara para tirarse en la tirolina
-07/05/2022 21:15:20 Niño N00007 se tira por la tirolina
-07/05/2022 21:15:21 Ha terminado competición soga
-07/05/2022 21:15:21 Han ganado los niños :   N00003 N00004 N00001 N00006 N00009
-07/05/2022 21:15:21 Niño N00011 ha ganado competición soga
-07/05/2022 21:15:21 Niño N00009 ha perdido competición soga
-07/05/2022 21:15:21 Niño N00004 ha perdido competición soga
-07/05/2022 21:15:21 Niño N00001 ha perdido competición soga
-07/05/2022 21:15:21 Niño N00003 ha perdido competición soga
-07/05/2022 21:15:21 Niño N00011 se va a la zona comun
-07/05/2022 21:15:21 Niño N00002 ha ganado competición soga
-07/05/2022 21:15:21 Niño N00010 ha ganado competición soga
-07/05/2022 21:15:21 Niño N00005 ha ganado competición soga
-07/05/2022 21:15:21 Niño N00010 se va a la zona comun
-07/05/2022 21:15:21 Niño N00013 ha ganado competición soga
-07/05/2022 21:15:21 Niño N00002 se va a la zona comun
-07/05/2022 21:15:21 Niño N00011 accede a la zona comun
-07/05/2022 21:15:21 Niño N00003 se va a la zona comun
-07/05/2022 21:15:21 Niño N00003 accede a la zona comun
-07/05/2022 21:15:21 Niño N00006 ha perdido competición soga
-07/05/2022 21:15:21 Niño N00004 se va a la zona comun
-07/05/2022 21:15:21 Niño N00004 accede a la zona comun
-07/05/2022 21:15:21 Niño N00001 se va a la zona comun
-07/05/2022 21:15:21 Niño N00009 se va a la zona comun
-07/05/2022 21:15:21 Niño N00001 accede a la zona comun
-07/05/2022 21:15:21 Niño N00006 se va a la zona comun
-07/05/2022 21:15:21 Niño N00002 accede a la zona comun
-07/05/2022 21:15:21 Niño N00013 se va a la zona comun
-07/05/2022 21:15:21 Niño N00010 accede a la zona comun
-07/05/2022 21:15:21 Niño N00005 se va a la zona comun
-07/05/2022 21:15:21 Niño N00005 accede a la zona comun
-07/05/2022 21:15:21 Niño N00013 accede a la zona comun
-07/05/2022 21:15:21 Niño N00006 accede a la zona comun
-07/05/2022 21:15:21 Niño N00009 accede a la zona comun
-07/05/2022 21:15:21 Niño N00017 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:21 Niño N00017 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:21 Niño N00017 accede a la actividad soga
-07/05/2022 21:15:22 Monitor M3 limpia bandeja
-07/05/2022 21:15:23 Niño N00012 selecciona siguiente actividad
-07/05/2022 21:15:23 Niño N00012 selecciona siguiente actividad
-07/05/2022 21:15:23 Niño N00012 selecciona siguiente actividad
-07/05/2022 21:15:23 Niño N00012 selecciona siguiente actividad
-07/05/2022 21:15:23 Niño N00012 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:23 Niño N00004 selecciona siguiente actividad
-07/05/2022 21:15:23 Niño N00004 accede a la actividad soga
-07/05/2022 21:15:23 Niño N00018 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:23 Niño N00018 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:23 Niño N00018 selecciona siguiente actividad
-07/05/2022 21:15:23 Niño N00018 accede a la actividad soga
-07/05/2022 21:15:23 Niño N00002 selecciona siguiente actividad
-07/05/2022 21:15:23 Niño N00002 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:24 Monitor M4 limpia bandeja
-07/05/2022 21:15:24 Niño N00007 llega al final de la tirolina
-07/05/2022 21:15:24 Niño N00010 selecciona siguiente actividad
-07/05/2022 21:15:24 Niño N00010 accede a la actividad soga
-07/05/2022 21:15:24 Niño N00001 selecciona siguiente actividad
-07/05/2022 21:15:24 Niño N00001 accede a la cola de la la actividad merienda
-07/05/2022 21:15:24 Niño N00001 accede a la actividad merienda
-07/05/2022 21:15:24 Niño N00001 coge plato limpio
-07/05/2022 21:15:25 Niño N00013 selecciona siguiente actividad
-07/05/2022 21:15:25 Niño N00013 accede a la actividad soga
-07/05/2022 21:15:25 Niño N00009 selecciona siguiente actividad
-07/05/2022 21:15:25 Niño N00009 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:25 Niño N00005 selecciona siguiente actividad
-07/05/2022 21:15:25 Niño N00005 selecciona siguiente actividad
-07/05/2022 21:15:25 Niño N00005 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:25 Niño N00003 selecciona siguiente actividad
-07/05/2022 21:15:25 Niño N00003 accede a la actividad soga
-07/05/2022 21:15:25 Niño N00006 selecciona siguiente actividad
-07/05/2022 21:15:25 Niño N00006 selecciona siguiente actividad
-07/05/2022 21:15:25 Niño N00006 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:25 Niño N00007 se baja de la tirolina
-07/05/2022 21:15:25 Niño N00007 se va a la zona comun
-07/05/2022 21:15:25 Niño N00007 accede a la zona comun
-07/05/2022 21:15:25 Niño N00014 accede a la actividad tirolina
-07/05/2022 21:15:25 Niño N00014 se prepara para tirarse en la tirolina
-07/05/2022 21:15:25 Niño N00011 selecciona siguiente actividad
-07/05/2022 21:15:25 Niño N00011 accede a la actividad soga
-07/05/2022 21:15:25 Monitor M3 limpia bandeja
-07/05/2022 21:15:26 Niño N00019 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:26 Niño N00019 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:26 Niño N00019 accede a la actividad soga
-07/05/2022 21:15:26 Niño N00014 se tira por la tirolina
-07/05/2022 21:15:27 Monitor M4 limpia bandeja
-07/05/2022 21:15:27 Monitor M4 se va al descanso
-07/05/2022 21:15:28 Niño N00020 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:15:28 Niño N00020 entra al campamento por la puerta derecha 
-07/05/2022 21:15:28 Niño N00020 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:28 Monitor M4 vuelve a su actividad
-07/05/2022 21:15:28 Monitor M4 accede a actividad merienda
-07/05/2022 21:15:28 Niño N00007 selecciona siguiente actividad
-07/05/2022 21:15:28 Niño N00007 selecciona siguiente actividad
-07/05/2022 21:15:28 Niño N00007 selecciona siguiente actividad
-07/05/2022 21:15:28 Niño N00007 accede a la actividad soga
-07/05/2022 21:15:29 Monitor M3 limpia bandeja
-07/05/2022 21:15:29 Monitor M3 se va al descanso
-07/05/2022 21:15:29 Niño N00014 llega al final de la tirolina
-07/05/2022 21:15:30 Niño N00014 se baja de la tirolina
-07/05/2022 21:15:30 Niño N00014 se va a la zona comun
-07/05/2022 21:15:30 Niño N00014 accede a la zona comun
-07/05/2022 21:15:30 Niño N00015 accede a la actividad tirolina
-07/05/2022 21:15:30 Niño N00015 se prepara para tirarse en la tirolina
-07/05/2022 21:15:30 Monitor M3 vuelve a su actividad
-07/05/2022 21:15:30 Monitor M3 accede a actividad merienda
-07/05/2022 21:15:31 Niño N00021 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:31 Niño N00021 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:31 Niño N00021 accede a la actividad soga
-07/05/2022 21:15:31 Niño N00017 se mete en el quipo A
-07/05/2022 21:15:31 Niño N00004 se mete en el quipo A
-07/05/2022 21:15:31 Niño N00018 se mete en el quipo A
-07/05/2022 21:15:31 Niño N00010 se mete en el equipo B
-07/05/2022 21:15:31 Niño N00013 se mete en el quipo A
-07/05/2022 21:15:31 Niño N00003 se mete en el quipo A
-07/05/2022 21:15:31 Niño N00011 se mete en el equipo B
-07/05/2022 21:15:31 Niño N00019 se mete en el equipo B
-07/05/2022 21:15:31 Niño N00007 se mete en el equipo B
-07/05/2022 21:15:31 Niño N00021 se mete en el equipo B
-07/05/2022 21:15:31 Monitor ha formado equipos
-07/05/2022 21:15:31 Niño N00015 se tira por la tirolina
-07/05/2022 21:15:31 Niño N00001 merienda
-07/05/2022 21:15:31 Niño N00001 deja plato sucio en su pila
-07/05/2022 21:15:31 Niño N00001 se va a la zona comun
-07/05/2022 21:15:31 Niño N00001 accede a la zona comun
-07/05/2022 21:15:32 Monitor M4 limpia bandeja
-07/05/2022 21:15:33 Niño N00022 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:33 Niño N00022 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:33 Niño N00022 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:33 Niño N00014 selecciona siguiente actividad
-07/05/2022 21:15:33 Niño N00014 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:34 Monitor M3 limpia bandeja
-07/05/2022 21:15:34 Niño N00001 selecciona siguiente actividad
-07/05/2022 21:15:34 Niño N00001 accede a la cola de la la actividad merienda
-07/05/2022 21:15:34 Niño N00001 accede a la actividad merienda
-07/05/2022 21:15:34 Niño N00001 coge plato limpio
-07/05/2022 21:15:35 Niño N00015 llega al final de la tirolina
-07/05/2022 21:15:35 Niño N00023 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:35 Niño N00023 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:35 Niño N00023 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:35 Niño N00015 se baja de la tirolina
-07/05/2022 21:15:35 Niño N00015 se va a la zona comun
-07/05/2022 21:15:35 Niño N00015 accede a la zona comun
-07/05/2022 21:15:35 Niño N00008 accede a la actividad tirolina
-07/05/2022 21:15:35 Niño N00008 se prepara para tirarse en la tirolina
-07/05/2022 21:15:36 Niño N00008 se tira por la tirolina
-07/05/2022 21:15:36 Monitor M4 limpia bandeja
-07/05/2022 21:15:37 Niño N00024 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:37 Niño N00024 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:37 Niño N00024 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:37 Monitor M2 se va al descanso
-07/05/2022 21:15:38 Monitor M3 limpia bandeja
-07/05/2022 21:15:38 Ha terminado competición soga
-07/05/2022 21:15:38 Han ganado los niños :   N00017 N00004 N00018 N00013 N00003
-07/05/2022 21:15:38 Niño N00019 ha perdido competición soga
-07/05/2022 21:15:38 Niño N00010 ha perdido competición soga
-07/05/2022 21:15:38 Niño N00007 ha perdido competición soga
-07/05/2022 21:15:38 Niño N00019 se va a la zona comun
-07/05/2022 21:15:38 Niño N00007 se va a la zona comun
-07/05/2022 21:15:38 Niño N00007 accede a la zona comun
-07/05/2022 21:15:38 Niño N00011 ha perdido competición soga
-07/05/2022 21:15:38 Niño N00010 se va a la zona comun
-07/05/2022 21:15:38 Niño N00021 ha perdido competición soga
-07/05/2022 21:15:38 Niño N00013 ha ganado competición soga
-07/05/2022 21:15:38 Niño N00011 se va a la zona comun
-07/05/2022 21:15:38 Niño N00017 ha ganado competición soga
-07/05/2022 21:15:38 Niño N00018 ha ganado competición soga
-07/05/2022 21:15:38 Niño N00003 ha ganado competición soga
-07/05/2022 21:15:38 Niño N00004 ha ganado competición soga
-07/05/2022 21:15:38 Niño N00019 accede a la zona comun
-07/05/2022 21:15:38 Niño N00004 se va a la zona comun
-07/05/2022 21:15:38 Niño N00004 accede a la zona comun
-07/05/2022 21:15:38 Niño N00003 se va a la zona comun
-07/05/2022 21:15:38 Niño N00018 se va a la zona comun
-07/05/2022 21:15:38 Niño N00018 accede a la zona comun
-07/05/2022 21:15:38 Niño N00017 se va a la zona comun
-07/05/2022 21:15:38 Niño N00017 accede a la zona comun
-07/05/2022 21:15:38 Niño N00013 se va a la zona comun
-07/05/2022 21:15:38 Niño N00011 accede a la zona comun
-07/05/2022 21:15:38 Niño N00021 se va a la zona comun
-07/05/2022 21:15:38 Niño N00010 accede a la zona comun
-07/05/2022 21:15:38 Niño N00021 accede a la zona comun
-07/05/2022 21:15:38 Niño N00013 accede a la zona comun
-07/05/2022 21:15:38 Niño N00003 accede a la zona comun
-07/05/2022 21:15:38 Monitor M2 vuelve a su actividad
-07/05/2022 21:15:38 Monitor M2 accede a actividad tirolina
-07/05/2022 21:15:38 Niño N00015 selecciona siguiente actividad
-07/05/2022 21:15:39 Niño N00015 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:39 Niño N00025 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:39 Niño N00025 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:39 Niño N00025 accede a la actividad soga
-07/05/2022 21:15:40 Niño N00008 llega al final de la tirolina
-07/05/2022 21:15:40 Niño N00017 selecciona siguiente actividad
-07/05/2022 21:15:40 Niño N00017 accede a la actividad soga
-07/05/2022 21:15:40 Niño N00018 selecciona siguiente actividad
-07/05/2022 21:15:40 Niño N00018 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:40 Niño N00004 selecciona siguiente actividad
-07/05/2022 21:15:40 Niño N00004 accede a la actividad soga
-07/05/2022 21:15:40 Monitor M4 limpia bandeja
-07/05/2022 21:15:40 Niño N00010 selecciona siguiente actividad
-07/05/2022 21:15:40 Niño N00010 accede a la actividad soga
-07/05/2022 21:15:40 Niño N00011 selecciona siguiente actividad
-07/05/2022 21:15:40 Niño N00011 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:40 Niño N00008 se baja de la tirolina
-07/05/2022 21:15:40 Niño N00008 se va a la zona comun
-07/05/2022 21:15:40 Niño N00008 accede a la zona comun
-07/05/2022 21:15:40 Niño N00016 accede a la actividad tirolina
-07/05/2022 21:15:40 Niño N00016 se prepara para tirarse en la tirolina
-07/05/2022 21:15:41 Niño N00019 selecciona siguiente actividad
-07/05/2022 21:15:41 Niño N00019 selecciona siguiente actividad
-07/05/2022 21:15:41 Niño N00019 accede a la actividad soga
-07/05/2022 21:15:41 Niño N00021 selecciona siguiente actividad
-07/05/2022 21:15:41 Niño N00021 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:41 Monitor M3 limpia bandeja
-07/05/2022 21:15:41 Niño N00007 selecciona siguiente actividad
-07/05/2022 21:15:41 Niño N00007 accede a la cola de la la actividad merienda
-07/05/2022 21:15:41 Niño N00007 accede a la actividad merienda
-07/05/2022 21:15:41 Niño N00007 coge plato limpio
-07/05/2022 21:15:41 Niño N00001 merienda
-07/05/2022 21:15:41 Niño N00001 deja plato sucio en su pila
-07/05/2022 21:15:41 Niño N00001 se va a la zona comun
-07/05/2022 21:15:41 Niño N00001 accede a la zona comun
-07/05/2022 21:15:41 Niño N00016 se tira por la tirolina
-07/05/2022 21:15:41 Niño N00026 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:15:41 Niño N00026 entra al campamento por la puerta derecha 
-07/05/2022 21:15:41 Niño N00026 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:42 Niño N00003 selecciona siguiente actividad
-07/05/2022 21:15:42 Niño N00003 accede a la cola de la la actividad merienda
-07/05/2022 21:15:42 Niño N00003 accede a la actividad merienda
-07/05/2022 21:15:42 Niño N00003 coge plato limpio
-07/05/2022 21:15:42 Niño N00013 selecciona siguiente actividad
-07/05/2022 21:15:42 Niño N00013 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:43 Niño N00008 selecciona siguiente actividad
-07/05/2022 21:15:43 Niño N00008 accede a la actividad soga
-07/05/2022 21:15:44 Niño N00027 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:44 Niño N00027 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:44 Niño N00027 selecciona siguiente actividad
-07/05/2022 21:15:44 Niño N00027 selecciona siguiente actividad
-07/05/2022 21:15:44 Niño N00027 selecciona siguiente actividad
-07/05/2022 21:15:44 Niño N00027 accede a la actividad soga
-07/05/2022 21:15:45 Niño N00016 llega al final de la tirolina
-07/05/2022 21:15:45 Niño N00001 selecciona siguiente actividad
-07/05/2022 21:15:45 Niño N00001 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:45 Monitor M4 limpia bandeja
-07/05/2022 21:15:45 Niño N00016 se baja de la tirolina
-07/05/2022 21:15:45 Niño N00016 se va a la zona comun
-07/05/2022 21:15:45 Niño N00016 accede a la zona comun
-07/05/2022 21:15:45 Niño N00012 accede a la actividad tirolina
-07/05/2022 21:15:45 Niño N00012 se prepara para tirarse en la tirolina
-07/05/2022 21:15:46 Niño N00028 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:46 Niño N00028 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:46 Niño N00028 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:46 Niño N00012 se tira por la tirolina
-07/05/2022 21:15:48 Niño N00007 merienda
-07/05/2022 21:15:48 Niño N00007 deja plato sucio en su pila
-07/05/2022 21:15:48 Niño N00007 se va a la zona comun
-07/05/2022 21:15:48 Niño N00007 accede a la zona comun
-07/05/2022 21:15:49 Niño N00003 merienda
-07/05/2022 21:15:49 Niño N00003 deja plato sucio en su pila
-07/05/2022 21:15:49 Niño N00003 se va a la zona comun
-07/05/2022 21:15:49 Niño N00003 accede a la zona comun
-07/05/2022 21:15:49 Niño N00029 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:15:49 Niño N00029 entra al campamento por la puerta derecha 
-07/05/2022 21:15:49 Niño N00029 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:49 Niño N00016 selecciona siguiente actividad
-07/05/2022 21:15:49 Niño N00016 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:50 Niño N00030 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:15:50 Niño N00030 entra al campamento por la puerta derecha 
-07/05/2022 21:15:50 Niño N00030 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:50 Niño N00012 llega al final de la tirolina
-07/05/2022 21:15:51 Niño N00012 se baja de la tirolina
-07/05/2022 21:15:51 Niño N00012 se va a la zona comun
-07/05/2022 21:15:51 Niño N00012 accede a la zona comun
-07/05/2022 21:15:51 Niño N00002 accede a la actividad tirolina
-07/05/2022 21:15:51 Niño N00002 se prepara para tirarse en la tirolina
-07/05/2022 21:15:51 Monitor M3 limpia bandeja
-07/05/2022 21:15:52 Niño N00007 selecciona siguiente actividad
-07/05/2022 21:15:52 Niño N00007 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:52 Niño N00031 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:52 Niño N00031 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:52 Niño N00031 selecciona siguiente actividad
-07/05/2022 21:15:52 Niño N00031 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:52 Monitor M4 limpia bandeja
-07/05/2022 21:15:52 Niño N00002 se tira por la tirolina
-07/05/2022 21:15:53 Niño N00003 selecciona siguiente actividad
-07/05/2022 21:15:53 Niño N00003 accede a la actividad soga
-07/05/2022 21:15:53 Niño N00032 intenta entrar al campamento por la puerta izquierda 
-07/05/2022 21:15:53 Niño N00032 entra al campamento por la puerta izquierda 
-07/05/2022 21:15:53 Niño N00032 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:53 Niño N00012 selecciona siguiente actividad
-07/05/2022 21:15:53 Niño N00012 accede a la actividad soga
-07/05/2022 21:15:55 Niño N00033 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:15:55 Niño N00033 entra al campamento por la puerta derecha 
-07/05/2022 21:15:55 Niño N00033 selecciona siguiente actividad
-07/05/2022 21:15:55 Niño N00033 selecciona siguiente actividad
-07/05/2022 21:15:55 Niño N00033 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:56 Niño N00002 llega al final de la tirolina
-07/05/2022 21:15:56 Niño N00002 se baja de la tirolina
-07/05/2022 21:15:56 Niño N00002 se va a la zona comun
-07/05/2022 21:15:56 Niño N00002 accede a la zona comun
-07/05/2022 21:15:56 Niño N00009 accede a la actividad tirolina
-07/05/2022 21:15:56 Niño N00009 se prepara para tirarse en la tirolina
-07/05/2022 21:15:57 Niño N00034 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:15:57 Niño N00034 entra al campamento por la puerta derecha 
-07/05/2022 21:15:57 Niño N00034 selecciona siguiente actividad
-07/05/2022 21:15:57 Niño N00034 accede a la actividad soga
-07/05/2022 21:15:57 Niño N00025 se mete en el quipo A
-07/05/2022 21:15:57 Niño N00017 se mete en el equipo B
-07/05/2022 21:15:57 Niño N00004 se mete en el equipo B
-07/05/2022 21:15:57 Niño N00010 se mete en el equipo B
-07/05/2022 21:15:57 Niño N00019 se mete en el equipo B
-07/05/2022 21:15:57 Niño N00008 se mete en el equipo B
-07/05/2022 21:15:57 Niño N00027 se mete en el quipo A
-07/05/2022 21:15:57 Niño N00003 se mete en el quipo A
-07/05/2022 21:15:57 Niño N00012 se mete en el quipo A
-07/05/2022 21:15:57 Niño N00034 se mete en el quipo A
-07/05/2022 21:15:57 Monitor ha formado equipos
-07/05/2022 21:15:57 Niño N00009 se tira por la tirolina
-07/05/2022 21:15:59 Niño N00002 selecciona siguiente actividad
-07/05/2022 21:15:59 Niño N00002 accede a la actividad soga
-07/05/2022 21:15:59 Niño N00002 selecciona otra actividad ya que no hay hueco en actividad soga
-07/05/2022 21:15:59 Niño N00002 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:15:59 Niño N00035 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:15:59 Niño N00035 entra al campamento por la puerta derecha 
-07/05/2022 21:15:59 Niño N00035 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:16:01 Niño N00009 llega al final de la tirolina
-07/05/2022 21:16:01 Niño N00036 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:16:01 Niño N00036 entra al campamento por la puerta derecha 
-07/05/2022 21:16:01 Niño N00036 accede a la actividad soga
-07/05/2022 21:16:01 Niño N00036 selecciona otra actividad ya que no hay hueco en actividad soga
-07/05/2022 21:16:01 Niño N00036 accede a la actividad soga
-07/05/2022 21:16:01 Niño N00036 selecciona otra actividad ya que no hay hueco en actividad soga
-07/05/2022 21:16:01 Niño N00036 selecciona siguiente actividad
-07/05/2022 21:16:01 Niño N00036 accede a la actividad soga
-07/05/2022 21:16:01 Niño N00036 selecciona otra actividad ya que no hay hueco en actividad soga
-07/05/2022 21:16:01 Niño N00036 accede a la actividad soga
-07/05/2022 21:16:01 Niño N00036 selecciona otra actividad ya que no hay hueco en actividad soga
-07/05/2022 21:16:01 Niño N00036 selecciona siguiente actividad
-07/05/2022 21:16:01 Niño N00036 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:16:01 Niño N00009 se baja de la tirolina
-07/05/2022 21:16:01 Niño N00009 se va a la zona comun
-07/05/2022 21:16:01 Niño N00009 accede a la zona comun
-07/05/2022 21:16:01 Niño N00005 accede a la actividad tirolina
-07/05/2022 21:16:01 Niño N00005 se prepara para tirarse en la tirolina
-07/05/2022 21:16:02 Niño N00005 se tira por la tirolina
-07/05/2022 21:16:03 Niño N00037 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:16:03 Niño N00037 entra al campamento por la puerta derecha 
-07/05/2022 21:16:03 Niño N00037 selecciona siguiente actividad
-07/05/2022 21:16:03 Niño N00037 selecciona siguiente actividad
-07/05/2022 21:16:03 Niño N00037 selecciona siguiente actividad
-07/05/2022 21:16:03 Niño N00037 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:16:04 Ha terminado competición soga
-07/05/2022 21:16:04 Han ganado los niños :   N00017 N00004 N00010 N00019 N00008
-07/05/2022 21:16:04 Niño N00004 ha perdido competición soga
-07/05/2022 21:16:04 Niño N00019 ha perdido competición soga
-07/05/2022 21:16:04 Niño N00004 se va a la zona comun
-07/05/2022 21:16:04 Niño N00004 accede a la zona comun
-07/05/2022 21:16:04 Niño N00027 ha ganado competición soga
-07/05/2022 21:16:04 Niño N00034 ha ganado competición soga
-07/05/2022 21:16:04 Niño N00017 ha perdido competición soga
-07/05/2022 21:16:04 Niño N00003 ha ganado competición soga
-07/05/2022 21:16:04 Niño N00012 ha ganado competición soga
-07/05/2022 21:16:04 Niño N00010 ha perdido competición soga
-07/05/2022 21:16:04 Niño N00019 se va a la zona comun
-07/05/2022 21:16:04 Niño N00010 se va a la zona comun
-07/05/2022 21:16:04 Niño N00010 accede a la zona comun
-07/05/2022 21:16:04 Niño N00012 se va a la zona comun
-07/05/2022 21:16:04 Niño N00003 se va a la zona comun
-07/05/2022 21:16:04 Niño N00003 accede a la zona comun
-07/05/2022 21:16:04 Niño N00017 se va a la zona comun
-07/05/2022 21:16:04 Niño N00017 accede a la zona comun
-07/05/2022 21:16:04 Niño N00034 se va a la zona comun
-07/05/2022 21:16:04 Niño N00034 accede a la zona comun
-07/05/2022 21:16:04 Niño N00008 ha perdido competición soga
-07/05/2022 21:16:04 Niño N00027 se va a la zona comun
-07/05/2022 21:16:04 Niño N00027 accede a la zona comun
-07/05/2022 21:16:04 Niño N00025 ha ganado competición soga
-07/05/2022 21:16:04 Niño N00008 se va a la zona comun
-07/05/2022 21:16:04 Niño N00012 accede a la zona comun
-07/05/2022 21:16:04 Niño N00019 accede a la zona comun
-07/05/2022 21:16:04 Niño N00008 accede a la zona comun
-07/05/2022 21:16:04 Niño N00025 se va a la zona comun
-07/05/2022 21:16:04 Niño N00025 accede a la zona comun
-07/05/2022 21:16:04 Niño N00009 selecciona siguiente actividad
-07/05/2022 21:16:04 Niño N00009 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:16:05 Niño N00038 intenta entrar al campamento por la puerta derecha 
-07/05/2022 21:16:05 Niño N00038 entra al campamento por la puerta derecha 
-07/05/2022 21:16:05 Niño N00038 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:16:06 Niño N00034 selecciona siguiente actividad
-07/05/2022 21:16:06 Niño N00034 accede a la cola de espera de la actividad tirolina
-07/05/2022 21:16:06 Niño N00010 selecciona siguiente actividad
-07/05/2022 21:16:06 Niño N00010 accede a la cola de la la actividad merienda
-07/05/2022 21:16:06 Niño N00010 accede a la actividad merienda
-07/05/2022 21:16:06 Niño N00010 coge plato limpio
+10/05/2022 18:47:50 Niño N00001 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:47:51 Monitor M2 abre puerta izquierda
+10/05/2022 18:47:51 Monitor M2 accede a actividad tirolina
+10/05/2022 18:47:51 Monitor M4 entra por la puerta izquierda
+10/05/2022 18:47:51 Monitor M4 accede a actividad merienda
+10/05/2022 18:47:51 Niño N00001 entra al campamento por la puerta izquierda 
+10/05/2022 18:47:51 Niño N00001 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:47:51 Niño N00001 accede a la actividad tirolina
+10/05/2022 18:47:51 Niño N00001 se prepara para tirarse en la tirolina
+10/05/2022 18:47:51 Monitor M1 abre puerta derecha
+10/05/2022 18:47:51 Monitor M1 accede a actividad soga
+10/05/2022 18:47:51 Monitor M3 entra por la puerta derecha
+10/05/2022 18:47:51 Monitor M3 accede a actividad merienda
+10/05/2022 18:47:51 Niño N00002 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:47:51 Niño N00002 entra al campamento por la puerta derecha 
+10/05/2022 18:47:51 Niño N00002 selecciona siguiente actividad
+10/05/2022 18:47:51 Niño N00002 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:47:52 Niño N00001 se tira por la tirolina
+10/05/2022 18:47:52 Niño N00003 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:47:52 Niño N00003 entra al campamento por la puerta derecha 
+10/05/2022 18:47:52 Niño N00003 accede a la actividad soga
+10/05/2022 18:47:54 Niño N00004 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:47:54 Niño N00004 entra al campamento por la puerta derecha 
+10/05/2022 18:47:54 Niño N00004 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:47:54 Monitor M3 limpia bandeja
+10/05/2022 18:47:55 Monitor M4 limpia bandeja
+10/05/2022 18:47:55 Niño N00005 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:47:55 Niño N00005 entra al campamento por la puerta izquierda 
+10/05/2022 18:47:55 Niño N00005 accede a la actividad soga
+10/05/2022 18:47:55 Niño N00001 llega al final de la tirolina
+10/05/2022 18:47:56 Niño N00001 se baja de la tirolina
+10/05/2022 18:47:56 Niño N00001 se va a la zona comun
+10/05/2022 18:47:56 Niño N00002 accede a la actividad tirolina
+10/05/2022 18:47:56 Niño N00001 accede a la zona comun
+10/05/2022 18:47:56 Niño N00002 se prepara para tirarse en la tirolina
+10/05/2022 18:47:57 Niño N00006 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:47:57 Niño N00006 entra al campamento por la puerta derecha 
+10/05/2022 18:47:57 Niño N00006 accede a la actividad soga
+10/05/2022 18:47:57 Niño N00002 se tira por la tirolina
+10/05/2022 18:47:58 Niño N00007 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:47:58 Niño N00007 entra al campamento por la puerta izquierda 
+10/05/2022 18:47:58 Niño N00007 selecciona siguiente actividad
+10/05/2022 18:47:58 Niño N00007 selecciona siguiente actividad
+10/05/2022 18:47:58 Niño N00007 accede a la actividad soga
+10/05/2022 18:47:58 Monitor M3 limpia bandeja
+10/05/2022 18:47:58 Niño N00001 selecciona siguiente actividad
+10/05/2022 18:47:58 Niño N00001 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:47:59 Monitor M4 limpia bandeja
+10/05/2022 18:47:59 Niño N00008 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:47:59 Niño N00008 entra al campamento por la puerta derecha 
+10/05/2022 18:47:59 Niño N00008 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:01 Niño N00002 llega al final de la tirolina
+10/05/2022 18:48:01 Niño N00009 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:01 Niño N00009 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:01 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:48:01 Niño N00009 accede a la actividad soga
+10/05/2022 18:48:01 Niño N00002 se baja de la tirolina
+10/05/2022 18:48:01 Niño N00002 se va a la zona comun
+10/05/2022 18:48:01 Niño N00002 accede a la zona comun
+10/05/2022 18:48:01 Niño N00004 accede a la actividad tirolina
+10/05/2022 18:48:01 Niño N00004 se prepara para tirarse en la tirolina
+10/05/2022 18:48:02 Monitor M3 limpia bandeja
+10/05/2022 18:48:02 Niño N00004 se tira por la tirolina
+10/05/2022 18:48:04 Monitor M4 limpia bandeja
+10/05/2022 18:48:04 Niño N00010 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:04 Niño N00010 entra al campamento por la puerta derecha 
+10/05/2022 18:48:04 Niño N00010 accede a la actividad soga
+10/05/2022 18:48:05 Niño N00002 selecciona siguiente actividad
+10/05/2022 18:48:05 Niño N00002 accede a la actividad soga
+10/05/2022 18:48:06 Niño N00011 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:06 Niño N00011 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:06 Niño N00011 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:06 Niño N00004 llega al final de la tirolina
+10/05/2022 18:48:07 Niño N00004 se baja de la tirolina
+10/05/2022 18:48:07 Niño N00004 se va a la zona comun
+10/05/2022 18:48:07 Niño N00001 accede a la actividad tirolina
+10/05/2022 18:48:07 Niño N00004 accede a la zona comun
+10/05/2022 18:48:07 Niño N00001 se prepara para tirarse en la tirolina
+10/05/2022 18:48:07 Monitor M3 limpia bandeja
+10/05/2022 18:48:08 Monitor M4 limpia bandeja
+10/05/2022 18:48:08 Niño N00001 se tira por la tirolina
+10/05/2022 18:48:09 Niño N00012 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:09 Niño N00012 entra al campamento por la puerta derecha 
+10/05/2022 18:48:09 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:48:09 Niño N00012 accede a la actividad soga
+10/05/2022 18:48:10 Niño N00004 selecciona siguiente actividad
+10/05/2022 18:48:10 Niño N00004 selecciona siguiente actividad
+10/05/2022 18:48:10 Niño N00004 selecciona siguiente actividad
+10/05/2022 18:48:10 Niño N00004 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:10 Monitor M3 limpia bandeja
+10/05/2022 18:48:12 Niño N00001 llega al final de la tirolina
+10/05/2022 18:48:12 Niño N00013 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:12 Niño N00013 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:12 Niño N00013 accede a la actividad soga
+10/05/2022 18:48:12 Niño N00001 se baja de la tirolina
+10/05/2022 18:48:12 Niño N00001 se va a la zona comun
+10/05/2022 18:48:12 Niño N00001 accede a la zona comun
+10/05/2022 18:48:12 Niño N00008 accede a la actividad tirolina
+10/05/2022 18:48:12 Niño N00008 se prepara para tirarse en la tirolina
+10/05/2022 18:48:12 Monitor M4 limpia bandeja
+10/05/2022 18:48:13 Niño N00008 se tira por la tirolina
+10/05/2022 18:48:14 Niño N00014 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:14 Niño N00014 entra al campamento por la puerta derecha 
+10/05/2022 18:48:14 Niño N00014 selecciona siguiente actividad
+10/05/2022 18:48:14 Niño N00014 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:15 Monitor M3 limpia bandeja
+10/05/2022 18:48:15 Niño N00001 selecciona siguiente actividad
+10/05/2022 18:48:15 Niño N00001 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:16 Niño N00015 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:16 Niño N00015 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:16 Niño N00015 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:16 Monitor M4 limpia bandeja
+10/05/2022 18:48:17 Niño N00008 llega al final de la tirolina
+10/05/2022 18:48:17 Niño N00008 se baja de la tirolina
+10/05/2022 18:48:17 Niño N00008 se va a la zona comun
+10/05/2022 18:48:17 Niño N00008 accede a la zona comun
+10/05/2022 18:48:17 Niño N00011 accede a la actividad tirolina
+10/05/2022 18:48:17 Niño N00011 se prepara para tirarse en la tirolina
+10/05/2022 18:48:17 Niño N00016 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:17 Niño N00016 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:17 Niño N00016 selecciona siguiente actividad
+10/05/2022 18:48:17 Niño N00016 accede a la actividad soga
+10/05/2022 18:48:17 Niño N00003 se mete en el quipo A
+10/05/2022 18:48:17 Niño N00005 se mete en el equipo B
+10/05/2022 18:48:17 Niño N00006 se mete en el equipo B
+10/05/2022 18:48:17 Niño N00007 se mete en el quipo A
+10/05/2022 18:48:17 Niño N00009 se mete en el equipo B
+10/05/2022 18:48:17 Niño N00010 se mete en el equipo B
+10/05/2022 18:48:17 Niño N00002 se mete en el equipo B
+10/05/2022 18:48:17 Niño N00012 se mete en el quipo A
+10/05/2022 18:48:17 Niño N00013 se mete en el quipo A
+10/05/2022 18:48:17 Niño N00016 se mete en el quipo A
+10/05/2022 18:48:17 Monitor ha formado equipos
+10/05/2022 18:48:18 Niño N00011 se tira por la tirolina
+10/05/2022 18:48:19 Niño N00017 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:19 Niño N00017 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:19 Niño N00017 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:20 Monitor M3 limpia bandeja
+10/05/2022 18:48:20 Niño N00018 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:20 Niño N00018 entra al campamento por la puerta derecha 
+10/05/2022 18:48:20 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:48:20 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:48:20 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:48:20 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:48:20 Niño N00018 accede a la actividad soga
+10/05/2022 18:48:20 Niño N00018 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:48:20 Niño N00018 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:20 Niño N00008 selecciona siguiente actividad
+10/05/2022 18:48:20 Niño N00008 accede a la actividad soga
+10/05/2022 18:48:20 Niño N00008 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:48:20 Niño N00008 accede a la actividad soga
+10/05/2022 18:48:20 Niño N00008 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:48:20 Niño N00008 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:21 Monitor M4 limpia bandeja
+10/05/2022 18:48:21 Niño N00019 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:21 Niño N00019 entra al campamento por la puerta derecha 
+10/05/2022 18:48:21 Niño N00019 selecciona siguiente actividad
+10/05/2022 18:48:21 Niño N00019 accede a la actividad soga
+10/05/2022 18:48:21 Niño N00019 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:48:21 Niño N00019 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:22 Niño N00011 llega al final de la tirolina
+10/05/2022 18:48:22 Niño N00011 se baja de la tirolina
+10/05/2022 18:48:22 Niño N00011 se va a la zona comun
+10/05/2022 18:48:22 Niño N00011 accede a la zona comun
+10/05/2022 18:48:22 Niño N00004 accede a la actividad tirolina
+10/05/2022 18:48:22 Niño N00004 se prepara para tirarse en la tirolina
+10/05/2022 18:48:23 Niño N00004 se tira por la tirolina
+10/05/2022 18:48:24 Niño N00020 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:24 Niño N00020 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:24 Niño N00020 selecciona siguiente actividad
+10/05/2022 18:48:24 Niño N00020 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:24 Ha terminado competición soga
+10/05/2022 18:48:24 Han ganado los niños :   N00003 N00007 N00012 N00013 N00016
+10/05/2022 18:48:24 Niño N00013 ha ganado competición soga
+10/05/2022 18:48:24 Niño N00012 ha ganado competición soga
+10/05/2022 18:48:24 Niño N00002 ha perdido competición soga
+10/05/2022 18:48:24 Niño N00013 se va a la zona comun
+10/05/2022 18:48:24 Niño N00009 ha perdido competición soga
+10/05/2022 18:48:24 Niño N00010 ha perdido competición soga
+10/05/2022 18:48:24 Niño N00003 ha ganado competición soga
+10/05/2022 18:48:24 Niño N00010 se va a la zona comun
+10/05/2022 18:48:24 Niño N00010 accede a la zona comun
+10/05/2022 18:48:24 Niño N00009 se va a la zona comun
+10/05/2022 18:48:24 Niño N00009 accede a la zona comun
+10/05/2022 18:48:24 Niño N00002 se va a la zona comun
+10/05/2022 18:48:24 Niño N00006 ha perdido competición soga
+10/05/2022 18:48:24 Niño N00013 accede a la zona comun
+10/05/2022 18:48:24 Niño N00006 se va a la zona comun
+10/05/2022 18:48:24 Niño N00012 se va a la zona comun
+10/05/2022 18:48:24 Niño N00012 accede a la zona comun
+10/05/2022 18:48:24 Niño N00007 ha ganado competición soga
+10/05/2022 18:48:24 Niño N00006 accede a la zona comun
+10/05/2022 18:48:24 Niño N00007 se va a la zona comun
+10/05/2022 18:48:24 Niño N00007 accede a la zona comun
+10/05/2022 18:48:24 Niño N00002 accede a la zona comun
+10/05/2022 18:48:24 Niño N00003 se va a la zona comun
+10/05/2022 18:48:24 Niño N00003 accede a la zona comun
+10/05/2022 18:48:24 Niño N00016 ha ganado competición soga
+10/05/2022 18:48:24 Niño N00005 ha perdido competición soga
+10/05/2022 18:48:24 Niño N00016 se va a la zona comun
+10/05/2022 18:48:24 Niño N00016 accede a la zona comun
+10/05/2022 18:48:24 Niño N00005 se va a la zona comun
+10/05/2022 18:48:24 Niño N00005 accede a la zona comun
+10/05/2022 18:48:25 Monitor M3 limpia bandeja
+10/05/2022 18:48:25 Niño N00011 selecciona siguiente actividad
+10/05/2022 18:48:25 Niño N00011 accede a la actividad soga
+10/05/2022 18:48:26 Monitor M4 limpia bandeja
+10/05/2022 18:48:26 Niño N00021 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:26 Niño N00021 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:26 Niño N00021 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:26 Niño N00002 selecciona siguiente actividad
+10/05/2022 18:48:26 Niño N00002 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:26 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:48:26 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:48:26 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:48:26 Niño N00009 accede a la actividad soga
+10/05/2022 18:48:27 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:48:27 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:48:27 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:48:27 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:48:27 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:48:27 Niño N00012 accede a la actividad soga
+10/05/2022 18:48:27 Niño N00003 selecciona siguiente actividad
+10/05/2022 18:48:27 Niño N00003 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:27 Niño N00004 llega al final de la tirolina
+10/05/2022 18:48:27 Niño N00005 selecciona siguiente actividad
+10/05/2022 18:48:27 Niño N00005 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:27 Niño N00007 selecciona siguiente actividad
+10/05/2022 18:48:27 Niño N00007 selecciona siguiente actividad
+10/05/2022 18:48:27 Niño N00007 selecciona siguiente actividad
+10/05/2022 18:48:27 Niño N00007 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:28 Niño N00016 selecciona siguiente actividad
+10/05/2022 18:48:28 Niño N00016 accede a la actividad soga
+10/05/2022 18:48:28 Niño N00006 selecciona siguiente actividad
+10/05/2022 18:48:28 Niño N00006 selecciona siguiente actividad
+10/05/2022 18:48:28 Niño N00006 accede a la actividad soga
+10/05/2022 18:48:28 Niño N00004 se baja de la tirolina
+10/05/2022 18:48:28 Niño N00004 se va a la zona comun
+10/05/2022 18:48:28 Niño N00004 accede a la zona comun
+10/05/2022 18:48:28 Niño N00014 accede a la actividad tirolina
+10/05/2022 18:48:28 Niño N00014 se prepara para tirarse en la tirolina
+10/05/2022 18:48:28 Niño N00010 selecciona siguiente actividad
+10/05/2022 18:48:28 Niño N00010 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:28 Niño N00022 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:28 Niño N00022 entra al campamento por la puerta derecha 
+10/05/2022 18:48:28 Niño N00022 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:28 Niño N00013 selecciona siguiente actividad
+10/05/2022 18:48:28 Niño N00013 accede a la actividad soga
+10/05/2022 18:48:29 Niño N00014 se tira por la tirolina
+10/05/2022 18:48:29 Niño N00023 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:29 Niño N00023 entra al campamento por la puerta derecha 
+10/05/2022 18:48:29 Niño N00023 selecciona siguiente actividad
+10/05/2022 18:48:29 Niño N00023 selecciona siguiente actividad
+10/05/2022 18:48:29 Niño N00023 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:29 Monitor M3 limpia bandeja
+10/05/2022 18:48:30 Monitor M4 limpia bandeja
+10/05/2022 18:48:31 Niño N00024 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:31 Niño N00024 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:31 Niño N00024 accede a la actividad soga
+10/05/2022 18:48:31 Niño N00004 selecciona siguiente actividad
+10/05/2022 18:48:31 Niño N00004 selecciona siguiente actividad
+10/05/2022 18:48:31 Niño N00004 accede a la actividad soga
+10/05/2022 18:48:33 Niño N00014 llega al final de la tirolina
+10/05/2022 18:48:33 Niño N00025 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:33 Niño N00025 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:33 Niño N00025 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:33 Monitor M3 limpia bandeja
+10/05/2022 18:48:33 Monitor M3 se va al descanso
+10/05/2022 18:48:33 Niño N00014 se baja de la tirolina
+10/05/2022 18:48:33 Niño N00014 se va a la zona comun
+10/05/2022 18:48:33 Niño N00014 accede a la zona comun
+10/05/2022 18:48:33 Niño N00001 accede a la actividad tirolina
+10/05/2022 18:48:33 Niño N00001 se prepara para tirarse en la tirolina
+10/05/2022 18:48:33 Monitor M4 limpia bandeja
+10/05/2022 18:48:33 Monitor M4 se va al descanso
+10/05/2022 18:48:34 Niño N00001 se tira por la tirolina
+10/05/2022 18:48:34 Monitor M3 vuelve a su actividad
+10/05/2022 18:48:34 Monitor M3 accede a actividad merienda
+10/05/2022 18:48:34 Niño N00026 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:34 Niño N00026 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:34 Niño N00026 accede a la actividad soga
+10/05/2022 18:48:35 Monitor M4 vuelve a su actividad
+10/05/2022 18:48:35 Monitor M4 accede a actividad merienda
+10/05/2022 18:48:36 Niño N00014 selecciona siguiente actividad
+10/05/2022 18:48:36 Niño N00014 accede a la actividad soga
+10/05/2022 18:48:36 Niño N00011 se mete en el quipo A
+10/05/2022 18:48:36 Niño N00009 se mete en el equipo B
+10/05/2022 18:48:36 Niño N00012 se mete en el equipo B
+10/05/2022 18:48:36 Niño N00016 se mete en el equipo B
+10/05/2022 18:48:36 Niño N00006 se mete en el equipo B
+10/05/2022 18:48:36 Niño N00013 se mete en el quipo A
+10/05/2022 18:48:36 Niño N00024 se mete en el quipo A
+10/05/2022 18:48:36 Niño N00004 se mete en el equipo B
+10/05/2022 18:48:36 Niño N00026 se mete en el quipo A
+10/05/2022 18:48:36 Niño N00014 se mete en el quipo A
+10/05/2022 18:48:36 Monitor ha formado equipos
+10/05/2022 18:48:37 Niño N00027 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:37 Niño N00027 entra al campamento por la puerta derecha 
+10/05/2022 18:48:37 Niño N00027 accede a la actividad soga
+10/05/2022 18:48:37 Niño N00027 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:48:37 Niño N00027 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:38 Niño N00001 llega al final de la tirolina
+10/05/2022 18:48:38 Niño N00001 se baja de la tirolina
+10/05/2022 18:48:38 Niño N00001 se va a la zona comun
+10/05/2022 18:48:38 Niño N00001 accede a la zona comun
+10/05/2022 18:48:38 Niño N00015 accede a la actividad tirolina
+10/05/2022 18:48:38 Niño N00015 se prepara para tirarse en la tirolina
+10/05/2022 18:48:39 Niño N00028 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:39 Niño N00028 entra al campamento por la puerta derecha 
+10/05/2022 18:48:39 Niño N00028 selecciona siguiente actividad
+10/05/2022 18:48:39 Niño N00028 selecciona siguiente actividad
+10/05/2022 18:48:39 Niño N00028 selecciona siguiente actividad
+10/05/2022 18:48:39 Niño N00028 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:39 Monitor M3 limpia bandeja
+10/05/2022 18:48:39 Niño N00015 se tira por la tirolina
+10/05/2022 18:48:40 Monitor M4 limpia bandeja
+10/05/2022 18:48:40 Monitor M2 se va al descanso
+10/05/2022 18:48:41 Niño N00029 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:41 Niño N00029 entra al campamento por la puerta derecha 
+10/05/2022 18:48:41 Niño N00029 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:42 Niño N00001 selecciona siguiente actividad
+10/05/2022 18:48:42 Niño N00001 accede a la actividad soga
+10/05/2022 18:48:42 Niño N00001 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:48:42 Niño N00001 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:42 Monitor M2 vuelve a su actividad
+10/05/2022 18:48:42 Monitor M2 accede a actividad tirolina
+10/05/2022 18:48:43 Monitor M4 limpia bandeja
+10/05/2022 18:48:43 Niño N00030 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:43 Niño N00030 entra al campamento por la puerta derecha 
+10/05/2022 18:48:43 Niño N00030 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:43 Ha terminado competición soga
+10/05/2022 18:48:43 Han ganado los niños :   N00011 N00013 N00024 N00026 N00014
+10/05/2022 18:48:43 Niño N00006 ha perdido competición soga
+10/05/2022 18:48:43 Niño N00014 ha ganado competición soga
+10/05/2022 18:48:43 Niño N00009 ha perdido competición soga
+10/05/2022 18:48:43 Niño N00014 se va a la zona comun
+10/05/2022 18:48:43 Niño N00009 se va a la zona comun
+10/05/2022 18:48:43 Niño N00009 accede a la zona comun
+10/05/2022 18:48:43 Niño N00006 se va a la zona comun
+10/05/2022 18:48:43 Niño N00004 ha perdido competición soga
+10/05/2022 18:48:43 Niño N00024 ha ganado competición soga
+10/05/2022 18:48:43 Niño N00014 accede a la zona comun
+10/05/2022 18:48:43 Niño N00013 ha ganado competición soga
+10/05/2022 18:48:43 Niño N00026 ha ganado competición soga
+10/05/2022 18:48:43 Niño N00016 ha perdido competición soga
+10/05/2022 18:48:43 Niño N00013 se va a la zona comun
+10/05/2022 18:48:43 Niño N00013 accede a la zona comun
+10/05/2022 18:48:43 Niño N00024 se va a la zona comun
+10/05/2022 18:48:43 Niño N00024 accede a la zona comun
+10/05/2022 18:48:43 Niño N00011 ha ganado competición soga
+10/05/2022 18:48:43 Niño N00004 se va a la zona comun
+10/05/2022 18:48:43 Niño N00006 accede a la zona comun
+10/05/2022 18:48:43 Niño N00004 accede a la zona comun
+10/05/2022 18:48:43 Niño N00011 se va a la zona comun
+10/05/2022 18:48:43 Niño N00011 accede a la zona comun
+10/05/2022 18:48:43 Niño N00016 se va a la zona comun
+10/05/2022 18:48:43 Niño N00026 se va a la zona comun
+10/05/2022 18:48:43 Niño N00026 accede a la zona comun
+10/05/2022 18:48:43 Niño N00012 ha perdido competición soga
+10/05/2022 18:48:43 Niño N00016 accede a la zona comun
+10/05/2022 18:48:43 Niño N00012 se va a la zona comun
+10/05/2022 18:48:43 Niño N00012 accede a la zona comun
+10/05/2022 18:48:43 Niño N00015 llega al final de la tirolina
+10/05/2022 18:48:44 Niño N00015 se baja de la tirolina
+10/05/2022 18:48:44 Niño N00015 se va a la zona comun
+10/05/2022 18:48:44 Niño N00015 accede a la zona comun
+10/05/2022 18:48:44 Niño N00017 accede a la actividad tirolina
+10/05/2022 18:48:44 Niño N00017 se prepara para tirarse en la tirolina
+10/05/2022 18:48:44 Monitor M3 limpia bandeja
+10/05/2022 18:48:45 Niño N00017 se tira por la tirolina
+10/05/2022 18:48:45 Niño N00024 selecciona siguiente actividad
+10/05/2022 18:48:45 Niño N00024 selecciona siguiente actividad
+10/05/2022 18:48:45 Niño N00024 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:45 Niño N00013 selecciona siguiente actividad
+10/05/2022 18:48:45 Niño N00013 accede a la actividad soga
+10/05/2022 18:48:45 Niño N00031 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:45 Niño N00031 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:45 Niño N00031 selecciona siguiente actividad
+10/05/2022 18:48:45 Niño N00031 accede a la actividad soga
+10/05/2022 18:48:45 Niño N00004 selecciona siguiente actividad
+10/05/2022 18:48:45 Niño N00004 accede a la actividad soga
+10/05/2022 18:48:46 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:48:46 Niño N00009 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:46 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:48:46 Niño N00012 accede a la actividad soga
+10/05/2022 18:48:46 Monitor M4 limpia bandeja
+10/05/2022 18:48:46 Niño N00015 selecciona siguiente actividad
+10/05/2022 18:48:46 Niño N00015 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:46 Niño N00026 selecciona siguiente actividad
+10/05/2022 18:48:46 Niño N00026 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:46 Niño N00016 selecciona siguiente actividad
+10/05/2022 18:48:46 Niño N00016 accede a la cola de la la actividad merienda
+10/05/2022 18:48:46 Niño N00016 accede a la actividad merienda
+10/05/2022 18:48:46 Niño N00016 coge plato limpio
+10/05/2022 18:48:47 Niño N00011 selecciona siguiente actividad
+10/05/2022 18:48:47 Niño N00011 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:47 Niño N00014 selecciona siguiente actividad
+10/05/2022 18:48:47 Niño N00014 accede a la cola de la la actividad merienda
+10/05/2022 18:48:47 Niño N00014 accede a la actividad merienda
+10/05/2022 18:48:47 Niño N00014 coge plato limpio
+10/05/2022 18:48:47 Niño N00006 selecciona siguiente actividad
+10/05/2022 18:48:47 Niño N00006 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:48 Niño N00032 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:48 Niño N00032 entra al campamento por la puerta derecha 
+10/05/2022 18:48:48 Niño N00032 accede a la actividad soga
+10/05/2022 18:48:49 Niño N00017 llega al final de la tirolina
+10/05/2022 18:48:49 Niño N00033 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:49 Niño N00033 entra al campamento por la puerta derecha 
+10/05/2022 18:48:49 Niño N00033 accede a la actividad soga
+10/05/2022 18:48:49 Niño N00017 se baja de la tirolina
+10/05/2022 18:48:49 Niño N00017 se va a la zona comun
+10/05/2022 18:48:49 Niño N00017 accede a la zona comun
+10/05/2022 18:48:49 Niño N00018 accede a la actividad tirolina
+10/05/2022 18:48:49 Niño N00018 se prepara para tirarse en la tirolina
+10/05/2022 18:48:50 Niño N00018 se tira por la tirolina
+10/05/2022 18:48:51 Niño N00034 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:51 Niño N00034 entra al campamento por la puerta derecha 
+10/05/2022 18:48:51 Niño N00034 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:52 Niño N00017 selecciona siguiente actividad
+10/05/2022 18:48:52 Niño N00017 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:52 Niño N00035 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:48:52 Niño N00035 entra al campamento por la puerta derecha 
+10/05/2022 18:48:52 Niño N00035 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:53 Niño N00016 merienda
+10/05/2022 18:48:53 Niño N00016 deja plato sucio en su pila
+10/05/2022 18:48:53 Niño N00016 se va a la zona comun
+10/05/2022 18:48:53 Niño N00016 accede a la zona comun
+10/05/2022 18:48:54 Niño N00014 merienda
+10/05/2022 18:48:54 Niño N00014 deja plato sucio en su pila
+10/05/2022 18:48:54 Niño N00014 se va a la zona comun
+10/05/2022 18:48:54 Niño N00014 accede a la zona comun
+10/05/2022 18:48:54 Niño N00018 llega al final de la tirolina
+10/05/2022 18:48:54 Niño N00036 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:54 Niño N00036 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:54 Niño N00036 selecciona siguiente actividad
+10/05/2022 18:48:54 Niño N00036 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:55 Niño N00018 se baja de la tirolina
+10/05/2022 18:48:55 Niño N00018 se va a la zona comun
+10/05/2022 18:48:55 Niño N00018 accede a la zona comun
+10/05/2022 18:48:55 Niño N00008 accede a la actividad tirolina
+10/05/2022 18:48:55 Niño N00008 se prepara para tirarse en la tirolina
+10/05/2022 18:48:56 Niño N00008 se tira por la tirolina
+10/05/2022 18:48:56 Niño N00037 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:56 Niño N00037 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:56 Niño N00037 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:56 Niño N00016 selecciona siguiente actividad
+10/05/2022 18:48:56 Niño N00016 accede a la cola de la la actividad merienda
+10/05/2022 18:48:56 Niño N00016 accede a la actividad merienda
+10/05/2022 18:48:56 Niño N00016 coge plato limpio
+10/05/2022 18:48:57 Niño N00038 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:57 Niño N00038 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:57 Niño N00038 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:58 Monitor M3 limpia bandeja
+10/05/2022 18:48:58 Niño N00014 selecciona siguiente actividad
+10/05/2022 18:48:58 Niño N00014 accede a la actividad soga
+10/05/2022 18:48:59 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:48:59 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:48:59 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:48:59 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:48:59 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:48:59 Niño N00018 accede a la actividad soga
+10/05/2022 18:48:59 Monitor M4 limpia bandeja
+10/05/2022 18:48:59 Niño N00039 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:48:59 Niño N00039 entra al campamento por la puerta izquierda 
+10/05/2022 18:48:59 Niño N00039 selecciona siguiente actividad
+10/05/2022 18:48:59 Niño N00039 selecciona siguiente actividad
+10/05/2022 18:48:59 Niño N00039 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:48:59 Niño N00008 llega al final de la tirolina
+10/05/2022 18:49:00 Niño N00008 se baja de la tirolina
+10/05/2022 18:49:00 Niño N00008 se va a la zona comun
+10/05/2022 18:49:00 Niño N00008 accede a la zona comun
+10/05/2022 18:49:00 Niño N00019 accede a la actividad tirolina
+10/05/2022 18:49:00 Niño N00019 se prepara para tirarse en la tirolina
+10/05/2022 18:49:01 Niño N00019 se tira por la tirolina
+10/05/2022 18:49:01 Niño N00040 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:01 Niño N00040 entra al campamento por la puerta derecha 
+10/05/2022 18:49:01 Niño N00040 accede a la actividad soga
+10/05/2022 18:49:03 Niño N00008 selecciona siguiente actividad
+10/05/2022 18:49:03 Niño N00008 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:03 Niño N00041 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:03 Niño N00041 entra al campamento por la puerta derecha 
+10/05/2022 18:49:03 Niño N00041 selecciona siguiente actividad
+10/05/2022 18:49:03 Niño N00041 accede a la actividad soga
+10/05/2022 18:49:03 Niño N00013 se mete en el equipo B
+10/05/2022 18:49:03 Niño N00031 se mete en el equipo B
+10/05/2022 18:49:03 Niño N00004 se mete en el quipo A
+10/05/2022 18:49:03 Niño N00012 se mete en el equipo B
+10/05/2022 18:49:03 Niño N00032 se mete en el equipo B
+10/05/2022 18:49:03 Niño N00033 se mete en el equipo B
+10/05/2022 18:49:03 Niño N00014 se mete en el quipo A
+10/05/2022 18:49:03 Niño N00018 se mete en el quipo A
+10/05/2022 18:49:03 Niño N00040 se mete en el quipo A
+10/05/2022 18:49:03 Niño N00041 se mete en el quipo A
+10/05/2022 18:49:03 Monitor ha formado equipos
+10/05/2022 18:49:03 Niño N00016 merienda
+10/05/2022 18:49:03 Niño N00016 deja plato sucio en su pila
+10/05/2022 18:49:03 Niño N00016 se va a la zona comun
+10/05/2022 18:49:03 Niño N00016 accede a la zona comun
+10/05/2022 18:49:04 Niño N00042 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:04 Niño N00042 entra al campamento por la puerta derecha 
+10/05/2022 18:49:04 Niño N00042 accede a la actividad soga
+10/05/2022 18:49:04 Niño N00042 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:49:04 Niño N00042 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:05 Niño N00019 llega al final de la tirolina
+10/05/2022 18:49:05 Niño N00019 se baja de la tirolina
+10/05/2022 18:49:05 Niño N00019 se va a la zona comun
+10/05/2022 18:49:05 Niño N00019 accede a la zona comun
+10/05/2022 18:49:05 Niño N00020 accede a la actividad tirolina
+10/05/2022 18:49:05 Niño N00020 se prepara para tirarse en la tirolina
+10/05/2022 18:49:06 Niño N00043 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:06 Niño N00043 entra al campamento por la puerta derecha 
+10/05/2022 18:49:06 Niño N00043 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:06 Niño N00020 se tira por la tirolina
+10/05/2022 18:49:06 Monitor M3 limpia bandeja
+10/05/2022 18:49:07 Niño N00016 selecciona siguiente actividad
+10/05/2022 18:49:07 Niño N00016 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:08 Niño N00044 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:08 Niño N00044 entra al campamento por la puerta izquierda 
+10/05/2022 18:49:08 Niño N00044 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:09 Niño N00019 selecciona siguiente actividad
+10/05/2022 18:49:09 Niño N00019 accede a la actividad soga
+10/05/2022 18:49:09 Niño N00019 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:49:09 Niño N00019 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:09 Niño N00045 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:09 Niño N00045 entra al campamento por la puerta izquierda 
+10/05/2022 18:49:09 Niño N00045 accede a la actividad soga
+10/05/2022 18:49:09 Niño N00045 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:49:09 Niño N00045 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:10 Ha terminado competición soga
+10/05/2022 18:49:10 Niño N00033 ha perdido competición soga
+10/05/2022 18:49:10 Han ganado los niños :   N00004 N00014 N00018 N00040 N00041
+10/05/2022 18:49:10 Niño N00018 ha ganado competición soga
+10/05/2022 18:49:10 Niño N00040 ha ganado competición soga
+10/05/2022 18:49:10 Niño N00018 se va a la zona comun
+10/05/2022 18:49:10 Niño N00004 ha ganado competición soga
+10/05/2022 18:49:10 Niño N00041 ha ganado competición soga
+10/05/2022 18:49:10 Niño N00033 se va a la zona comun
+10/05/2022 18:49:10 Niño N00033 accede a la zona comun
+10/05/2022 18:49:10 Niño N00041 se va a la zona comun
+10/05/2022 18:49:10 Niño N00041 accede a la zona comun
+10/05/2022 18:49:10 Niño N00014 ha ganado competición soga
+10/05/2022 18:49:10 Niño N00032 ha perdido competición soga
+10/05/2022 18:49:10 Niño N00004 se va a la zona comun
+10/05/2022 18:49:10 Niño N00004 accede a la zona comun
+10/05/2022 18:49:10 Niño N00012 ha perdido competición soga
+10/05/2022 18:49:10 Niño N00018 accede a la zona comun
+10/05/2022 18:49:10 Niño N00012 se va a la zona comun
+10/05/2022 18:49:10 Niño N00012 accede a la zona comun
+10/05/2022 18:49:10 Niño N00040 se va a la zona comun
+10/05/2022 18:49:10 Niño N00040 accede a la zona comun
+10/05/2022 18:49:10 Niño N00032 se va a la zona comun
+10/05/2022 18:49:10 Niño N00014 se va a la zona comun
+10/05/2022 18:49:10 Niño N00014 accede a la zona comun
+10/05/2022 18:49:10 Niño N00031 ha perdido competición soga
+10/05/2022 18:49:10 Niño N00013 ha perdido competición soga
+10/05/2022 18:49:10 Niño N00031 se va a la zona comun
+10/05/2022 18:49:10 Niño N00032 accede a la zona comun
+10/05/2022 18:49:10 Niño N00031 accede a la zona comun
+10/05/2022 18:49:10 Niño N00013 se va a la zona comun
+10/05/2022 18:49:10 Niño N00013 accede a la zona comun
+10/05/2022 18:49:10 Niño N00020 llega al final de la tirolina
+10/05/2022 18:49:10 Niño N00046 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:10 Niño N00046 entra al campamento por la puerta derecha 
+10/05/2022 18:49:10 Niño N00046 selecciona siguiente actividad
+10/05/2022 18:49:10 Niño N00046 selecciona siguiente actividad
+10/05/2022 18:49:10 Niño N00046 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:11 Niño N00020 se baja de la tirolina
+10/05/2022 18:49:11 Niño N00020 se va a la zona comun
+10/05/2022 18:49:11 Niño N00020 accede a la zona comun
+10/05/2022 18:49:11 Niño N00021 accede a la actividad tirolina
+10/05/2022 18:49:11 Niño N00021 se prepara para tirarse en la tirolina
+10/05/2022 18:49:12 Niño N00021 se tira por la tirolina
+10/05/2022 18:49:12 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:49:12 Niño N00012 accede a la actividad soga
+10/05/2022 18:49:12 Niño N00032 selecciona siguiente actividad
+10/05/2022 18:49:12 Niño N00032 selecciona siguiente actividad
+10/05/2022 18:49:12 Niño N00032 accede a la actividad soga
+10/05/2022 18:49:12 Niño N00013 selecciona siguiente actividad
+10/05/2022 18:49:12 Niño N00013 accede a la actividad soga
+10/05/2022 18:49:12 Niño N00041 selecciona siguiente actividad
+10/05/2022 18:49:12 Niño N00041 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:12 Niño N00047 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:12 Niño N00047 entra al campamento por la puerta izquierda 
+10/05/2022 18:49:12 Niño N00047 accede a la actividad soga
+10/05/2022 18:49:13 Niño N00040 selecciona siguiente actividad
+10/05/2022 18:49:13 Niño N00040 selecciona siguiente actividad
+10/05/2022 18:49:13 Niño N00040 accede a la actividad soga
+10/05/2022 18:49:13 Niño N00033 selecciona siguiente actividad
+10/05/2022 18:49:13 Niño N00033 selecciona siguiente actividad
+10/05/2022 18:49:13 Niño N00033 accede a la actividad soga
+10/05/2022 18:49:13 Niño N00004 selecciona siguiente actividad
+10/05/2022 18:49:13 Niño N00004 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:13 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:49:13 Niño N00018 accede a la cola de la la actividad merienda
+10/05/2022 18:49:13 Niño N00018 accede a la actividad merienda
+10/05/2022 18:49:13 Niño N00018 coge plato limpio
+10/05/2022 18:49:14 Niño N00020 selecciona siguiente actividad
+10/05/2022 18:49:14 Niño N00020 accede a la actividad soga
+10/05/2022 18:49:14 Niño N00031 selecciona siguiente actividad
+10/05/2022 18:49:14 Niño N00031 selecciona siguiente actividad
+10/05/2022 18:49:14 Niño N00031 selecciona siguiente actividad
+10/05/2022 18:49:14 Niño N00031 accede a la actividad soga
+10/05/2022 18:49:14 Niño N00014 selecciona siguiente actividad
+10/05/2022 18:49:14 Niño N00014 accede a la cola de la la actividad merienda
+10/05/2022 18:49:14 Niño N00014 accede a la actividad merienda
+10/05/2022 18:49:14 Niño N00014 coge plato limpio
+10/05/2022 18:49:14 Niño N00048 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:14 Niño N00048 entra al campamento por la puerta derecha 
+10/05/2022 18:49:14 Niño N00048 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:15 Niño N00021 llega al final de la tirolina
+10/05/2022 18:49:16 Niño N00021 se baja de la tirolina
+10/05/2022 18:49:16 Niño N00021 se va a la zona comun
+10/05/2022 18:49:16 Niño N00021 accede a la zona comun
+10/05/2022 18:49:16 Niño N00002 accede a la actividad tirolina
+10/05/2022 18:49:16 Niño N00002 se prepara para tirarse en la tirolina
+10/05/2022 18:49:17 Niño N00049 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:17 Niño N00049 entra al campamento por la puerta izquierda 
+10/05/2022 18:49:17 Niño N00049 selecciona siguiente actividad
+10/05/2022 18:49:17 Niño N00049 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:17 Niño N00002 se tira por la tirolina
+10/05/2022 18:49:19 Niño N00050 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:19 Niño N00050 entra al campamento por la puerta derecha 
+10/05/2022 18:49:19 Niño N00050 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:19 Niño N00021 selecciona siguiente actividad
+10/05/2022 18:49:19 Niño N00021 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:20 Niño N00018 merienda
+10/05/2022 18:49:20 Niño N00018 deja plato sucio en su pila
+10/05/2022 18:49:20 Niño N00018 se va a la zona comun
+10/05/2022 18:49:20 Niño N00018 accede a la zona comun
+10/05/2022 18:49:21 Niño N00014 merienda
+10/05/2022 18:49:21 Niño N00014 deja plato sucio en su pila
+10/05/2022 18:49:21 Niño N00014 se va a la zona comun
+10/05/2022 18:49:21 Niño N00014 accede a la zona comun
+10/05/2022 18:49:21 Niño N00002 llega al final de la tirolina
+10/05/2022 18:49:21 Niño N00002 se baja de la tirolina
+10/05/2022 18:49:21 Niño N00002 se va a la zona comun
+10/05/2022 18:49:21 Niño N00002 accede a la zona comun
+10/05/2022 18:49:21 Niño N00003 accede a la actividad tirolina
+10/05/2022 18:49:21 Niño N00003 se prepara para tirarse en la tirolina
+10/05/2022 18:49:21 Niño N00051 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:21 Niño N00051 entra al campamento por la puerta derecha 
+10/05/2022 18:49:21 Niño N00051 accede a la actividad soga
+10/05/2022 18:49:22 Niño N00003 se tira por la tirolina
+10/05/2022 18:49:23 Niño N00052 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:23 Niño N00014 selecciona siguiente actividad
+10/05/2022 18:49:23 Niño N00014 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:24 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:49:24 Niño N00018 accede a la actividad soga
+10/05/2022 18:49:24 Niño N00012 se mete en el quipo A
+10/05/2022 18:49:24 Niño N00032 se mete en el equipo B
+10/05/2022 18:49:24 Niño N00013 se mete en el equipo B
+10/05/2022 18:49:24 Niño N00047 se mete en el quipo A
+10/05/2022 18:49:24 Niño N00040 se mete en el equipo B
+10/05/2022 18:49:24 Niño N00033 se mete en el equipo B
+10/05/2022 18:49:24 Niño N00020 se mete en el equipo B
+10/05/2022 18:49:24 Niño N00031 se mete en el quipo A
+10/05/2022 18:49:24 Niño N00051 se mete en el quipo A
+10/05/2022 18:49:24 Niño N00018 se mete en el quipo A
+10/05/2022 18:49:24 Monitor ha formado equipos
+10/05/2022 18:49:24 Niño N00002 selecciona siguiente actividad
+10/05/2022 18:49:24 Niño N00002 accede a la actividad soga
+10/05/2022 18:49:24 Niño N00002 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:49:24 Niño N00002 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:24 Monitor M3 limpia bandeja
+10/05/2022 18:49:25 Monitor M4 limpia bandeja
+10/05/2022 18:49:25 Niño N00053 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:26 Niño N00003 llega al final de la tirolina
+10/05/2022 18:49:27 Niño N00003 se baja de la tirolina
+10/05/2022 18:49:27 Niño N00003 se va a la zona comun
+10/05/2022 18:49:27 Niño N00003 accede a la zona comun
+10/05/2022 18:49:27 Niño N00005 accede a la actividad tirolina
+10/05/2022 18:49:27 Niño N00005 se prepara para tirarse en la tirolina
+10/05/2022 18:49:27 Niño N00054 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:28 Niño N00005 se tira por la tirolina
+10/05/2022 18:49:30 Niño N00055 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:30 Niño N00003 selecciona siguiente actividad
+10/05/2022 18:49:30 Niño N00003 accede a la actividad soga
+10/05/2022 18:49:30 Niño N00003 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:49:30 Niño N00003 accede a la cola de la la actividad merienda
+10/05/2022 18:49:30 Niño N00003 accede a la actividad merienda
+10/05/2022 18:49:30 Niño N00003 coge plato limpio
+10/05/2022 18:49:31 Ha terminado competición soga
+10/05/2022 18:49:31 Han ganado los niños :   N00012 N00047 N00031 N00051 N00018
+10/05/2022 18:49:31 Niño N00032 ha perdido competición soga
+10/05/2022 18:49:31 Niño N00013 ha perdido competición soga
+10/05/2022 18:49:31 Niño N00032 se va a la zona comun
+10/05/2022 18:49:31 Niño N00032 accede a la zona comun
+10/05/2022 18:49:31 Niño N00012 ha ganado competición soga
+10/05/2022 18:49:31 Niño N00013 se va a la zona comun
+10/05/2022 18:49:31 Niño N00013 accede a la zona comun
+10/05/2022 18:49:31 Niño N00018 ha ganado competición soga
+10/05/2022 18:49:31 Niño N00012 se va a la zona comun
+10/05/2022 18:49:31 Niño N00033 ha perdido competición soga
+10/05/2022 18:49:31 Niño N00020 ha perdido competición soga
+10/05/2022 18:49:31 Niño N00051 ha ganado competición soga
+10/05/2022 18:49:31 Niño N00020 se va a la zona comun
+10/05/2022 18:49:31 Niño N00033 se va a la zona comun
+10/05/2022 18:49:31 Niño N00033 accede a la zona comun
+10/05/2022 18:49:31 Niño N00040 ha perdido competición soga
+10/05/2022 18:49:31 Niño N00047 ha ganado competición soga
+10/05/2022 18:49:31 Niño N00040 se va a la zona comun
+10/05/2022 18:49:31 Niño N00047 se va a la zona comun
+10/05/2022 18:49:31 Niño N00047 accede a la zona comun
+10/05/2022 18:49:31 Niño N00012 accede a la zona comun
+10/05/2022 18:49:31 Niño N00018 se va a la zona comun
+10/05/2022 18:49:31 Niño N00018 accede a la zona comun
+10/05/2022 18:49:31 Niño N00031 ha ganado competición soga
+10/05/2022 18:49:31 Niño N00031 se va a la zona comun
+10/05/2022 18:49:31 Niño N00031 accede a la zona comun
+10/05/2022 18:49:31 Niño N00040 accede a la zona comun
+10/05/2022 18:49:31 Niño N00020 accede a la zona comun
+10/05/2022 18:49:31 Niño N00051 se va a la zona comun
+10/05/2022 18:49:31 Niño N00051 accede a la zona comun
+10/05/2022 18:49:31 Niño N00005 llega al final de la tirolina
+10/05/2022 18:49:32 Niño N00005 se baja de la tirolina
+10/05/2022 18:49:32 Niño N00005 se va a la zona comun
+10/05/2022 18:49:32 Niño N00005 accede a la zona comun
+10/05/2022 18:49:32 Niño N00007 accede a la actividad tirolina
+10/05/2022 18:49:32 Niño N00007 se prepara para tirarse en la tirolina
+10/05/2022 18:49:33 Niño N00056 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:33 Niño N00007 se tira por la tirolina
+10/05/2022 18:49:33 Niño N00040 selecciona siguiente actividad
+10/05/2022 18:49:33 Niño N00040 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:33 Niño N00031 selecciona siguiente actividad
+10/05/2022 18:49:33 Niño N00031 accede a la actividad soga
+10/05/2022 18:49:33 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:49:33 Niño N00018 accede a la cola de la la actividad merienda
+10/05/2022 18:49:33 Niño N00018 accede a la actividad merienda
+10/05/2022 18:49:33 Niño N00018 coge plato limpio
+10/05/2022 18:49:33 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:49:33 Niño N00012 accede a la actividad soga
+10/05/2022 18:49:34 Niño N00020 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00020 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00020 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00020 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00020 accede a la actividad soga
+10/05/2022 18:49:34 Monitor M2 se va al descanso
+10/05/2022 18:49:34 Niño N00047 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00047 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00047 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:34 Niño N00033 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00033 accede a la actividad soga
+10/05/2022 18:49:34 Niño N00005 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00005 accede a la actividad soga
+10/05/2022 18:49:34 Niño N00032 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00032 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00032 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00032 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00032 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:34 Niño N00013 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00013 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:34 Niño N00051 selecciona siguiente actividad
+10/05/2022 18:49:34 Niño N00051 accede a la actividad soga
+10/05/2022 18:49:35 Niño N00057 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:35 Monitor M2 vuelve a su actividad
+10/05/2022 18:49:35 Monitor M2 accede a actividad tirolina
+10/05/2022 18:49:36 Niño N00058 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:37 Niño N00007 llega al final de la tirolina
+10/05/2022 18:49:37 Niño N00007 se baja de la tirolina
+10/05/2022 18:49:37 Niño N00007 se va a la zona comun
+10/05/2022 18:49:37 Niño N00007 accede a la zona comun
+10/05/2022 18:49:37 Niño N00010 accede a la actividad tirolina
+10/05/2022 18:49:37 Niño N00010 se prepara para tirarse en la tirolina
+10/05/2022 18:49:37 Niño N00003 merienda
+10/05/2022 18:49:37 Niño N00003 deja plato sucio en su pila
+10/05/2022 18:49:37 Niño N00003 se va a la zona comun
+10/05/2022 18:49:37 Niño N00003 accede a la zona comun
+10/05/2022 18:49:38 Niño N00059 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:38 Niño N00010 se tira por la tirolina
+10/05/2022 18:49:40 Niño N00003 selecciona siguiente actividad
+10/05/2022 18:49:40 Niño N00003 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:40 Niño N00018 merienda
+10/05/2022 18:49:40 Niño N00018 deja plato sucio en su pila
+10/05/2022 18:49:40 Niño N00018 se va a la zona comun
+10/05/2022 18:49:40 Niño N00018 accede a la zona comun
+10/05/2022 18:49:40 Niño N00060 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:40 Niño N00007 selecciona siguiente actividad
+10/05/2022 18:49:40 Niño N00007 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:41 Niño N00061 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:42 Monitor M3 limpia bandeja
+10/05/2022 18:49:42 Niño N00010 llega al final de la tirolina
+10/05/2022 18:49:42 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:49:42 Niño N00018 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:43 Niño N00010 se baja de la tirolina
+10/05/2022 18:49:43 Niño N00010 se va a la zona comun
+10/05/2022 18:49:43 Niño N00010 accede a la zona comun
+10/05/2022 18:49:43 Niño N00022 accede a la actividad tirolina
+10/05/2022 18:49:43 Niño N00022 se prepara para tirarse en la tirolina
+10/05/2022 18:49:43 Monitor M4 limpia bandeja
+10/05/2022 18:49:44 Niño N00022 se tira por la tirolina
+10/05/2022 18:49:44 Niño N00062 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:46 Niño N00010 selecciona siguiente actividad
+10/05/2022 18:49:46 Niño N00010 selecciona siguiente actividad
+10/05/2022 18:49:46 Niño N00010 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:49:46 Niño N00063 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:48 Niño N00022 llega al final de la tirolina
+10/05/2022 18:49:48 Niño N00064 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:48 Niño N00022 se baja de la tirolina
+10/05/2022 18:49:48 Niño N00022 se va a la zona comun
+10/05/2022 18:49:48 Niño N00022 accede a la zona comun
+10/05/2022 18:49:48 Niño N00023 accede a la actividad tirolina
+10/05/2022 18:49:48 Niño N00023 se prepara para tirarse en la tirolina
+10/05/2022 18:49:49 Niño N00023 se tira por la tirolina
+10/05/2022 18:49:50 Niño N00065 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:51 Niño N00022 selecciona siguiente actividad
+10/05/2022 18:49:51 Niño N00022 accede a la actividad soga
+10/05/2022 18:49:52 Niño N00066 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:49:53 Niño N00023 llega al final de la tirolina
+10/05/2022 18:49:54 Niño N00023 se baja de la tirolina
+10/05/2022 18:49:54 Niño N00023 se va a la zona comun
+10/05/2022 18:49:54 Niño N00023 accede a la zona comun
+10/05/2022 18:49:54 Niño N00025 accede a la actividad tirolina
+10/05/2022 18:49:54 Niño N00025 se prepara para tirarse en la tirolina
+10/05/2022 18:49:55 Niño N00025 se tira por la tirolina
+10/05/2022 18:49:55 Niño N00067 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:57 Niño N00023 selecciona siguiente actividad
+10/05/2022 18:49:57 Niño N00023 selecciona siguiente actividad
+10/05/2022 18:49:57 Niño N00023 accede a la actividad soga
+10/05/2022 18:49:58 Niño N00068 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:49:58 Niño N00025 llega al final de la tirolina
+10/05/2022 18:49:59 Niño N00025 se baja de la tirolina
+10/05/2022 18:49:59 Niño N00025 se va a la zona comun
+10/05/2022 18:49:59 Niño N00025 accede a la zona comun
+10/05/2022 18:49:59 Niño N00027 accede a la actividad tirolina
+10/05/2022 18:49:59 Niño N00027 se prepara para tirarse en la tirolina
+10/05/2022 18:50:00 Niño N00027 se tira por la tirolina
+10/05/2022 18:50:01 Niño N00069 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:02 Niño N00025 selecciona siguiente actividad
+10/05/2022 18:50:02 Niño N00025 accede a la actividad soga
+10/05/2022 18:50:02 Niño N00070 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:03 Niño N00027 llega al final de la tirolina
+10/05/2022 18:50:04 Niño N00027 se baja de la tirolina
+10/05/2022 18:50:04 Niño N00027 se va a la zona comun
+10/05/2022 18:50:04 Niño N00027 accede a la zona comun
+10/05/2022 18:50:04 Niño N00028 accede a la actividad tirolina
+10/05/2022 18:50:04 Niño N00028 se prepara para tirarse en la tirolina
+10/05/2022 18:50:04 Niño N00071 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:05 Niño N00028 se tira por la tirolina
+10/05/2022 18:50:06 Niño N00027 selecciona siguiente actividad
+10/05/2022 18:50:06 Niño N00027 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:50:07 Niño N00072 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:08 Niño N00073 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:09 Niño N00028 llega al final de la tirolina
+10/05/2022 18:50:09 Niño N00028 se baja de la tirolina
+10/05/2022 18:50:09 Niño N00028 se va a la zona comun
+10/05/2022 18:50:09 Niño N00028 accede a la zona comun
+10/05/2022 18:50:09 Niño N00029 accede a la actividad tirolina
+10/05/2022 18:50:09 Niño N00029 se prepara para tirarse en la tirolina
+10/05/2022 18:50:10 Niño N00074 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:10 Niño N00029 se tira por la tirolina
+10/05/2022 18:50:12 Niño N00028 selecciona siguiente actividad
+10/05/2022 18:50:12 Niño N00028 selecciona siguiente actividad
+10/05/2022 18:50:12 Niño N00028 selecciona siguiente actividad
+10/05/2022 18:50:12 Niño N00028 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:50:12 Niño N00075 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:13 Niño N00076 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:14 Niño N00029 llega al final de la tirolina
+10/05/2022 18:50:15 Niño N00029 se baja de la tirolina
+10/05/2022 18:50:15 Niño N00029 se va a la zona comun
+10/05/2022 18:50:15 Niño N00029 accede a la zona comun
+10/05/2022 18:50:15 Niño N00001 accede a la actividad tirolina
+10/05/2022 18:50:15 Niño N00001 se prepara para tirarse en la tirolina
+10/05/2022 18:50:16 Niño N00001 se tira por la tirolina
+10/05/2022 18:50:16 Niño N00077 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:18 Niño N00029 selecciona siguiente actividad
+10/05/2022 18:50:18 Niño N00029 selecciona siguiente actividad
+10/05/2022 18:50:18 Niño N00029 accede a la actividad soga
+10/05/2022 18:50:18 Niño N00031 se mete en el equipo B
+10/05/2022 18:50:18 Niño N00012 se mete en el quipo A
+10/05/2022 18:50:18 Niño N00020 se mete en el quipo A
+10/05/2022 18:50:18 Niño N00033 se mete en el quipo A
+10/05/2022 18:50:18 Niño N00005 se mete en el quipo A
+10/05/2022 18:50:18 Niño N00051 se mete en el equipo B
+10/05/2022 18:50:18 Niño N00022 se mete en el quipo A
+10/05/2022 18:50:18 Niño N00023 se mete en el equipo B
+10/05/2022 18:50:18 Niño N00025 se mete en el equipo B
+10/05/2022 18:50:18 Niño N00029 se mete en el equipo B
+10/05/2022 18:50:18 Monitor ha formado equipos
+10/05/2022 18:50:18 Niño N00078 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:19 Niño N00001 llega al final de la tirolina
+10/05/2022 18:50:20 Niño N00001 se baja de la tirolina
+10/05/2022 18:50:20 Niño N00001 se va a la zona comun
+10/05/2022 18:50:20 Niño N00001 accede a la zona comun
+10/05/2022 18:50:20 Niño N00030 accede a la actividad tirolina
+10/05/2022 18:50:20 Niño N00030 se prepara para tirarse en la tirolina
+10/05/2022 18:50:21 Niño N00079 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:21 Niño N00030 se tira por la tirolina
+10/05/2022 18:50:22 Niño N00001 selecciona siguiente actividad
+10/05/2022 18:50:22 Niño N00001 accede a la actividad soga
+10/05/2022 18:50:22 Niño N00001 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:50:22 Niño N00001 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:50:23 Niño N00080 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:24 Niño N00030 llega al final de la tirolina
+10/05/2022 18:50:25 Ha terminado competición soga
+10/05/2022 18:50:25 Niño N00029 ha perdido competición soga
+10/05/2022 18:50:25 Niño N00012 ha ganado competición soga
+10/05/2022 18:50:25 Han ganado los niños :   N00012 N00020 N00033 N00005 N00022
+10/05/2022 18:50:25 Niño N00012 se va a la zona comun
+10/05/2022 18:50:25 Niño N00012 accede a la zona comun
+10/05/2022 18:50:25 Niño N00023 ha perdido competición soga
+10/05/2022 18:50:25 Niño N00033 ha ganado competición soga
+10/05/2022 18:50:25 Niño N00023 se va a la zona comun
+10/05/2022 18:50:25 Niño N00023 accede a la zona comun
+10/05/2022 18:50:25 Niño N00031 ha perdido competición soga
+10/05/2022 18:50:25 Niño N00051 ha perdido competición soga
+10/05/2022 18:50:25 Niño N00051 se va a la zona comun
+10/05/2022 18:50:25 Niño N00051 accede a la zona comun
+10/05/2022 18:50:25 Niño N00029 se va a la zona comun
+10/05/2022 18:50:25 Niño N00020 ha ganado competición soga
+10/05/2022 18:50:25 Niño N00029 accede a la zona comun
+10/05/2022 18:50:25 Niño N00031 se va a la zona comun
+10/05/2022 18:50:25 Niño N00005 ha ganado competición soga
+10/05/2022 18:50:25 Niño N00025 ha perdido competición soga
+10/05/2022 18:50:25 Niño N00033 se va a la zona comun
+10/05/2022 18:50:25 Niño N00033 accede a la zona comun
+10/05/2022 18:50:25 Niño N00022 ha ganado competición soga
+10/05/2022 18:50:25 Niño N00025 se va a la zona comun
+10/05/2022 18:50:25 Niño N00025 accede a la zona comun
+10/05/2022 18:50:25 Niño N00005 se va a la zona comun
+10/05/2022 18:50:25 Niño N00005 accede a la zona comun
+10/05/2022 18:50:25 Niño N00031 accede a la zona comun
+10/05/2022 18:50:25 Niño N00020 se va a la zona comun
+10/05/2022 18:50:25 Niño N00022 se va a la zona comun
+10/05/2022 18:50:25 Niño N00022 accede a la zona comun
+10/05/2022 18:50:25 Niño N00020 accede a la zona comun
+10/05/2022 18:50:25 Niño N00030 se baja de la tirolina
+10/05/2022 18:50:25 Niño N00030 se va a la zona comun
+10/05/2022 18:50:25 Niño N00030 accede a la zona comun
+10/05/2022 18:50:25 Niño N00024 accede a la actividad tirolina
+10/05/2022 18:50:25 Niño N00024 se prepara para tirarse en la tirolina
+10/05/2022 18:50:25 Niño N00081 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:26 Niño N00024 se tira por la tirolina
+10/05/2022 18:50:26 Monitor M2 se va al descanso
+10/05/2022 18:50:27 Niño N00031 selecciona siguiente actividad
+10/05/2022 18:50:27 Niño N00031 accede a la actividad soga
+10/05/2022 18:50:27 Niño N00033 selecciona siguiente actividad
+10/05/2022 18:50:27 Niño N00033 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:50:27 Niño N00005 selecciona siguiente actividad
+10/05/2022 18:50:27 Niño N00005 accede a la cola de la la actividad merienda
+10/05/2022 18:50:27 Niño N00005 accede a la actividad merienda
+10/05/2022 18:50:27 Niño N00005 coge plato limpio
+10/05/2022 18:50:28 Niño N00082 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:28 Niño N00020 selecciona siguiente actividad
+10/05/2022 18:50:28 Niño N00020 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:50:28 Niño N00025 selecciona siguiente actividad
+10/05/2022 18:50:28 Niño N00025 selecciona siguiente actividad
+10/05/2022 18:50:28 Niño N00025 accede a la actividad soga
+10/05/2022 18:50:28 Niño N00051 selecciona siguiente actividad
+10/05/2022 18:50:28 Niño N00051 accede a la cola de la la actividad merienda
+10/05/2022 18:50:28 Niño N00051 accede a la actividad merienda
+10/05/2022 18:50:28 Niño N00051 coge plato limpio
+10/05/2022 18:50:28 Monitor M2 vuelve a su actividad
+10/05/2022 18:50:28 Monitor M2 accede a actividad tirolina
+10/05/2022 18:50:28 Niño N00029 selecciona siguiente actividad
+10/05/2022 18:50:28 Niño N00029 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:50:28 Niño N00022 selecciona siguiente actividad
+10/05/2022 18:50:28 Niño N00022 accede a la cola de la la actividad merienda
+10/05/2022 18:50:28 Niño N00022 accede a la actividad merienda
+10/05/2022 18:50:28 Niño N00022 coge plato limpio
+10/05/2022 18:50:28 Niño N00030 selecciona siguiente actividad
+10/05/2022 18:50:28 Niño N00030 accede a la actividad soga
+10/05/2022 18:50:28 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:50:28 Niño N00012 accede a la actividad soga
+10/05/2022 18:50:28 Niño N00023 selecciona siguiente actividad
+10/05/2022 18:50:28 Niño N00023 selecciona siguiente actividad
+10/05/2022 18:50:28 Niño N00023 accede a la actividad soga
+10/05/2022 18:50:29 Niño N00083 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:29 Niño N00024 llega al final de la tirolina
+10/05/2022 18:50:30 Niño N00024 se baja de la tirolina
+10/05/2022 18:50:30 Niño N00024 se va a la zona comun
+10/05/2022 18:50:30 Niño N00024 accede a la zona comun
+10/05/2022 18:50:30 Niño N00009 accede a la actividad tirolina
+10/05/2022 18:50:30 Niño N00009 se prepara para tirarse en la tirolina
+10/05/2022 18:50:31 Niño N00084 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:31 Niño N00009 se tira por la tirolina
+10/05/2022 18:50:32 Niño N00024 selecciona siguiente actividad
+10/05/2022 18:50:32 Niño N00024 accede a la cola de la la actividad merienda
+10/05/2022 18:50:32 Niño N00024 accede a la actividad merienda
+10/05/2022 18:50:32 Niño N00024 coge plato limpio
+10/05/2022 18:50:33 Niño N00085 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:34 Niño N00005 merienda
+10/05/2022 18:50:34 Niño N00005 deja plato sucio en su pila
+10/05/2022 18:50:34 Niño N00005 se va a la zona comun
+10/05/2022 18:50:34 Niño N00005 accede a la zona comun
+10/05/2022 18:50:35 Niño N00009 llega al final de la tirolina
+10/05/2022 18:50:35 Niño N00051 merienda
+10/05/2022 18:50:35 Niño N00051 deja plato sucio en su pila
+10/05/2022 18:50:35 Niño N00051 se va a la zona comun
+10/05/2022 18:50:35 Niño N00051 accede a la zona comun
+10/05/2022 18:50:35 Niño N00009 se baja de la tirolina
+10/05/2022 18:50:35 Niño N00009 se va a la zona comun
+10/05/2022 18:50:35 Niño N00009 accede a la zona comun
+10/05/2022 18:50:35 Niño N00015 accede a la actividad tirolina
+10/05/2022 18:50:35 Niño N00015 se prepara para tirarse en la tirolina
+10/05/2022 18:50:35 Niño N00022 merienda
+10/05/2022 18:50:35 Niño N00022 deja plato sucio en su pila
+10/05/2022 18:50:35 Niño N00022 se va a la zona comun
+10/05/2022 18:50:35 Niño N00022 accede a la zona comun
+10/05/2022 18:50:36 Niño N00015 se tira por la tirolina
+10/05/2022 18:50:36 Niño N00086 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:38 Niño N00005 selecciona siguiente actividad
+10/05/2022 18:50:38 Niño N00005 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:50:38 Monitor M3 limpia bandeja
+10/05/2022 18:50:38 Niño N00022 selecciona siguiente actividad
+10/05/2022 18:50:38 Niño N00022 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:50:39 Niño N00087 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:39 Niño N00051 selecciona siguiente actividad
+10/05/2022 18:50:39 Niño N00051 accede a la cola de la la actividad merienda
+10/05/2022 18:50:39 Niño N00051 accede a la actividad merienda
+10/05/2022 18:50:39 Niño N00051 coge plato limpio
+10/05/2022 18:50:39 Monitor M4 limpia bandeja
+10/05/2022 18:50:39 Niño N00024 merienda
+10/05/2022 18:50:39 Niño N00024 deja plato sucio en su pila
+10/05/2022 18:50:39 Niño N00024 se va a la zona comun
+10/05/2022 18:50:39 Niño N00024 accede a la zona comun
+10/05/2022 18:50:39 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:50:39 Niño N00009 accede a la actividad soga
+10/05/2022 18:50:40 Niño N00015 llega al final de la tirolina
+10/05/2022 18:50:40 Niño N00088 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:41 Niño N00015 se baja de la tirolina
+10/05/2022 18:50:41 Niño N00015 se va a la zona comun
+10/05/2022 18:50:41 Niño N00015 accede a la zona comun
+10/05/2022 18:50:41 Niño N00026 accede a la actividad tirolina
+10/05/2022 18:50:41 Niño N00026 se prepara para tirarse en la tirolina
+10/05/2022 18:50:41 Monitor M3 limpia bandeja
+10/05/2022 18:50:41 Niño N00024 selecciona siguiente actividad
+10/05/2022 18:50:41 Niño N00024 accede a la actividad soga
+10/05/2022 18:50:42 Niño N00026 se tira por la tirolina
+10/05/2022 18:50:42 Monitor M4 limpia bandeja
+10/05/2022 18:50:43 Niño N00089 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:44 Niño N00015 selecciona siguiente actividad
+10/05/2022 18:50:44 Niño N00015 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:50:45 Niño N00026 llega al final de la tirolina
+10/05/2022 18:50:46 Niño N00051 merienda
+10/05/2022 18:50:46 Niño N00051 deja plato sucio en su pila
+10/05/2022 18:50:46 Niño N00051 se va a la zona comun
+10/05/2022 18:50:46 Niño N00051 accede a la zona comun
+10/05/2022 18:50:46 Niño N00090 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:46 Niño N00026 se baja de la tirolina
+10/05/2022 18:50:46 Niño N00026 se va a la zona comun
+10/05/2022 18:50:46 Niño N00026 accede a la zona comun
+10/05/2022 18:50:46 Niño N00011 accede a la actividad tirolina
+10/05/2022 18:50:46 Niño N00011 se prepara para tirarse en la tirolina
+10/05/2022 18:50:47 Niño N00011 se tira por la tirolina
+10/05/2022 18:50:48 Niño N00051 selecciona siguiente actividad
+10/05/2022 18:50:48 Niño N00051 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:50:49 Niño N00091 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:49 Niño N00026 selecciona siguiente actividad
+10/05/2022 18:50:49 Niño N00026 accede a la cola de la la actividad merienda
+10/05/2022 18:50:49 Niño N00026 accede a la actividad merienda
+10/05/2022 18:50:49 Niño N00026 coge plato limpio
+10/05/2022 18:50:50 Monitor M3 limpia bandeja
+10/05/2022 18:50:50 Niño N00092 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:51 Niño N00011 llega al final de la tirolina
+10/05/2022 18:50:51 Niño N00011 se baja de la tirolina
+10/05/2022 18:50:51 Niño N00011 se va a la zona comun
+10/05/2022 18:50:51 Niño N00011 accede a la zona comun
+10/05/2022 18:50:51 Niño N00006 accede a la actividad tirolina
+10/05/2022 18:50:51 Niño N00006 se prepara para tirarse en la tirolina
+10/05/2022 18:50:52 Niño N00006 se tira por la tirolina
+10/05/2022 18:50:53 Niño N00093 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:50:54 Niño N00011 selecciona siguiente actividad
+10/05/2022 18:50:54 Niño N00011 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:50:56 Niño N00094 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:56 Niño N00006 llega al final de la tirolina
+10/05/2022 18:50:56 Niño N00026 merienda
+10/05/2022 18:50:56 Niño N00026 deja plato sucio en su pila
+10/05/2022 18:50:56 Niño N00026 se va a la zona comun
+10/05/2022 18:50:56 Niño N00026 accede a la zona comun
+10/05/2022 18:50:56 Niño N00006 se baja de la tirolina
+10/05/2022 18:50:56 Niño N00006 se va a la zona comun
+10/05/2022 18:50:56 Niño N00006 accede a la zona comun
+10/05/2022 18:50:56 Niño N00034 accede a la actividad tirolina
+10/05/2022 18:50:56 Niño N00034 se prepara para tirarse en la tirolina
+10/05/2022 18:50:57 Niño N00095 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:50:57 Niño N00034 se tira por la tirolina
+10/05/2022 18:50:59 Niño N00006 selecciona siguiente actividad
+10/05/2022 18:50:59 Niño N00006 accede a la actividad soga
+10/05/2022 18:50:59 Niño N00026 selecciona siguiente actividad
+10/05/2022 18:50:59 Niño N00026 accede a la cola de la la actividad merienda
+10/05/2022 18:50:59 Niño N00026 accede a la actividad merienda
+10/05/2022 18:50:59 Niño N00026 coge plato limpio
+10/05/2022 18:51:00 Niño N00096 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:51:00 Monitor M4 limpia bandeja
+10/05/2022 18:51:01 Niño N00034 llega al final de la tirolina
+10/05/2022 18:51:02 Niño N00034 se baja de la tirolina
+10/05/2022 18:51:02 Niño N00034 se va a la zona comun
+10/05/2022 18:51:02 Niño N00034 accede a la zona comun
+10/05/2022 18:51:02 Niño N00017 accede a la actividad tirolina
+10/05/2022 18:51:02 Niño N00017 se prepara para tirarse en la tirolina
+10/05/2022 18:51:03 Niño N00017 se tira por la tirolina
+10/05/2022 18:51:03 Niño N00097 intenta entrar al campamento por la puerta izquierda 
+10/05/2022 18:51:04 Niño N00034 selecciona siguiente actividad
+10/05/2022 18:51:04 Niño N00034 accede a la actividad soga
+10/05/2022 18:51:05 Niño N00098 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:51:06 Niño N00026 merienda
+10/05/2022 18:51:06 Niño N00026 deja plato sucio en su pila
+10/05/2022 18:51:06 Niño N00026 se va a la zona comun
+10/05/2022 18:51:06 Niño N00026 accede a la zona comun
+10/05/2022 18:51:06 Niño N00017 llega al final de la tirolina
+10/05/2022 18:51:06 Niño N00099 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:51:07 Niño N00017 se baja de la tirolina
+10/05/2022 18:51:07 Niño N00017 se va a la zona comun
+10/05/2022 18:51:07 Niño N00017 accede a la zona comun
+10/05/2022 18:51:07 Niño N00035 accede a la actividad tirolina
+10/05/2022 18:51:07 Niño N00035 se prepara para tirarse en la tirolina
+10/05/2022 18:51:08 Niño N00035 se tira por la tirolina
+10/05/2022 18:51:09 Niño N00026 selecciona siguiente actividad
+10/05/2022 18:51:09 Niño N00026 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:09 Niño N00100 intenta entrar al campamento por la puerta derecha 
+10/05/2022 18:51:10 Monitor M3 limpia bandeja
+10/05/2022 18:51:10 Monitor M3 se va al descanso
+10/05/2022 18:51:11 Niño N00017 selecciona siguiente actividad
+10/05/2022 18:51:11 Niño N00017 accede a la actividad soga
+10/05/2022 18:51:11 Niño N00031 se mete en el quipo A
+10/05/2022 18:51:11 Niño N00025 se mete en el equipo B
+10/05/2022 18:51:11 Niño N00030 se mete en el quipo A
+10/05/2022 18:51:11 Niño N00012 se mete en el equipo B
+10/05/2022 18:51:11 Niño N00023 se mete en el equipo B
+10/05/2022 18:51:11 Niño N00009 se mete en el quipo A
+10/05/2022 18:51:11 Niño N00024 se mete en el quipo A
+10/05/2022 18:51:11 Niño N00006 se mete en el quipo A
+10/05/2022 18:51:11 Niño N00034 se mete en el equipo B
+10/05/2022 18:51:11 Niño N00017 se mete en el equipo B
+10/05/2022 18:51:11 Monitor ha formado equipos
+10/05/2022 18:51:11 Monitor M3 vuelve a su actividad
+10/05/2022 18:51:11 Monitor M3 accede a actividad merienda
+10/05/2022 18:51:12 Niño N00035 llega al final de la tirolina
+10/05/2022 18:51:12 Niño N00035 se baja de la tirolina
+10/05/2022 18:51:12 Niño N00035 se va a la zona comun
+10/05/2022 18:51:12 Niño N00035 accede a la zona comun
+10/05/2022 18:51:12 Niño N00036 accede a la actividad tirolina
+10/05/2022 18:51:12 Niño N00036 se prepara para tirarse en la tirolina
+10/05/2022 18:51:13 Niño N00036 se tira por la tirolina
+10/05/2022 18:51:14 Niño N00035 selecciona siguiente actividad
+10/05/2022 18:51:14 Niño N00035 selecciona siguiente actividad
+10/05/2022 18:51:14 Niño N00035 accede a la actividad soga
+10/05/2022 18:51:14 Niño N00035 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:51:14 Niño N00035 selecciona siguiente actividad
+10/05/2022 18:51:14 Niño N00035 selecciona siguiente actividad
+10/05/2022 18:51:14 Niño N00035 selecciona siguiente actividad
+10/05/2022 18:51:14 Niño N00035 accede a la actividad soga
+10/05/2022 18:51:14 Niño N00035 selecciona otra actividad ya que no hay hueco en actividad soga
+10/05/2022 18:51:14 Niño N00035 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:17 Niño N00036 llega al final de la tirolina
+10/05/2022 18:51:17 Niño N00036 se baja de la tirolina
+10/05/2022 18:51:17 Niño N00036 se va a la zona comun
+10/05/2022 18:51:17 Niño N00036 accede a la zona comun
+10/05/2022 18:51:17 Niño N00037 accede a la actividad tirolina
+10/05/2022 18:51:17 Niño N00037 se prepara para tirarse en la tirolina
+10/05/2022 18:51:18 Ha terminado competición soga
+10/05/2022 18:51:18 Han ganado los niños :   N00025 N00012 N00023 N00034 N00017
+10/05/2022 18:51:18 Niño N00031 ha ganado competición soga
+10/05/2022 18:51:18 Niño N00023 ha perdido competición soga
+10/05/2022 18:51:18 Niño N00031 se va a la zona comun
+10/05/2022 18:51:18 Niño N00031 accede a la zona comun
+10/05/2022 18:51:18 Niño N00009 ha ganado competición soga
+10/05/2022 18:51:18 Niño N00025 ha perdido competición soga
+10/05/2022 18:51:18 Niño N00023 se va a la zona comun
+10/05/2022 18:51:18 Niño N00017 ha perdido competición soga
+10/05/2022 18:51:18 Niño N00025 se va a la zona comun
+10/05/2022 18:51:18 Niño N00017 se va a la zona comun
+10/05/2022 18:51:18 Niño N00017 accede a la zona comun
+10/05/2022 18:51:18 Niño N00034 ha perdido competición soga
+10/05/2022 18:51:18 Niño N00012 ha perdido competición soga
+10/05/2022 18:51:18 Niño N00009 se va a la zona comun
+10/05/2022 18:51:18 Niño N00009 accede a la zona comun
+10/05/2022 18:51:18 Niño N00024 ha ganado competición soga
+10/05/2022 18:51:18 Niño N00006 ha ganado competición soga
+10/05/2022 18:51:18 Niño N00024 se va a la zona comun
+10/05/2022 18:51:18 Niño N00024 accede a la zona comun
+10/05/2022 18:51:18 Niño N00012 se va a la zona comun
+10/05/2022 18:51:18 Niño N00012 accede a la zona comun
+10/05/2022 18:51:18 Niño N00034 se va a la zona comun
+10/05/2022 18:51:18 Niño N00034 accede a la zona comun
+10/05/2022 18:51:18 Niño N00025 accede a la zona comun
+10/05/2022 18:51:18 Niño N00030 ha ganado competición soga
+10/05/2022 18:51:18 Niño N00023 accede a la zona comun
+10/05/2022 18:51:18 Niño N00030 se va a la zona comun
+10/05/2022 18:51:18 Niño N00030 accede a la zona comun
+10/05/2022 18:51:18 Niño N00006 se va a la zona comun
+10/05/2022 18:51:18 Niño N00006 accede a la zona comun
+10/05/2022 18:51:18 Niño N00037 se tira por la tirolina
+10/05/2022 18:51:19 Monitor M2 se va al descanso
+10/05/2022 18:51:20 Niño N00017 selecciona siguiente actividad
+10/05/2022 18:51:20 Niño N00017 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:20 Niño N00023 selecciona siguiente actividad
+10/05/2022 18:51:20 Niño N00023 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:20 Niño N00031 selecciona siguiente actividad
+10/05/2022 18:51:20 Niño N00031 accede a la cola de la la actividad merienda
+10/05/2022 18:51:20 Niño N00031 accede a la actividad merienda
+10/05/2022 18:51:20 Niño N00031 coge plato limpio
+10/05/2022 18:51:20 Niño N00030 selecciona siguiente actividad
+10/05/2022 18:51:20 Niño N00030 accede a la actividad soga
+10/05/2022 18:51:20 Niño N00006 selecciona siguiente actividad
+10/05/2022 18:51:20 Niño N00006 accede a la cola de la la actividad merienda
+10/05/2022 18:51:20 Niño N00006 accede a la actividad merienda
+10/05/2022 18:51:20 Niño N00006 coge plato limpio
+10/05/2022 18:51:20 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:51:20 Niño N00012 accede a la actividad soga
+10/05/2022 18:51:21 Niño N00034 selecciona siguiente actividad
+10/05/2022 18:51:21 Niño N00034 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:21 Niño N00024 selecciona siguiente actividad
+10/05/2022 18:51:21 Niño N00024 accede a la cola de la la actividad merienda
+10/05/2022 18:51:21 Niño N00024 accede a la actividad merienda
+10/05/2022 18:51:21 Niño N00024 coge plato limpio
+10/05/2022 18:51:21 Niño N00036 selecciona siguiente actividad
+10/05/2022 18:51:21 Niño N00036 selecciona siguiente actividad
+10/05/2022 18:51:21 Niño N00036 selecciona siguiente actividad
+10/05/2022 18:51:21 Niño N00036 accede a la actividad soga
+10/05/2022 18:51:21 Niño N00025 selecciona siguiente actividad
+10/05/2022 18:51:21 Niño N00025 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:21 Monitor M2 vuelve a su actividad
+10/05/2022 18:51:21 Monitor M2 accede a actividad tirolina
+10/05/2022 18:51:21 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:51:21 Niño N00009 accede a la actividad soga
+10/05/2022 18:51:22 Niño N00037 llega al final de la tirolina
+10/05/2022 18:51:23 Niño N00037 se baja de la tirolina
+10/05/2022 18:51:23 Niño N00037 se va a la zona comun
+10/05/2022 18:51:23 Niño N00037 accede a la zona comun
+10/05/2022 18:51:23 Niño N00038 accede a la actividad tirolina
+10/05/2022 18:51:23 Niño N00038 se prepara para tirarse en la tirolina
+10/05/2022 18:51:24 Niño N00038 se tira por la tirolina
+10/05/2022 18:51:26 Niño N00037 selecciona siguiente actividad
+10/05/2022 18:51:26 Niño N00037 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:27 Niño N00031 merienda
+10/05/2022 18:51:27 Niño N00031 deja plato sucio en su pila
+10/05/2022 18:51:27 Niño N00031 se va a la zona comun
+10/05/2022 18:51:27 Niño N00031 accede a la zona comun
+10/05/2022 18:51:27 Niño N00006 merienda
+10/05/2022 18:51:27 Niño N00006 deja plato sucio en su pila
+10/05/2022 18:51:27 Niño N00006 se va a la zona comun
+10/05/2022 18:51:27 Niño N00006 accede a la zona comun
+10/05/2022 18:51:28 Niño N00024 merienda
+10/05/2022 18:51:28 Niño N00024 deja plato sucio en su pila
+10/05/2022 18:51:28 Niño N00024 se va a la zona comun
+10/05/2022 18:51:28 Niño N00024 accede a la zona comun
+10/05/2022 18:51:28 Niño N00038 llega al final de la tirolina
+10/05/2022 18:51:28 Niño N00038 se baja de la tirolina
+10/05/2022 18:51:28 Niño N00038 se va a la zona comun
+10/05/2022 18:51:28 Niño N00038 accede a la zona comun
+10/05/2022 18:51:28 Niño N00039 accede a la actividad tirolina
+10/05/2022 18:51:28 Niño N00039 se prepara para tirarse en la tirolina
+10/05/2022 18:51:29 Niño N00039 se tira por la tirolina
+10/05/2022 18:51:30 Niño N00031 selecciona siguiente actividad
+10/05/2022 18:51:30 Niño N00031 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:30 Niño N00006 selecciona siguiente actividad
+10/05/2022 18:51:30 Niño N00006 accede a la actividad soga
+10/05/2022 18:51:30 Monitor M4 limpia bandeja
+10/05/2022 18:51:30 Monitor M4 se va al descanso
+10/05/2022 18:51:30 Niño N00024 selecciona siguiente actividad
+10/05/2022 18:51:30 Niño N00024 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:31 Monitor M3 limpia bandeja
+10/05/2022 18:51:32 Monitor M4 vuelve a su actividad
+10/05/2022 18:51:32 Monitor M4 accede a actividad merienda
+10/05/2022 18:51:32 Niño N00038 selecciona siguiente actividad
+10/05/2022 18:51:32 Niño N00038 selecciona siguiente actividad
+10/05/2022 18:51:32 Niño N00038 accede a la actividad soga
+10/05/2022 18:51:33 Niño N00039 llega al final de la tirolina
+10/05/2022 18:51:33 Niño N00039 se baja de la tirolina
+10/05/2022 18:51:33 Niño N00039 se va a la zona comun
+10/05/2022 18:51:33 Niño N00039 accede a la zona comun
+10/05/2022 18:51:33 Niño N00008 accede a la actividad tirolina
+10/05/2022 18:51:33 Niño N00008 se prepara para tirarse en la tirolina
+10/05/2022 18:51:34 Niño N00008 se tira por la tirolina
+10/05/2022 18:51:35 Monitor M3 limpia bandeja
+10/05/2022 18:51:36 Niño N00039 selecciona siguiente actividad
+10/05/2022 18:51:36 Niño N00039 accede a la actividad soga
+10/05/2022 18:51:38 Niño N00008 llega al final de la tirolina
+10/05/2022 18:51:39 Niño N00008 se baja de la tirolina
+10/05/2022 18:51:39 Niño N00008 se va a la zona comun
+10/05/2022 18:51:39 Niño N00008 accede a la zona comun
+10/05/2022 18:51:39 Niño N00042 accede a la actividad tirolina
+10/05/2022 18:51:39 Niño N00042 se prepara para tirarse en la tirolina
+10/05/2022 18:51:40 Niño N00042 se tira por la tirolina
+10/05/2022 18:51:41 Niño N00008 selecciona siguiente actividad
+10/05/2022 18:51:41 Niño N00008 accede a la actividad soga
+10/05/2022 18:51:43 Niño N00042 llega al final de la tirolina
+10/05/2022 18:51:44 Niño N00042 se baja de la tirolina
+10/05/2022 18:51:44 Niño N00042 se va a la zona comun
+10/05/2022 18:51:44 Niño N00042 accede a la zona comun
+10/05/2022 18:51:44 Niño N00043 accede a la actividad tirolina
+10/05/2022 18:51:44 Niño N00043 se prepara para tirarse en la tirolina
+10/05/2022 18:51:45 Niño N00043 se tira por la tirolina
+10/05/2022 18:51:47 Niño N00042 selecciona siguiente actividad
+10/05/2022 18:51:47 Niño N00042 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:49 Niño N00043 llega al final de la tirolina
+10/05/2022 18:51:49 Niño N00043 se baja de la tirolina
+10/05/2022 18:51:49 Niño N00043 se va a la zona comun
+10/05/2022 18:51:49 Niño N00043 accede a la zona comun
+10/05/2022 18:51:49 Niño N00016 accede a la actividad tirolina
+10/05/2022 18:51:49 Niño N00016 se prepara para tirarse en la tirolina
+10/05/2022 18:51:50 Niño N00016 se tira por la tirolina
+10/05/2022 18:51:52 Niño N00043 selecciona siguiente actividad
+10/05/2022 18:51:52 Niño N00043 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:54 Niño N00016 llega al final de la tirolina
+10/05/2022 18:51:54 Niño N00016 se baja de la tirolina
+10/05/2022 18:51:54 Niño N00016 se va a la zona comun
+10/05/2022 18:51:54 Niño N00016 accede a la zona comun
+10/05/2022 18:51:54 Niño N00044 accede a la actividad tirolina
+10/05/2022 18:51:54 Niño N00044 se prepara para tirarse en la tirolina
+10/05/2022 18:51:55 Niño N00044 se tira por la tirolina
+10/05/2022 18:51:58 Niño N00016 selecciona siguiente actividad
+10/05/2022 18:51:58 Niño N00016 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:51:59 Niño N00044 llega al final de la tirolina
+10/05/2022 18:52:00 Niño N00044 se baja de la tirolina
+10/05/2022 18:52:00 Niño N00044 se va a la zona comun
+10/05/2022 18:52:00 Niño N00044 accede a la zona comun
+10/05/2022 18:52:00 Niño N00019 accede a la actividad tirolina
+10/05/2022 18:52:00 Niño N00019 se prepara para tirarse en la tirolina
+10/05/2022 18:52:01 Niño N00019 se tira por la tirolina
+10/05/2022 18:52:04 Niño N00044 selecciona siguiente actividad
+10/05/2022 18:52:04 Niño N00044 accede a la actividad soga
+10/05/2022 18:52:04 Niño N00019 llega al final de la tirolina
+10/05/2022 18:52:05 Niño N00019 se baja de la tirolina
+10/05/2022 18:52:05 Niño N00019 se va a la zona comun
+10/05/2022 18:52:05 Niño N00019 accede a la zona comun
+10/05/2022 18:52:05 Niño N00045 accede a la actividad tirolina
+10/05/2022 18:52:05 Niño N00045 se prepara para tirarse en la tirolina
+10/05/2022 18:52:06 Niño N00045 se tira por la tirolina
+10/05/2022 18:52:08 Niño N00019 selecciona siguiente actividad
+10/05/2022 18:52:08 Niño N00019 selecciona siguiente actividad
+10/05/2022 18:52:08 Niño N00019 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:52:10 Niño N00045 llega al final de la tirolina
+10/05/2022 18:52:10 Niño N00045 se baja de la tirolina
+10/05/2022 18:52:10 Niño N00045 se va a la zona comun
+10/05/2022 18:52:10 Niño N00045 accede a la zona comun
+10/05/2022 18:52:10 Niño N00046 accede a la actividad tirolina
+10/05/2022 18:52:10 Niño N00046 se prepara para tirarse en la tirolina
+10/05/2022 18:52:11 Niño N00046 se tira por la tirolina
+10/05/2022 18:52:12 Monitor M2 se va al descanso
+10/05/2022 18:52:13 Niño N00045 selecciona siguiente actividad
+10/05/2022 18:52:13 Niño N00045 accede a la actividad soga
+10/05/2022 18:52:13 Niño N00030 se mete en el equipo B
+10/05/2022 18:52:13 Niño N00012 se mete en el equipo B
+10/05/2022 18:52:13 Niño N00036 se mete en el quipo A
+10/05/2022 18:52:13 Niño N00009 se mete en el equipo B
+10/05/2022 18:52:13 Niño N00006 se mete en el equipo B
+10/05/2022 18:52:13 Niño N00038 se mete en el equipo B
+10/05/2022 18:52:13 Niño N00039 se mete en el quipo A
+10/05/2022 18:52:13 Niño N00008 se mete en el quipo A
+10/05/2022 18:52:13 Niño N00044 se mete en el quipo A
+10/05/2022 18:52:13 Niño N00045 se mete en el quipo A
+10/05/2022 18:52:13 Monitor ha formado equipos
+10/05/2022 18:52:13 Monitor M2 vuelve a su actividad
+10/05/2022 18:52:13 Monitor M2 accede a actividad tirolina
+10/05/2022 18:52:15 Niño N00046 llega al final de la tirolina
+10/05/2022 18:52:15 Niño N00046 se baja de la tirolina
+10/05/2022 18:52:15 Niño N00046 se va a la zona comun
+10/05/2022 18:52:15 Niño N00046 accede a la zona comun
+10/05/2022 18:52:15 Niño N00041 accede a la actividad tirolina
+10/05/2022 18:52:15 Niño N00041 se prepara para tirarse en la tirolina
+10/05/2022 18:52:16 Niño N00041 se tira por la tirolina
+10/05/2022 18:52:18 Niño N00046 selecciona siguiente actividad
+10/05/2022 18:52:18 Niño N00046 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:52:20 Ha terminado competición soga
+10/05/2022 18:52:20 Niño N00006 ha perdido competición soga
+10/05/2022 18:52:20 Han ganado los niños :   N00036 N00039 N00008 N00044 N00045
+10/05/2022 18:52:20 Niño N00006 se va a la zona comun
+10/05/2022 18:52:20 Niño N00006 accede a la zona comun
+10/05/2022 18:52:20 Niño N00030 ha perdido competición soga
+10/05/2022 18:52:20 Niño N00012 ha perdido competición soga
+10/05/2022 18:52:20 Niño N00039 ha ganado competición soga
+10/05/2022 18:52:20 Niño N00045 ha ganado competición soga
+10/05/2022 18:52:20 Niño N00009 ha perdido competición soga
+10/05/2022 18:52:20 Niño N00036 ha ganado competición soga
+10/05/2022 18:52:20 Niño N00045 se va a la zona comun
+10/05/2022 18:52:20 Niño N00045 accede a la zona comun
+10/05/2022 18:52:20 Niño N00039 se va a la zona comun
+10/05/2022 18:52:20 Niño N00039 accede a la zona comun
+10/05/2022 18:52:20 Niño N00038 ha perdido competición soga
+10/05/2022 18:52:20 Niño N00008 ha ganado competición soga
+10/05/2022 18:52:20 Niño N00038 se va a la zona comun
+10/05/2022 18:52:20 Niño N00038 accede a la zona comun
+10/05/2022 18:52:20 Niño N00012 se va a la zona comun
+10/05/2022 18:52:20 Niño N00012 accede a la zona comun
+10/05/2022 18:52:20 Niño N00030 se va a la zona comun
+10/05/2022 18:52:20 Niño N00008 se va a la zona comun
+10/05/2022 18:52:20 Niño N00008 accede a la zona comun
+10/05/2022 18:52:20 Niño N00036 se va a la zona comun
+10/05/2022 18:52:20 Niño N00044 ha ganado competición soga
+10/05/2022 18:52:20 Niño N00009 se va a la zona comun
+10/05/2022 18:52:20 Niño N00009 accede a la zona comun
+10/05/2022 18:52:20 Niño N00044 se va a la zona comun
+10/05/2022 18:52:20 Niño N00044 accede a la zona comun
+10/05/2022 18:52:20 Niño N00036 accede a la zona comun
+10/05/2022 18:52:20 Niño N00030 accede a la zona comun
+10/05/2022 18:52:20 Niño N00041 llega al final de la tirolina
+10/05/2022 18:52:21 Niño N00041 se baja de la tirolina
+10/05/2022 18:52:21 Niño N00041 se va a la zona comun
+10/05/2022 18:52:21 Niño N00041 accede a la zona comun
+10/05/2022 18:52:21 Niño N00004 accede a la actividad tirolina
+10/05/2022 18:52:21 Niño N00004 se prepara para tirarse en la tirolina
+10/05/2022 18:52:22 Niño N00004 se tira por la tirolina
+10/05/2022 18:52:22 Niño N00030 selecciona siguiente actividad
+10/05/2022 18:52:22 Niño N00030 accede a la actividad soga
+10/05/2022 18:52:22 Niño N00038 selecciona siguiente actividad
+10/05/2022 18:52:22 Niño N00038 selecciona siguiente actividad
+10/05/2022 18:52:22 Niño N00038 selecciona siguiente actividad
+10/05/2022 18:52:22 Niño N00038 selecciona siguiente actividad
+10/05/2022 18:52:22 Niño N00038 accede a la actividad soga
+10/05/2022 18:52:22 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:52:22 Niño N00012 accede a la cola de la la actividad merienda
+10/05/2022 18:52:22 Niño N00012 accede a la actividad merienda
+10/05/2022 18:52:22 Niño N00012 coge plato limpio
+10/05/2022 18:52:23 Niño N00008 selecciona siguiente actividad
+10/05/2022 18:52:23 Niño N00008 accede a la cola de la la actividad merienda
+10/05/2022 18:52:23 Niño N00008 accede a la actividad merienda
+10/05/2022 18:52:23 Niño N00008 coge plato limpio
+10/05/2022 18:52:23 Niño N00006 selecciona siguiente actividad
+10/05/2022 18:52:23 Niño N00006 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:52:23 Niño N00045 selecciona siguiente actividad
+10/05/2022 18:52:23 Niño N00045 accede a la actividad soga
+10/05/2022 18:52:23 Niño N00044 selecciona siguiente actividad
+10/05/2022 18:52:23 Niño N00044 accede a la cola de la la actividad merienda
+10/05/2022 18:52:23 Niño N00044 accede a la actividad merienda
+10/05/2022 18:52:23 Niño N00044 coge plato limpio
+10/05/2022 18:52:23 Niño N00041 selecciona siguiente actividad
+10/05/2022 18:52:23 Niño N00041 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:52:23 Niño N00039 selecciona siguiente actividad
+10/05/2022 18:52:23 Niño N00039 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:52:24 Niño N00036 selecciona siguiente actividad
+10/05/2022 18:52:24 Niño N00036 accede a la cola de la la actividad merienda
+10/05/2022 18:52:24 Niño N00036 accede a la actividad merienda
+10/05/2022 18:52:24 Niño N00036 coge plato limpio
+10/05/2022 18:52:24 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:52:24 Niño N00009 accede a la cola de la la actividad merienda
+10/05/2022 18:52:24 Niño N00009 accede a la actividad merienda
+10/05/2022 18:52:24 Niño N00009 coge plato limpio
+10/05/2022 18:52:25 Niño N00004 llega al final de la tirolina
+10/05/2022 18:52:26 Niño N00004 se baja de la tirolina
+10/05/2022 18:52:26 Niño N00004 se va a la zona comun
+10/05/2022 18:52:26 Niño N00004 accede a la zona comun
+10/05/2022 18:52:26 Niño N00048 accede a la actividad tirolina
+10/05/2022 18:52:26 Niño N00048 se prepara para tirarse en la tirolina
+10/05/2022 18:52:27 Niño N00048 se tira por la tirolina
+10/05/2022 18:52:29 Niño N00004 selecciona siguiente actividad
+10/05/2022 18:52:29 Niño N00004 accede a la actividad soga
+10/05/2022 18:52:29 Niño N00012 merienda
+10/05/2022 18:52:29 Niño N00012 deja plato sucio en su pila
+10/05/2022 18:52:29 Niño N00012 se va a la zona comun
+10/05/2022 18:52:29 Niño N00012 accede a la zona comun
+10/05/2022 18:52:30 Niño N00008 merienda
+10/05/2022 18:52:30 Niño N00008 deja plato sucio en su pila
+10/05/2022 18:52:30 Niño N00008 se va a la zona comun
+10/05/2022 18:52:30 Niño N00008 accede a la zona comun
+10/05/2022 18:52:30 Niño N00044 merienda
+10/05/2022 18:52:30 Niño N00044 deja plato sucio en su pila
+10/05/2022 18:52:30 Niño N00044 se va a la zona comun
+10/05/2022 18:52:30 Niño N00044 accede a la zona comun
+10/05/2022 18:52:31 Niño N00036 merienda
+10/05/2022 18:52:31 Niño N00036 deja plato sucio en su pila
+10/05/2022 18:52:31 Niño N00036 se va a la zona comun
+10/05/2022 18:52:31 Niño N00036 accede a la zona comun
+10/05/2022 18:52:31 Niño N00009 merienda
+10/05/2022 18:52:31 Niño N00009 deja plato sucio en su pila
+10/05/2022 18:52:31 Niño N00009 se va a la zona comun
+10/05/2022 18:52:31 Niño N00009 accede a la zona comun
+10/05/2022 18:52:31 Niño N00048 llega al final de la tirolina
+10/05/2022 18:52:31 Niño N00048 se baja de la tirolina
+10/05/2022 18:52:31 Niño N00048 se va a la zona comun
+10/05/2022 18:52:31 Niño N00048 accede a la zona comun
+10/05/2022 18:52:31 Niño N00049 accede a la actividad tirolina
+10/05/2022 18:52:31 Niño N00049 se prepara para tirarse en la tirolina
+10/05/2022 18:52:32 Niño N00049 se tira por la tirolina
+10/05/2022 18:52:32 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:52:32 Niño N00012 accede a la actividad soga
+10/05/2022 18:52:33 Monitor M4 limpia bandeja
+10/05/2022 18:52:33 Niño N00008 selecciona siguiente actividad
+10/05/2022 18:52:33 Niño N00008 accede a la cola de la la actividad merienda
+10/05/2022 18:52:33 Niño N00008 accede a la actividad merienda
+10/05/2022 18:52:33 Niño N00008 coge plato limpio
+10/05/2022 18:52:33 Niño N00044 selecciona siguiente actividad
+10/05/2022 18:52:33 Niño N00044 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:52:33 Niño N00036 selecciona siguiente actividad
+10/05/2022 18:52:33 Niño N00036 accede a la actividad soga
+10/05/2022 18:52:34 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:52:34 Niño N00009 accede a la cola de la la actividad merienda
+10/05/2022 18:52:34 Niño N00009 accede a la actividad merienda
+10/05/2022 18:52:34 Niño N00009 coge plato limpio
+10/05/2022 18:52:34 Monitor M3 limpia bandeja
+10/05/2022 18:52:35 Niño N00048 selecciona siguiente actividad
+10/05/2022 18:52:35 Niño N00048 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:52:36 Niño N00049 llega al final de la tirolina
+10/05/2022 18:52:36 Monitor M4 limpia bandeja
+10/05/2022 18:52:37 Niño N00049 se baja de la tirolina
+10/05/2022 18:52:37 Niño N00049 se va a la zona comun
+10/05/2022 18:52:37 Niño N00049 accede a la zona comun
+10/05/2022 18:52:37 Niño N00050 accede a la actividad tirolina
+10/05/2022 18:52:37 Niño N00050 se prepara para tirarse en la tirolina
+10/05/2022 18:52:38 Niño N00050 se tira por la tirolina
+10/05/2022 18:52:39 Monitor M3 limpia bandeja
+10/05/2022 18:52:40 Niño N00008 merienda
+10/05/2022 18:52:40 Niño N00008 deja plato sucio en su pila
+10/05/2022 18:52:40 Niño N00008 se va a la zona comun
+10/05/2022 18:52:40 Niño N00008 accede a la zona comun
+10/05/2022 18:52:40 Niño N00049 selecciona siguiente actividad
+10/05/2022 18:52:40 Niño N00049 selecciona siguiente actividad
+10/05/2022 18:52:40 Niño N00049 accede a la actividad soga
+10/05/2022 18:52:41 Niño N00009 merienda
+10/05/2022 18:52:41 Niño N00009 deja plato sucio en su pila
+10/05/2022 18:52:41 Niño N00009 se va a la zona comun
+10/05/2022 18:52:41 Niño N00009 accede a la zona comun
+10/05/2022 18:52:41 Monitor M4 limpia bandeja
+10/05/2022 18:52:41 Niño N00050 llega al final de la tirolina
+10/05/2022 18:52:42 Niño N00050 se baja de la tirolina
+10/05/2022 18:52:42 Niño N00050 se va a la zona comun
+10/05/2022 18:52:42 Niño N00050 accede a la zona comun
+10/05/2022 18:52:42 Niño N00021 accede a la actividad tirolina
+10/05/2022 18:52:42 Niño N00021 se prepara para tirarse en la tirolina
+10/05/2022 18:52:43 Niño N00008 selecciona siguiente actividad
+10/05/2022 18:52:43 Niño N00008 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:52:43 Niño N00021 se tira por la tirolina
+10/05/2022 18:52:43 Monitor M3 limpia bandeja
+10/05/2022 18:52:44 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:52:44 Niño N00009 accede a la cola de la la actividad merienda
+10/05/2022 18:52:44 Niño N00009 accede a la actividad merienda
+10/05/2022 18:52:44 Niño N00009 coge plato limpio
+10/05/2022 18:52:44 Niño N00050 selecciona siguiente actividad
+10/05/2022 18:52:44 Niño N00050 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:52:46 Monitor M4 limpia bandeja
+10/05/2022 18:52:47 Niño N00021 llega al final de la tirolina
+10/05/2022 18:52:47 Niño N00021 se baja de la tirolina
+10/05/2022 18:52:47 Niño N00021 se va a la zona comun
+10/05/2022 18:52:47 Niño N00021 accede a la zona comun
+10/05/2022 18:52:47 Niño N00014 accede a la actividad tirolina
+10/05/2022 18:52:47 Niño N00014 se prepara para tirarse en la tirolina
+10/05/2022 18:52:48 Niño N00014 se tira por la tirolina
+10/05/2022 18:52:51 Niño N00021 selecciona siguiente actividad
+10/05/2022 18:52:51 Niño N00021 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:52:51 Niño N00009 merienda
+10/05/2022 18:52:51 Niño N00009 deja plato sucio en su pila
+10/05/2022 18:52:51 Niño N00009 se va a la zona comun
+10/05/2022 18:52:51 Niño N00009 accede a la zona comun
+10/05/2022 18:52:52 Niño N00014 llega al final de la tirolina
+10/05/2022 18:52:53 Niño N00014 se baja de la tirolina
+10/05/2022 18:52:53 Niño N00014 se va a la zona comun
+10/05/2022 18:52:53 Niño N00014 accede a la zona comun
+10/05/2022 18:52:53 Niño N00002 accede a la actividad tirolina
+10/05/2022 18:52:53 Niño N00002 se prepara para tirarse en la tirolina
+10/05/2022 18:52:53 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:52:53 Niño N00009 accede a la cola de la la actividad merienda
+10/05/2022 18:52:53 Niño N00009 accede a la actividad merienda
+10/05/2022 18:52:53 Niño N00009 coge plato limpio
+10/05/2022 18:52:54 Niño N00002 se tira por la tirolina
+10/05/2022 18:52:55 Niño N00014 selecciona siguiente actividad
+10/05/2022 18:52:55 Niño N00014 accede a la actividad soga
+10/05/2022 18:52:56 Monitor M3 limpia bandeja
+10/05/2022 18:52:57 Niño N00002 llega al final de la tirolina
+10/05/2022 18:52:58 Niño N00002 se baja de la tirolina
+10/05/2022 18:52:58 Niño N00002 se va a la zona comun
+10/05/2022 18:52:58 Niño N00002 accede a la zona comun
+10/05/2022 18:52:58 Niño N00040 accede a la actividad tirolina
+10/05/2022 18:52:58 Niño N00040 se prepara para tirarse en la tirolina
+10/05/2022 18:52:59 Niño N00040 se tira por la tirolina
+10/05/2022 18:53:00 Niño N00009 merienda
+10/05/2022 18:53:00 Niño N00009 deja plato sucio en su pila
+10/05/2022 18:53:00 Niño N00009 se va a la zona comun
+10/05/2022 18:53:00 Niño N00009 accede a la zona comun
+10/05/2022 18:53:01 Niño N00002 selecciona siguiente actividad
+10/05/2022 18:53:01 Niño N00002 accede a la actividad soga
+10/05/2022 18:53:03 Niño N00040 llega al final de la tirolina
+10/05/2022 18:53:03 Niño N00040 se baja de la tirolina
+10/05/2022 18:53:03 Niño N00040 se va a la zona comun
+10/05/2022 18:53:03 Niño N00040 accede a la zona comun
+10/05/2022 18:53:03 Niño N00047 accede a la actividad tirolina
+10/05/2022 18:53:03 Niño N00047 se prepara para tirarse en la tirolina
+10/05/2022 18:53:04 Monitor M4 limpia bandeja
+10/05/2022 18:53:04 Niño N00009 selecciona siguiente actividad
+10/05/2022 18:53:04 Niño N00009 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:04 Niño N00047 se tira por la tirolina
+10/05/2022 18:53:05 Monitor M2 se va al descanso
+10/05/2022 18:53:06 Monitor M2 vuelve a su actividad
+10/05/2022 18:53:06 Monitor M2 accede a actividad tirolina
+10/05/2022 18:53:07 Niño N00040 selecciona siguiente actividad
+10/05/2022 18:53:07 Niño N00040 accede a la actividad soga
+10/05/2022 18:53:07 Niño N00030 se mete en el equipo B
+10/05/2022 18:53:07 Niño N00038 se mete en el quipo A
+10/05/2022 18:53:07 Niño N00045 se mete en el equipo B
+10/05/2022 18:53:07 Niño N00004 se mete en el equipo B
+10/05/2022 18:53:07 Niño N00012 se mete en el quipo A
+10/05/2022 18:53:07 Niño N00036 se mete en el equipo B
+10/05/2022 18:53:07 Niño N00049 se mete en el equipo B
+10/05/2022 18:53:07 Niño N00014 se mete en el quipo A
+10/05/2022 18:53:07 Niño N00002 se mete en el quipo A
+10/05/2022 18:53:07 Niño N00040 se mete en el quipo A
+10/05/2022 18:53:07 Monitor ha formado equipos
+10/05/2022 18:53:08 Niño N00047 llega al final de la tirolina
+10/05/2022 18:53:08 Niño N00047 se baja de la tirolina
+10/05/2022 18:53:08 Niño N00047 se va a la zona comun
+10/05/2022 18:53:08 Niño N00047 accede a la zona comun
+10/05/2022 18:53:08 Niño N00032 accede a la actividad tirolina
+10/05/2022 18:53:08 Niño N00032 se prepara para tirarse en la tirolina
+10/05/2022 18:53:09 Niño N00032 se tira por la tirolina
+10/05/2022 18:53:12 Niño N00047 selecciona siguiente actividad
+10/05/2022 18:53:12 Niño N00047 accede a la cola de la la actividad merienda
+10/05/2022 18:53:12 Niño N00047 accede a la actividad merienda
+10/05/2022 18:53:12 Niño N00047 coge plato limpio
+10/05/2022 18:53:13 Niño N00032 llega al final de la tirolina
+10/05/2022 18:53:14 Niño N00032 se baja de la tirolina
+10/05/2022 18:53:14 Niño N00032 se va a la zona comun
+10/05/2022 18:53:14 Niño N00032 accede a la zona comun
+10/05/2022 18:53:14 Niño N00013 accede a la actividad tirolina
+10/05/2022 18:53:14 Niño N00013 se prepara para tirarse en la tirolina
+10/05/2022 18:53:14 Ha terminado competición soga
+10/05/2022 18:53:14 Niño N00014 ha ganado competición soga
+10/05/2022 18:53:14 Niño N00038 ha ganado competición soga
+10/05/2022 18:53:14 Niño N00004 ha perdido competición soga
+10/05/2022 18:53:14 Niño N00036 ha perdido competición soga
+10/05/2022 18:53:14 Han ganado los niños :   N00030 N00045 N00004 N00036 N00049
+10/05/2022 18:53:14 Niño N00040 ha ganado competición soga
+10/05/2022 18:53:14 Niño N00045 ha perdido competición soga
+10/05/2022 18:53:14 Niño N00049 ha perdido competición soga
+10/05/2022 18:53:14 Niño N00030 ha perdido competición soga
+10/05/2022 18:53:14 Niño N00004 se va a la zona comun
+10/05/2022 18:53:14 Niño N00038 se va a la zona comun
+10/05/2022 18:53:14 Niño N00038 accede a la zona comun
+10/05/2022 18:53:14 Niño N00014 se va a la zona comun
+10/05/2022 18:53:14 Niño N00004 accede a la zona comun
+10/05/2022 18:53:14 Niño N00030 se va a la zona comun
+10/05/2022 18:53:14 Niño N00049 se va a la zona comun
+10/05/2022 18:53:14 Niño N00002 ha ganado competición soga
+10/05/2022 18:53:14 Niño N00045 se va a la zona comun
+10/05/2022 18:53:14 Niño N00045 accede a la zona comun
+10/05/2022 18:53:14 Niño N00012 ha ganado competición soga
+10/05/2022 18:53:14 Niño N00012 se va a la zona comun
+10/05/2022 18:53:14 Niño N00012 accede a la zona comun
+10/05/2022 18:53:14 Niño N00040 se va a la zona comun
+10/05/2022 18:53:14 Niño N00036 se va a la zona comun
+10/05/2022 18:53:14 Niño N00036 accede a la zona comun
+10/05/2022 18:53:14 Niño N00040 accede a la zona comun
+10/05/2022 18:53:14 Niño N00002 se va a la zona comun
+10/05/2022 18:53:14 Niño N00002 accede a la zona comun
+10/05/2022 18:53:14 Niño N00049 accede a la zona comun
+10/05/2022 18:53:14 Niño N00030 accede a la zona comun
+10/05/2022 18:53:14 Niño N00014 accede a la zona comun
+10/05/2022 18:53:15 Niño N00013 se tira por la tirolina
+10/05/2022 18:53:16 Niño N00032 selecciona siguiente actividad
+10/05/2022 18:53:16 Niño N00032 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:16 Niño N00049 selecciona siguiente actividad
+10/05/2022 18:53:16 Niño N00049 accede a la cola de la la actividad merienda
+10/05/2022 18:53:16 Niño N00049 accede a la actividad merienda
+10/05/2022 18:53:16 Niño N00049 coge plato limpio
+10/05/2022 18:53:17 Niño N00004 selecciona siguiente actividad
+10/05/2022 18:53:17 Niño N00004 accede a la cola de la la actividad merienda
+10/05/2022 18:53:17 Niño N00004 accede a la actividad merienda
+10/05/2022 18:53:17 Niño N00004 coge plato limpio
+10/05/2022 18:53:17 Niño N00030 selecciona siguiente actividad
+10/05/2022 18:53:17 Niño N00030 accede a la actividad soga
+10/05/2022 18:53:17 Niño N00014 selecciona siguiente actividad
+10/05/2022 18:53:17 Niño N00014 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:17 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:53:17 Niño N00012 accede a la cola de la la actividad merienda
+10/05/2022 18:53:17 Niño N00012 accede a la actividad merienda
+10/05/2022 18:53:17 Niño N00012 coge plato limpio
+10/05/2022 18:53:17 Niño N00040 selecciona siguiente actividad
+10/05/2022 18:53:17 Niño N00040 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:18 Niño N00002 selecciona siguiente actividad
+10/05/2022 18:53:18 Niño N00002 accede a la actividad soga
+10/05/2022 18:53:18 Niño N00045 selecciona siguiente actividad
+10/05/2022 18:53:18 Niño N00045 accede a la actividad soga
+10/05/2022 18:53:18 Niño N00036 selecciona siguiente actividad
+10/05/2022 18:53:18 Niño N00036 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:18 Niño N00038 selecciona siguiente actividad
+10/05/2022 18:53:18 Niño N00038 accede a la actividad soga
+10/05/2022 18:53:18 Niño N00013 llega al final de la tirolina
+10/05/2022 18:53:19 Niño N00013 se baja de la tirolina
+10/05/2022 18:53:19 Niño N00013 se va a la zona comun
+10/05/2022 18:53:19 Niño N00013 accede a la zona comun
+10/05/2022 18:53:19 Niño N00003 accede a la actividad tirolina
+10/05/2022 18:53:19 Niño N00003 se prepara para tirarse en la tirolina
+10/05/2022 18:53:19 Niño N00047 merienda
+10/05/2022 18:53:19 Niño N00047 deja plato sucio en su pila
+10/05/2022 18:53:19 Niño N00047 se va a la zona comun
+10/05/2022 18:53:19 Niño N00047 accede a la zona comun
+10/05/2022 18:53:20 Niño N00003 se tira por la tirolina
+10/05/2022 18:53:22 Niño N00047 selecciona siguiente actividad
+10/05/2022 18:53:22 Niño N00047 accede a la actividad soga
+10/05/2022 18:53:22 Niño N00013 selecciona siguiente actividad
+10/05/2022 18:53:22 Niño N00013 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:23 Monitor M3 limpia bandeja
+10/05/2022 18:53:23 Niño N00049 merienda
+10/05/2022 18:53:23 Niño N00049 deja plato sucio en su pila
+10/05/2022 18:53:23 Niño N00049 se va a la zona comun
+10/05/2022 18:53:23 Niño N00049 accede a la zona comun
+10/05/2022 18:53:24 Niño N00004 merienda
+10/05/2022 18:53:24 Niño N00004 deja plato sucio en su pila
+10/05/2022 18:53:24 Niño N00004 se va a la zona comun
+10/05/2022 18:53:24 Niño N00004 accede a la zona comun
+10/05/2022 18:53:24 Niño N00003 llega al final de la tirolina
+10/05/2022 18:53:24 Niño N00003 se baja de la tirolina
+10/05/2022 18:53:24 Niño N00003 se va a la zona comun
+10/05/2022 18:53:24 Niño N00003 accede a la zona comun
+10/05/2022 18:53:24 Niño N00007 accede a la actividad tirolina
+10/05/2022 18:53:24 Niño N00007 se prepara para tirarse en la tirolina
+10/05/2022 18:53:24 Niño N00012 merienda
+10/05/2022 18:53:24 Niño N00012 deja plato sucio en su pila
+10/05/2022 18:53:24 Niño N00012 se va a la zona comun
+10/05/2022 18:53:24 Niño N00012 accede a la zona comun
+10/05/2022 18:53:25 Niño N00007 se tira por la tirolina
+10/05/2022 18:53:25 Niño N00049 selecciona siguiente actividad
+10/05/2022 18:53:25 Niño N00049 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:26 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:53:26 Niño N00012 accede a la cola de la la actividad merienda
+10/05/2022 18:53:26 Niño N00012 accede a la actividad merienda
+10/05/2022 18:53:26 Niño N00012 coge plato limpio
+10/05/2022 18:53:26 Niño N00004 selecciona siguiente actividad
+10/05/2022 18:53:26 Niño N00004 accede a la actividad soga
+10/05/2022 18:53:27 Niño N00003 selecciona siguiente actividad
+10/05/2022 18:53:27 Niño N00003 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:28 Monitor M3 limpia bandeja
+10/05/2022 18:53:28 Monitor M4 limpia bandeja
+10/05/2022 18:53:29 Niño N00007 llega al final de la tirolina
+10/05/2022 18:53:29 Niño N00007 se baja de la tirolina
+10/05/2022 18:53:29 Niño N00007 se va a la zona comun
+10/05/2022 18:53:29 Niño N00007 accede a la zona comun
+10/05/2022 18:53:29 Niño N00018 accede a la actividad tirolina
+10/05/2022 18:53:29 Niño N00018 se prepara para tirarse en la tirolina
+10/05/2022 18:53:30 Niño N00018 se tira por la tirolina
+10/05/2022 18:53:32 Monitor M3 limpia bandeja
+10/05/2022 18:53:33 Niño N00007 selecciona siguiente actividad
+10/05/2022 18:53:33 Niño N00007 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:33 Niño N00012 merienda
+10/05/2022 18:53:33 Niño N00012 deja plato sucio en su pila
+10/05/2022 18:53:33 Niño N00012 se va a la zona comun
+10/05/2022 18:53:33 Niño N00012 accede a la zona comun
+10/05/2022 18:53:34 Niño N00018 llega al final de la tirolina
+10/05/2022 18:53:35 Niño N00018 se baja de la tirolina
+10/05/2022 18:53:35 Niño N00018 se va a la zona comun
+10/05/2022 18:53:35 Niño N00018 accede a la zona comun
+10/05/2022 18:53:35 Niño N00010 accede a la actividad tirolina
+10/05/2022 18:53:35 Niño N00010 se prepara para tirarse en la tirolina
+10/05/2022 18:53:36 Niño N00010 se tira por la tirolina
+10/05/2022 18:53:37 Monitor M4 limpia bandeja
+10/05/2022 18:53:37 Niño N00012 selecciona siguiente actividad
+10/05/2022 18:53:37Niño N00012 sale del campamento
+10/05/2022 18:53:37 Niño N00052 entra al campamento por la puerta derecha 
+10/05/2022 18:53:37 Niño N00052 selecciona siguiente actividad
+10/05/2022 18:53:37 Niño N00052 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:38 Niño N00018 selecciona siguiente actividad
+10/05/2022 18:53:38 Niño N00018 accede a la actividad soga
+10/05/2022 18:53:39 Niño N00010 llega al final de la tirolina
+10/05/2022 18:53:40 Niño N00010 se baja de la tirolina
+10/05/2022 18:53:40 Niño N00010 se va a la zona comun
+10/05/2022 18:53:40 Niño N00010 accede a la zona comun
+10/05/2022 18:53:40 Niño N00027 accede a la actividad tirolina
+10/05/2022 18:53:40 Niño N00027 se prepara para tirarse en la tirolina
+10/05/2022 18:53:41 Niño N00027 se tira por la tirolina
+10/05/2022 18:53:42 Niño N00010 selecciona siguiente actividad
+10/05/2022 18:53:42 Niño N00010 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:45 Niño N00027 llega al final de la tirolina
+10/05/2022 18:53:45 Niño N00027 se baja de la tirolina
+10/05/2022 18:53:45 Niño N00027 se va a la zona comun
+10/05/2022 18:53:45 Niño N00027 accede a la zona comun
+10/05/2022 18:53:45 Niño N00028 accede a la actividad tirolina
+10/05/2022 18:53:45 Niño N00028 se prepara para tirarse en la tirolina
+10/05/2022 18:53:46 Niño N00028 se tira por la tirolina
+10/05/2022 18:53:49 Niño N00027 selecciona siguiente actividad
+10/05/2022 18:53:49 Niño N00027 accede a la actividad soga
+10/05/2022 18:53:50 Niño N00028 llega al final de la tirolina
+10/05/2022 18:53:50 Niño N00028 se baja de la tirolina
+10/05/2022 18:53:50 Niño N00028 se va a la zona comun
+10/05/2022 18:53:50 Niño N00028 accede a la zona comun
+10/05/2022 18:53:50 Niño N00001 accede a la actividad tirolina
+10/05/2022 18:53:50 Niño N00001 se prepara para tirarse en la tirolina
+10/05/2022 18:53:51 Niño N00001 se tira por la tirolina
+10/05/2022 18:53:52 Niño N00028 selecciona siguiente actividad
+10/05/2022 18:53:52 Niño N00028 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:53:55 Niño N00001 llega al final de la tirolina
+10/05/2022 18:53:56 Niño N00001 se baja de la tirolina
+10/05/2022 18:53:56 Niño N00001 se va a la zona comun
+10/05/2022 18:53:56 Niño N00001 accede a la zona comun
+10/05/2022 18:53:56 Niño N00033 accede a la actividad tirolina
+10/05/2022 18:53:56 Niño N00033 se prepara para tirarse en la tirolina
+10/05/2022 18:53:57 Niño N00033 se tira por la tirolina
+10/05/2022 18:53:58 Monitor M2 se va al descanso
+10/05/2022 18:53:59 Monitor M2 vuelve a su actividad
+10/05/2022 18:53:59 Monitor M2 accede a actividad tirolina
+10/05/2022 18:54:00 Niño N00001 selecciona siguiente actividad
+10/05/2022 18:54:00 Niño N00001 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:54:01 Niño N00033 llega al final de la tirolina
+10/05/2022 18:54:01 Niño N00033 se baja de la tirolina
+10/05/2022 18:54:01 Niño N00033 se va a la zona comun
+10/05/2022 18:54:01 Niño N00033 accede a la zona comun
+10/05/2022 18:54:01 Niño N00020 accede a la actividad tirolina
+10/05/2022 18:54:01 Niño N00020 se prepara para tirarse en la tirolina
+10/05/2022 18:54:02 Niño N00020 se tira por la tirolina
+10/05/2022 18:54:04 Niño N00033 selecciona siguiente actividad
+10/05/2022 18:54:04 Niño N00033 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:54:06 Niño N00020 llega al final de la tirolina
+10/05/2022 18:54:07 Niño N00020 se baja de la tirolina
+10/05/2022 18:54:07 Niño N00020 se va a la zona comun
+10/05/2022 18:54:07 Niño N00020 accede a la zona comun
+10/05/2022 18:54:07 Niño N00029 accede a la actividad tirolina
+10/05/2022 18:54:07 Niño N00029 se prepara para tirarse en la tirolina
+10/05/2022 18:54:08 Niño N00029 se tira por la tirolina
+10/05/2022 18:54:09 Niño N00020 selecciona siguiente actividad
+10/05/2022 18:54:09 Niño N00020 accede a la actividad soga
+10/05/2022 18:54:11 Niño N00029 llega al final de la tirolina
+10/05/2022 18:54:12 Niño N00029 se baja de la tirolina
+10/05/2022 18:54:12 Niño N00029 se va a la zona comun
+10/05/2022 18:54:12 Niño N00029 accede a la zona comun
+10/05/2022 18:54:12 Niño N00005 accede a la actividad tirolina
+10/05/2022 18:54:12 Niño N00005 se prepara para tirarse en la tirolina
+10/05/2022 18:54:13 Niño N00005 se tira por la tirolina
+10/05/2022 18:54:16 Niño N00029 selecciona siguiente actividad
+10/05/2022 18:54:16 Niño N00029 accede a la cola de la la actividad merienda
+10/05/2022 18:54:16 Niño N00029 accede a la actividad merienda
+10/05/2022 18:54:16 Niño N00029 coge plato limpio
+10/05/2022 18:54:16 Niño N00005 llega al final de la tirolina
+10/05/2022 18:54:17 Niño N00005 se baja de la tirolina
+10/05/2022 18:54:17 Niño N00005 se va a la zona comun
+10/05/2022 18:54:17 Niño N00005 accede a la zona comun
+10/05/2022 18:54:17 Niño N00022 accede a la actividad tirolina
+10/05/2022 18:54:17 Niño N00022 se prepara para tirarse en la tirolina
+10/05/2022 18:54:18 Niño N00022 se tira por la tirolina
+10/05/2022 18:54:19 Niño N00005 selecciona siguiente actividad
+10/05/2022 18:54:19 Niño N00005 accede a la cola de espera de la actividad tirolina
+10/05/2022 18:54:21 Niño N00022 llega al final de la tirolina
+10/05/2022 18:54:22 Niño N00022 se baja de la tirolina
+10/05/2022 18:54:22 Niño N00022 se va a la zona comun
+10/05/2022 18:54:22 Niño N00022 accede a la zona comun
+10/05/2022 18:54:22 Niño N00015 accede a la actividad tirolina
+10/05/2022 18:54:22 Niño N00015 se prepara para tirarse en la tirolina
+10/05/2022 18:54:23 Niño N00029 merienda
+10/05/2022 18:54:23 Niño N00029 deja plato sucio en su pila
+10/05/2022 18:54:23 Niño N00029 se va a la zona comun
+10/05/2022 18:54:23 Niño N00029 accede a la zona comun
+10/05/2022 18:54:23 Niño N00015 se tira por la tirolina
+10/05/2022 18:54:24 Niño N00022 selecciona siguiente actividad
+10/05/2022 18:54:24 Niño N00022 accede a la actividad soga
+10/05/2022 18:54:24 Niño N00030 se mete en el quipo A
+10/05/2022 18:54:24 Niño N00002 se mete en el equipo B
+10/05/2022 18:54:24 Niño N00045 se mete en el equipo B
+10/05/2022 18:54:24 Niño N00038 se mete en el equipo B
+10/05/2022 18:54:24 Niño N00047 se mete en el equipo B
+10/05/2022 18:54:24 Niño N00004 se mete en el equipo B
+10/05/2022 18:54:24 Niño N00018 se mete en el quipo A
+10/05/2022 18:54:24 Niño N00027 se mete en el quipo A
+10/05/2022 18:54:24 Niño N00020 se mete en el quipo A
+10/05/2022 18:54:24 Niño N00022 se mete en el quipo A
+10/05/2022 18:54:24 Monitor ha formado equipos
+10/05/2022 18:54:25 Niño N00029 selecciona siguiente actividad
+10/05/2022 18:54:25 Niño N00029 accede a la cola de la la actividad merienda
+10/05/2022 18:54:25 Niño N00029 accede a la actividad merienda
+10/05/2022 18:54:25 Niño N00029 coge plato limpio
+10/05/2022 18:54:27 Niño N00015 llega al final de la tirolina

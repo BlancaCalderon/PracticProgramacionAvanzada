@@ -26,12 +26,13 @@ public class InterfazCliente extends javax.swing.JFrame {
     /**
      * Creates new form InterfazCliente
      */
-    DataInputStream entrada;
-    DataOutputStream salida;
-    Socket cliente;
-    int consulta, resultadoTam;
-    String resultadoS;
-    ImageIcon imagen, icono;
+    private DataInputStream entrada;
+    private DataOutputStream salida;
+    private Socket cliente;
+    private int consulta, resultadoTam;
+    private String resultadoS;
+    private ImageIcon imagen, icono;
+    private String id;  //Id del niños a consultar
     
     public InterfazCliente() {
         initComponents();
@@ -44,7 +45,6 @@ public class InterfazCliente extends javax.swing.JFrame {
             cliente = new Socket(InetAddress.getLocalHost(),5005);   //Se crea el socket para conectar cliente a puerto 5005 del servidor
             entrada = new DataInputStream(cliente.getInputStream());  //Se crea canal de entrada
             salida = new DataOutputStream(cliente.getOutputStream());;  //Se crea canal de salida
-            initComponents();
             this.setVisible(false);
         } 
         catch (UnknownHostException ex) 
@@ -100,10 +100,10 @@ public class InterfazCliente extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        idNiño = new javax.swing.JTextField();
         numActividades = new javax.swing.JTextField();
         consultarId = new javax.swing.JButton();
         errorId = new javax.swing.JLabel();
+        idChild = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -128,6 +128,10 @@ public class InterfazCliente extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 204, 0));
         jLabel4.setText("USOS");
+
+        colaEsperaTirolina.setEditable(false);
+
+        numeroUsosTir.setEditable(false);
 
         consultarColaEsperaTir.setBackground(new java.awt.Color(204, 153, 0));
         consultarColaEsperaTir.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
@@ -160,21 +164,16 @@ public class InterfazCliente extends javax.swing.JFrame {
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(174, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(numeroUsosTir)
-                                .addGap(43, 43, 43)))
-                        .addComponent(consultarNumeroUsosTir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(colaEsperaTirolina, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(43, 43, 43)
-                        .addComponent(consultarColaEsperaTir)))
+                .addGap(0, 174, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(numeroUsosTir, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(colaEsperaTirolina, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(consultarNumeroUsosTir, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(consultarColaEsperaTir))
                 .addGap(35, 35, 35))
         );
         jPanel2Layout.setVerticalGroup(
@@ -211,6 +210,10 @@ public class InterfazCliente extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(0, 204, 0));
         jLabel7.setText("BANDEJAS LIMPIAS");
 
+        niñosMerendando.setEditable(false);
+
+        bandejasSucias.setEditable(false);
+
         consularNiñosMer.setBackground(new java.awt.Color(204, 153, 0));
         consularNiñosMer.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         consularNiñosMer.setForeground(new java.awt.Color(0, 204, 0));
@@ -234,6 +237,8 @@ public class InterfazCliente extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 204, 0));
         jLabel8.setText("BANDEJAS SUCIAS");
+
+        bandejasLimpias.setEditable(false);
 
         consultarBandejasSuc.setBackground(new java.awt.Color(204, 153, 0));
         consultarBandejasSuc.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
@@ -343,6 +348,8 @@ public class InterfazCliente extends javax.swing.JFrame {
         jLabel11.setForeground(new java.awt.Color(0, 204, 0));
         jLabel11.setText("NUMERO DE ACTIVIDADES");
 
+        numActividades.setEditable(false);
+
         consultarId.setBackground(new java.awt.Color(204, 153, 0));
         consultarId.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         consultarId.setForeground(new java.awt.Color(0, 204, 0));
@@ -361,29 +368,28 @@ public class InterfazCliente extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(179, 179, 179))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(27, 27, 27)
+                        .addComponent(idChild, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(166, 166, 166))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addGap(174, 174, 174)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(39, 39, 39)
-                        .addComponent(errorId, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(27, 27, 27))
+                        .addComponent(errorId, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(numActividades)
-                                .addGap(166, 166, 166))
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(idNiño, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
-                                .addComponent(consultarId)
-                                .addGap(27, 27, 27))))))
+                        .addComponent(numActividades, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
+                        .addGap(30, 30, 30)
+                        .addComponent(consultarId)))
+                .addGap(27, 27, 27))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -392,12 +398,12 @@ public class InterfazCliente extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(errorId, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
-                            .addComponent(idNiño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(idChild, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(27, 27, 27))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addComponent(consultarId)
@@ -405,7 +411,7 @@ public class InterfazCliente extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(numActividades, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
@@ -419,6 +425,8 @@ public class InterfazCliente extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(0, 204, 0));
         jLabel13.setText("COLA DE ESPERA");
+
+        colaEsperaSoga.setEditable(false);
 
         consultarColaEsperaSoga.setBackground(new java.awt.Color(204, 153, 0));
         consultarColaEsperaSoga.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
@@ -570,11 +578,11 @@ public class InterfazCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_consultarNumeroUsosTirActionPerformed
 
     private void consultarIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultarIdActionPerformed
-        String id;  //Id del niños a consultar
-        if(!idNiño.getText().isEmpty()) //Si el espacio dónde que hay introducir id del niño a consultar no esta vacio
+
+        if(!idChild.getText().isEmpty()) //Si el espacio dónde que hay introducir id del niño a consultar no esta vacio
         {
             errorId.setText(" ");   //Quita aviso
-            id = idNiño.getText();  //Recoge identificador del niño especificado
+            id = idChild.getText();  //Recoge identificador del niño especificado
             consulta = 7;           //Número de consulta
             resultadoTam = 0;       //Resultado incicial
             try
@@ -595,6 +603,7 @@ public class InterfazCliente extends javax.swing.JFrame {
         {
             errorId.setText("Introduce id");    //Indica a usuario que introduzca id
         }
+
     }//GEN-LAST:event_consultarIdActionPerformed
 
     private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
@@ -667,7 +676,7 @@ public class InterfazCliente extends javax.swing.JFrame {
     private javax.swing.JButton consultarNumeroUsosTir;
     private javax.swing.JLabel errorId;
     private javax.swing.JLabel fondo;
-    private javax.swing.JTextField idNiño;
+    private javax.swing.JTextField idChild;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

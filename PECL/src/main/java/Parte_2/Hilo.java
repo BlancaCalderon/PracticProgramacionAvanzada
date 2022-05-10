@@ -7,6 +7,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -29,11 +31,9 @@ public class Hilo extends Thread {
     
     public void run()
     {
-        num++;
-        System.out.println("Conexión nº "+ num +" desde: "+ conexion.getInetAddress().getHostName());   //Imprime en pantalal con quien nos hemos conectado
-        
-        try
-        {
+        try {
+            num++;
+            System.out.println("Conexión nº "+ num +" desde: "+ conexion.getInetAddress().getHostName());   //Imprime en pantalal con quien nos hemos conectado
             entrada = new DataInputStream(conexion.getInputStream());  //Creamos los canales de entrada/salida
             salida = new DataOutputStream(conexion.getOutputStream());
             while (fin)
@@ -78,8 +78,12 @@ public class Hilo extends Thread {
             }
             conexion.close(); //Cierra la consexión con el cliente   
         } 
-        catch (IOException e) {}
-    }
+        catch (IOException ex) 
+        {
+            Logger.getLogger(Hilo.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }   
 }
+
 
 

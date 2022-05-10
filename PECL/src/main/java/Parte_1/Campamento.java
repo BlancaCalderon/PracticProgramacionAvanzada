@@ -495,7 +495,7 @@ public class Campamento {
     {
         detener.comprobar();   //Punto donde se detendrá funcionaientod el program
         dentro.sacar(c.getCId()); //Saca a niño del campamento
-        log.escribir("Niño " + c.getCId() + "sale del campamento\n"); //Escribe estado del niño en archivo log
+        log.escribir("Niño " + c.getCId() + " sale del campamento\n"); //Escribe estado del niño en archivo log
         semaforoAforo.release(); //Libera permiso del niños sobre aforo del campamento
     }
     
