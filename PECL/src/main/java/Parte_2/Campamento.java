@@ -24,7 +24,7 @@ public class Campamento {
     private int aforo, capTir = 1, capMer = 20, capSoga = 10, numLimpias = 0, numSucias = 25, numJugadores = 0, numA = 0, numB = 0, contTir = 0,contMer = 0, ganador;     //Aforo maximo del campamento y parte numérica del identificador
     private ArrayList<Child> equiA, equiB,participantes, numActividades, niños;  //Arrays que contendrán miembros de cada equipo en actividad soga
     private ListaThreads colaEntradaIzq, colaEntradaDer, colaTirolina, colaMerienda, dentro, monEnTirolina,monEnMerienda,monEnZonaComun, monEnSoga, childEnSoga, childEnMer,limpias,sucias,childEnZc,childEnTirPrep,childEnTir,childEnFinTir,equipoA,equipoB; //Colas de espera y niños dentro de cada actividad y de entrada
-    private Semaphore semaforoAforo, semaforoCapTir, semaforoCapMer, semaforoCapSoga, señal, subido,esperaTir, esperaSoga,esperaMer, servir,limpiar; //Variable semaforo para proteger variables
+    private Semaphore semaforoAforo,semaforoCapTir, semaforoCapMer, señal, subido,esperaTir,esperaMer, servir,limpiar; //Variable semaforo para proteger variables
     private Lock cerrojoIzq = new ReentrantLock(); //variable cerrojo para cuando puertaIzq esta cerrada 
     private Lock cerrojoDer = new ReentrantLock(); //variable cerrojo para cuando puerta derecha esta cerrada
     private Condition cerradaIzq = cerrojoIzq.newCondition();   //Variable condition asociada al cerrojo de la puerta izq
@@ -44,8 +44,6 @@ public class Campamento {
         semaforoAforo = new Semaphore (aforo,true); //aforo es el número de èrmisos y true para indicar salida FIFO de la cola
         semaforoCapTir = new Semaphore (capTir, true);
         semaforoCapMer = new Semaphore (capMer, true);
-        semaforoCapSoga = new Semaphore (capSoga, true);
-        esperaSoga = new Semaphore (100, true);
         esperaMer = new Semaphore (10, true);
         esperaTir = new Semaphore (0, true);
         subido = new Semaphore (0, true);
@@ -274,7 +272,6 @@ public class Campamento {
     //Método simula actividad soga para los monitores
     public void soga(Monitor m, int n)
     {
-        esperaSoga.release(100);    //libera permisos para que puedan entrar niños cuando monitor vuelve del descanso
         for (int i = 0; i < 10; i++)         {
             try //Bucle controla que cuando monitor haga 10 veces esta actividad se vaya al descanso
             {
@@ -335,7 +332,6 @@ public class Campamento {
             }  
         }
         detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-        esperaSoga.drainPermits();  //bloquea a los niños que entran mientras no haya monitor
         log.escribir(" Monitor " + m.getMId() + " se va al descanso\n");    //Escribe estado del monitor en archivo
         monEnSoga.sacar(m.getMId());    //Se saca monitor de la actividad
         zonaComun(m,n); //Se envia monitor a la zona comun para que descanse 
@@ -681,103 +677,91 @@ public class Campamento {
     //Método simula funcionamiento de la actividad soga para los niños
     public void soga(Child c) 
     {
-        try 
-        {
-            detener.comprobar();   //Punto donde se detendrá ejecución del programa
-            esperaSoga.acquire();   //Si monitor no esta niño se queda bloqueado
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-            childEnSoga.sacar(c.getCId());  //Saca a niño de la lista
-            if(!finSoga)  //Si hilo llega y ya hay 10 jugadores
-            {
-                detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-                log.escribir(" Niño " + c.getCId() + " selecciona otra actividad ya que no hay hueco en actividad soga\n"); //Escribe estado del niño en archivo
-                accederActividad(c);  //No espera y se va a otra actividad
-            }
-            else        //Introduce al niño ene quipo correspondiente
-            {
-                detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-                participantes.add(c);   //Añade a niño a lista de participantes
-                numJugadores++; //Aumenta le número de jugadores
-                childEnSoga.meter(c.getCId());  //Introduce niño en actividad soga
-                try
-                {
-                    detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-                    barreraSoga.await();    //Espera a que lleguen 10 niños
-                    detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-                    hacerEquipo.await(); //Esperan a que monitor forme los equipos
-                    detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-                    finSoga = false;    //Indica que se esta realizando la actividad
-                    sleep(7000);    //Tardan 7 segundos en realizar actividad
-                    detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-                    jugar.await();  //Espera a que niños hayan terminado de jugar
-                    detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-                    elegirGanador.await(); //Esperan a que monitor elija ganador
-                    detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-                    childEnSoga.sacar(c.getCId());
-                    if(equiA.contains(c))   //Si niño esta en el equipo A
-                    {
-                        detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-                        log.escribir(" Niño " + c.getCId() + " ha ganado competición soga\n"); //Escribe estado del niño en archivo
-                        equipoA.sacar(c.getCId());  //sacamos  niño de equipo A
-                        equiA.remove(c);    //Sacamos al niño de su respectivoa array
-                        if(equiA.isEmpty() && equiB.isEmpty())  //Si equipos estan vacios ha terminado la actividad
-                        {
-                            detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-                            finSoga = true; //Indica que ha terminado actividad
-                        }
-                        numA--;         //Disminuimos número de jugadores en equipo
-                        if(ganador == 0)    //Equipo A ha ganado
-                        {
-                            c.sumar(2); //Se suma dos a equipo ganador
-                        }
-                        else
-                        {
-                            c.sumar(1); //Equipo A no ha ganadp
-                        }
-                        detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-                        numJugadores--; //Disminuye numero de jugadores
-                        log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n");   //Escribe estado del niño en archivo
-                        detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-                        zonaComun(c); //Tras terminar actividad niños van a zona comun
-                    }
-                    else    //Si niño estaba en el equipo B
-                    {
-                        detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-                        log.escribir(" Niño " + c.getCId() + " ha perdido competición soga\n"); //Escribe estado del niño en archivo
-                        equipoB.sacar(c.getCId());  //sacamos niño de equipo B
-                        equiB.remove(c);    //Saca a niño del array correspondiente
-                        if(equiA.isEmpty() && equiB.isEmpty())  //Si equipos estan vacios ha terminado la actividad
-                        {
-                            detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-                            finSoga = true; //Indica que ha terminado la actividad
-                        }
-                        numB--;             //Disminuimos número de jugadores en equipo B
-                        if(ganador == 1)    //Equipo B ha ganado
-                        {
-                            c.sumar(2); //Se suma dos a equipo ganador
-                        }
-                        else
-                        {
-                            c.sumar(1); //Equipo B ha perdido
-                        }
-                        detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-                        numJugadores--; //Disminuye numero de jugadores
-                        log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n"); //Escribe estado del niño en archivo
-                        zonaComun(c); //Tras terminar actividad niños van a zona comun
-                    } 
-                } 
-                catch ( InterruptedException | BrokenBarrierException ex) 
-                {
-                    Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
-        } 
-        catch (InterruptedException ex) 
+        childEnSoga.sacar(c.getCId());  //Saca a niño de la lista
+        if (!finSoga) //Si hilo llega y ya hay 10 jugadores
         {
-            Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
+            detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+            log.escribir(" Niño " + c.getCId() + " selecciona otra actividad ya que no hay hueco en actividad soga\n"); //Escribe estado del niño en archivo
+            accederActividad(c);  //No espera y se va a otra actividad
+        } 
+        else //Introduce al niño ene quipo correspondiente
+        {
+            detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+            participantes.add(c);   //Añade a niño a lista de participantes
+            numJugadores++; //Aumenta le número de jugadores
+            childEnSoga.meter(c.getCId());  //Introduce niño en actividad soga
+            try {
+                detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                barreraSoga.await();    //Espera a que lleguen 10 niños
+                detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                hacerEquipo.await(); //Esperan a que monitor forme los equipos
+                detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                finSoga = false;    //Indica que se esta realizando la actividad
+                sleep(7000);    //Tardan 7 segundos en realizar actividad
+                detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                jugar.await();  //Espera a que niños hayan terminado de jugar
+                detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                elegirGanador.await(); //Esperan a que monitor elija ganador
+                detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                childEnSoga.sacar(c.getCId());
+                if (equiA.contains(c)) //Si niño esta en el equipo A
+                {
+                    detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+                    log.escribir(" Niño " + c.getCId() + " ha ganado competición soga\n"); //Escribe estado del niño en archivo
+                    equipoA.sacar(c.getCId());  //sacamos  niño de equipo A
+                    equiA.remove(c);    //Sacamos al niño de su respectivoa array
+                    if (equiA.isEmpty() && equiB.isEmpty()) //Si equipos estan vacios ha terminado la actividad
+                    {
+                        detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                        finSoga = true; //Indica que ha terminado actividad
+                    }
+                    numA--;         //Disminuimos número de jugadores en equipo
+                    if (ganador == 0) //Equipo A ha ganado
+                    {
+                        c.sumar(2); //Se suma dos a equipo ganador
+                    } 
+                    else 
+                    {
+                        c.sumar(1); //Equipo A no ha ganadp
+                    }
+                    detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+                    numJugadores--; //Disminuye numero de jugadores
+                    log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n");   //Escribe estado del niño en archivo
+                    detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+                    zonaComun(c); //Tras terminar actividad niños van a zona comun
+                } 
+                else //Si niño estaba en el equipo B
+                {
+                    detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+                    log.escribir(" Niño " + c.getCId() + " ha perdido competición soga\n"); //Escribe estado del niño en archivo
+                    equipoB.sacar(c.getCId());  //sacamos niño de equipo B
+                    equiB.remove(c);    //Saca a niño del array correspondiente
+                    if (equiA.isEmpty() && equiB.isEmpty()) //Si equipos estan vacios ha terminado la actividad
+                    {
+                        detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+                        finSoga = true; //Indica que ha terminado la actividad
+                    }
+                    numB--;             //Disminuimos número de jugadores en equipo B
+                    if (ganador == 1) //Equipo B ha ganado
+                    {
+                        c.sumar(2); //Se suma dos a equipo ganador
+                    } else {
+                        c.sumar(1); //Equipo B ha perdido
+                    }
+                    detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+                    numJugadores--; //Disminuye numero de jugadores
+                    log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n"); //Escribe estado del niño en archivo
+                    zonaComun(c); //Tras terminar actividad niños van a zona comun
+                }
+            } 
+            catch (InterruptedException | BrokenBarrierException ex) 
+            {
+                Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
-    
+
     
     //Método para cerrar TODO el campamento
     public boolean cerrar() {
