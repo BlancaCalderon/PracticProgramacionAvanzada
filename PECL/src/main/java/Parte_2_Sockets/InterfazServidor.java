@@ -173,6 +173,7 @@ public class InterfazServidor extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         botonReanudar = new javax.swing.JButton();
         botonPausar = new javax.swing.JButton();
+        botonSalir = new javax.swing.JButton();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -642,7 +643,18 @@ public class InterfazServidor extends javax.swing.JFrame {
                 botonPausarActionPerformed(evt);
             }
         });
-        getContentPane().add(botonPausar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 630, 140, 50));
+        getContentPane().add(botonPausar, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 630, 140, 50));
+
+        botonSalir.setBackground(new java.awt.Color(102, 51, 0));
+        botonSalir.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        botonSalir.setForeground(new java.awt.Color(0, 204, 0));
+        botonSalir.setText("SALIR");
+        botonSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonSalirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botonSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 630, 140, 50));
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 690));
 
         pack();
@@ -655,6 +667,10 @@ public class InterfazServidor extends javax.swing.JFrame {
     private void botonReanudarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonReanudarActionPerformed
         deten.reanudar();   //Reanuda ejecución del programa
     }//GEN-LAST:event_botonReanudarActionPerformed
+
+    private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
+        this.setVisible(false); //Cierra ventana actual
+    }//GEN-LAST:event_botonSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -727,6 +743,7 @@ public class InterfazServidor extends javax.swing.JFrame {
     private javax.swing.JTextField bandejasSucias;
     private javax.swing.JButton botonPausar;
     private javax.swing.JButton botonReanudar;
+    private javax.swing.JButton botonSalir;
     private javax.swing.JTextField childEnFinal;
     private javax.swing.JTextField childEnTirolina;
     private javax.swing.JTextArea childMerendando;
