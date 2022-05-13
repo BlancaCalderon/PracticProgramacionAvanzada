@@ -7,7 +7,8 @@ package Parte_2_Sockets;
  *
  * @author blanf
  */
-public class Monitor extends Thread{
+public class Monitor extends Thread
+{
     private String id;
     private Campamento camp;
     private int contActividades;
@@ -23,24 +24,29 @@ public class Monitor extends Thread{
     }
 
     //Método devuelve identificador del monitor
-    public String getMId() {
+    public String getMId() 
+    {
         return id;
     }
 
     //Método establece identificador del monitor
-    public void setId(String id) {
+    public void setId(String id) 
+    {
         this.id = id;
     }
     
     //Devuelve valor de la variable contador de actividades
-    public  int getContActividades() {
+    public  int getContActividades() 
+    {
         return contActividades;
     }
 
     //Establece valor de contActividades
-    public void setContActividades(int contActividades) {
+    public void setContActividades(int contActividades) 
+    {
         this.contActividades = contActividades;
     }
+    
     //Método para sumar valor al contador de actividades
     public int sumar(int n)
     {

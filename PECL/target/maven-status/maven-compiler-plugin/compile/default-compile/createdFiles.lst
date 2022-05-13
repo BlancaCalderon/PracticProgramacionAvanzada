@@ -31,9 +31,11 @@ Parte_1\ListaThreads.class
 Parte_2_Sockets\Campamento.class
 Parte_2_RMI\InterfazCliente$8.class
 Parte_2_Sockets\InterfazServidor$3.class
+Parte_1\Interfaz$5.class
 Parte_2_Sockets\Child.class
 Parte_2_Sockets\InterfazCliente$2.class
 Parte_2_RMI\InterfazServidor$2.class
+Parte_2_RMI\InterfazServidor$5.class
 Parte_2_RMI\InterfazCliente.class
 Parte_1\Monitor.class
 Parte_2_RMI\InterfazCliente$2.class
@@ -42,6 +44,7 @@ Parte_2_Sockets\InterfazCliente$5.class
 Parte_1\Campamento.class
 Parte_2_RMI\InterfazCliente$4.class
 Parte_1\Interfaz.class
+Parte_2_Sockets\InterfazServidor$5.class
 Parte_2_Sockets\InterfazCliente$8.class
 Parte_1\Child.class
 Parte_2_Sockets\InterfazCliente$1.class

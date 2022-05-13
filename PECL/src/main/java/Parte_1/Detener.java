@@ -12,7 +12,8 @@ import java.util.logging.Logger;
  *
  * @author blanf
  */
-public class Detener {
+public class Detener 
+{
     private boolean detenido=false;      //Determina si se cierra campamento
     private Lock cerrojo = new ReentrantLock(); //variable cerrojo 
     private Condition parar = cerrojo.newCondition();   //Varuable condition asociada al cerrojo

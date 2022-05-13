@@ -16,7 +16,8 @@ import javax.swing.JLabel;
  *
  * @author blanf
  */
-public class Interfaz extends javax.swing.JFrame {
+public class Interfaz extends javax.swing.JFrame 
+{
 
     /**
      * Creates new form NewJFrame
@@ -28,11 +29,12 @@ public class Interfaz extends javax.swing.JFrame {
     Child c;
     String id;
     ImageIcon imagen, icono;
-    public Interfaz() {
-        initComponents();
-        colocarLogo(fondo,"C:\\Users\\blanf\\OneDrive\\Documentos\\NetBeansProjects\\PECL\\src\\main\\resources\\imagenes\\bosque.jpg");
+    public Interfaz() 
+    {
+        initComponents(); 
+        colocarLogo(fondo,"C:\\\\Users\\\\blanf\\OneDrive\\Documentos\\NetBeansProjects\\PECL\\src\\main\\resources\\imagenes\\bosque.jpg");
         this.setLocationRelativeTo(null);
-        int contActChild = 0, contActMon = 0;   //Se inicializan los contadores de actividades de los niños y monitores
+        int contActChild = 0, contActMon = 0, contMer = 0;   //Se inicializan los contadores de actividades de los niños y monitores
 
         deten = new Detener();  //Inicializao detener
         camp = new Campamento(50,colaEsperaIzq,colaEsperaDer,colaEsperaTirolina,colaEntradaMerendero,dentro,monitorTir,monitoresMerendero,monitoresZC,monitorSoga,colaEntradaMerendero,colaEsperaTirolina,hilosEntran,childMerendando,bandejasLimpias,bandejasSucias,childZC,childPreparacion,childEnTirolina,childEnFinal,equipoA,equipoB,deten);
@@ -44,34 +46,45 @@ public class Interfaz extends javax.swing.JFrame {
             mon = new Monitor('M' + n1, camp, contActMon,deten);    //Creo monitor
             mon.start();    //Empieza ejecución de monitor
         }
+        
         //Crea hilo anónimo en el que crearé todos los hilos child que componen el sistema
-        new Thread(new Runnable() {
-            public void run() {
+        new Thread(new Runnable() 
+        {
+            public void run() 
+            {
                 //Bucle para crear los hilos niños
-                for (int i = 1; i <= 100; i++) {
-                    try {
+                for (int i = 1; i <= 100; i++) 
+                {
+                    try 
+                    {
                         //Serie de condiciones para introducir 0 necesarios en los identificadores de los niños
-                        if (i < 10) {
+                        if (i < 10) 
+                        {
                             id = "N0000" + i;
                         }
-                        else if (10 <= i && i < 100) {
+                        else if (10 <= i && i < 100) 
+                        {
                             id = "N000" + i;
                         }
-                        else if (10 < i && i < 1000) {
+                        else if (10 < i && i < 1000) 
+                        {
                             id = "N00" + i;
                         }
-                        else if (1000 <= i && i < 10000) {
+                        else if (1000 <= i && i < 10000) 
+                        {
                             id = "N0" + i;
                         } 
                         else 
                         {
                             id = "N" + i;
                         }
-                        c = new Child(id, camp, contActChild, deten);  //Creo hilo niño
+                        c = new Child(id, camp, contActChild, deten, contMer);  //Creo hilo niño
                         c.start();
 
                         sleep(1000 + (int) (2000 * Math.random()));    //Niños se crean cada 1 - 3 segundos
-                    } catch (InterruptedException ex) {
+                    } 
+                    catch (InterruptedException ex) 
+                    {
                         Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
@@ -428,9 +441,12 @@ public class Interfaz extends javax.swing.JFrame {
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(childEnTirolina, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(47, 47, 47)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(childEnTirolina, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(39, 39, 39))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(childEnFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -443,7 +459,7 @@ public class Interfaz extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -452,12 +468,11 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGap(3, 3, 3)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel7)
-                        .addComponent(jLabel8)
-                        .addComponent(jLabel10)))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(monitorTir, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -656,7 +671,8 @@ public class Interfaz extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) 
+    {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

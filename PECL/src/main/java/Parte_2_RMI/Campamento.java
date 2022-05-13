@@ -24,16 +24,13 @@ import javax.swing.JTextField;
  */
 public class Campamento extends UnicastRemoteObject implements InterfazComun
 {
-    private boolean entradaIzq = false, entradaDer= false, finSoga = true; //Variables almacenan si entradas estan abiertas
-    private int aforo, capTir = 1, capMer = 20, numLimpias = 0, numSucias = 25, numJugadores = 0, numA = 0, numB = 0, contTir = 0,contMer = 0, ganador;     //Aforo maximo del campamento y parte numérica del identificador
-    private ArrayList<Child> equiA, equiB,participantes, numActividades, niños;  //Arrays que contendrán miembros de cada equipo en actividad soga
-    private ListaThreads colaEntradaIzq, colaEntradaDer, colaTirolina, colaMerienda, dentro, monEnTirolina,monEnMerienda,monEnZonaComun, monEnSoga, childEnSoga, childEnMer,limpias,sucias,childEnZc,childEnTirPrep,childEnTir,childEnFinTir,equipoA,equipoB; //Colas de espera y niños dentro de cada actividad y de entrada
-    private Semaphore semaforoAforo, semaforoCapTir, semaforoCapMer, señal, subido,esperaTir,esperaMer, servir,limpiar; //Variable semaforo para proteger variables
-    private Lock cerrojoIzq = new ReentrantLock(); //variable cerrojo para cuando puertaIzq esta cerrada 
-    private Lock cerrojoDer = new ReentrantLock(); //variable cerrojo para cuando puerta derecha esta cerrada
-    private Condition cerradaIzq = cerrojoIzq.newCondition();   //Variable condition asociada al cerrojo de la puerta izq
-    private Condition cerradaDer = cerrojoDer.newCondition();   //Variable condition asociada al cerrojo de la puerta derecha
-    private int maxJugadores = 10;  //Numero de jugadores necesarios para jugar a actividad soga
+    private boolean entradaIzq = false, entradaDer= false, finSoga = true; 
+    private int aforo, maxJugadores = 10, capTir = 1, capMer = 20, numLimpias = 0, numSucias = 25, numJugadores = 0, numA = 0, numB = 0, contTir = 0,contMer = 0, ganador;     //Aforo maximo del campamento y parte numérica del identificador
+    private ArrayList<Child> equiA, equiB,participantes, niños;  
+    private ListaThreads colaEntradaIzq, colaEntradaDer, colaTirolina, colaMerienda, dentro, monEnTirolina,monEnMerienda,monEnZonaComun, monEnSoga, childEnSoga, childEnMer,limpias,sucias,childEnZc,childEnTirPrep,childEnTir,childEnFinTir,equipoA,equipoB; 
+    private Semaphore semaforoAforo, semaforoCapTir, semaforoCapMer, señal, subido,esperaTir, servir,limpiar, preparacion; 
+    private Lock cerrojoIzq, cerrojoDer;
+    private Condition cerradaIzq, cerradaDer;
     private CyclicBarrier barreraSoga, hacerEquipo, elegirGanador, jugar ;
     private Detener detener;    //Para detener y reanudad ejecución del programa
     private Log log;    //Para escribir en archivo evolción de la ejecución del programa
@@ -42,49 +39,55 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
     /*Constructor de la clase*/
     public Campamento(int aforo,JTextArea espEn1,JTextArea espEn2,JTextArea espTir,JTextArea espMer, JTextArea den, JTextField monEnTir,JTextField monEnMer,JTextField monEnZC, JTextField monEnSo,JTextArea colaMer,JTextArea colaTir, JTextArea enSoga, JTextArea enMer, JTextField limp, JTextField suc, JTextArea zc, JTextField tirPrep,JTextField enTir, JTextField finTir, JTextArea a,JTextArea b,Detener deten) throws RemoteException   
     {
-        this.aforo = aforo;
-        this.detener = deten;
+        this.aforo = aforo; //Variable que contiene aforo del campamento (50)
+        this.detener = deten;   
         this.log = new Log(file);
-        semaforoAforo = new Semaphore (aforo,true); //aforo es el número de èrmisos y true para indicar salida FIFO de la cola
-        semaforoCapTir = new Semaphore (capTir, true);
-        semaforoCapMer = new Semaphore (capMer, true);
-        esperaMer = new Semaphore (10, true);
-        esperaTir = new Semaphore (0, true);
-        subido = new Semaphore (0, true);
-        señal = new Semaphore (0, true);
-        servir = new Semaphore (numLimpias, true);
-        limpiar = new Semaphore (numSucias, true);
-        colaEntradaIzq = new ListaThreads (espEn1);
-        colaEntradaDer = new ListaThreads (espEn2);
-        colaTirolina = new ListaThreads (colaTir);
-        colaMerienda = new ListaThreads (colaMer);
-        dentro = new ListaThreads (den);
-        monEnTirolina = new ListaThreads (monEnTir);
-        monEnMerienda = new ListaThreads (monEnMer);
-        monEnZonaComun = new ListaThreads (monEnZC);
-        monEnSoga = new ListaThreads (monEnSo);
-        childEnSoga = new ListaThreads (enSoga);
-        childEnMer = new ListaThreads (enMer);
-        limpias = new ListaThreads (limp);
-        sucias = new ListaThreads (suc);
-        childEnZc = new ListaThreads (zc);
-        childEnTirPrep = new ListaThreads (tirPrep);
-        childEnTir = new ListaThreads (enTir);
-        childEnFinTir = new ListaThreads (finTir);
-        equipoA = new ListaThreads (a);
-        equipoB = new ListaThreads (b);
-        equiA = new ArrayList<Child>();
-        equiB = new ArrayList<Child>();
-        niños = new ArrayList<Child>();
-        participantes = new ArrayList<Child>();
-        barreraSoga = new CyclicBarrier(maxJugadores + 1);
-        hacerEquipo = new CyclicBarrier(maxJugadores + 1);
-        jugar = new CyclicBarrier(maxJugadores + 1);
-        elegirGanador = new CyclicBarrier(maxJugadores + 1);
-        limpias.meter(" " + 0);
-        sucias.meter(" " + 25);
-        
+        cerrojoIzq = new ReentrantLock(); //variable cerrojo para entrada por la puerta izquierda 
+        cerrojoDer = new ReentrantLock(); //variable cerrojo para entrada por la puerta derecha
+        cerradaIzq = cerrojoIzq.newCondition();   //Variable condition asociada al cerrojo de la puerta izquierda que bloquea a hilos si la puerta esta cerrada
+        cerradaDer = cerrojoDer.newCondition();   //Variable condition asociada al cerrojo de la puerta derecha que bloquea a hilos si la puerta esta cerrada
+        semaforoAforo = new Semaphore (aforo,true); //Semáforo controla que no entres más niños de lo que permite el afor, true porque es justo (FIFO)
+        semaforoCapTir = new Semaphore (capTir, true);  //semáforo que controla que no haya más de un niño dentro de la actividad (FIFO) tirolina
+        semaforoCapMer = new Semaphore (capMer, true);  //Semáforo que controla que no haya más de 20 niños en la merienda (FIFO)
+        esperaTir = new Semaphore (0, true);    //Semáforo que bloquea a niño al entrar actividad tirolina si monitor se encuentra en el descanso 
+        subido = new Semaphore (0, true);   //Semáforo para indicar al monitor que hay un niño dentro de la actividad tirolina para que comience a prepararle
+        señal = new Semaphore (0, true);    //Semáforo que bloquea a niño en tirolina hasta que monitor le de la señal
+        servir = new Semaphore (0, true);   //Semáforo controla que monitores no limpien más platos de los que están sucios
+        limpiar = new Semaphore (numSucias, true);  //Semáforo controla que niños no cojan bandejas sucias en actividad merienda
+        preparacion = new Semaphore (0, true); //Semáforo que bloquea a niño en tirolina hasta que monitor lo prepara
+        colaEntradaIzq = new ListaThreads (espEn1); //Variable que contiene hilos que esperan en cola de entrada de la puerta izquierda
+        colaEntradaDer = new ListaThreads (espEn2); //Variable que contiene hilos que esperan en cola de entrada de la puerta derecha
+        colaTirolina = new ListaThreads (colaTir);  //Variable que contiene niños que esperan para entrar en la actividad tirolina
+        colaMerienda = new ListaThreads (colaMer);  //Variable que contiene niños que esperan para entrar en la actividad merienda
+        dentro = new ListaThreads (den);    //Variable que guarda que hilos (monitores y niños) están dentro del campamento
+        monEnTirolina = new ListaThreads (monEnTir);    //Variable que guarda que monitor está en actividad tirolina
+        monEnMerienda = new ListaThreads (monEnMer);    //Variable que guarda que monitores se encuentran en actividad merienda
+        monEnZonaComun = new ListaThreads (monEnZC);    //Variable que guarda que monitores se encuentran en la zona común en un momento dado 
+        monEnSoga = new ListaThreads (monEnSo);         //Variable que guarda que monitor esta en actividad soga
+        childEnSoga = new ListaThreads (enSoga);    //Variable que guarda que niños se encuentran en la actividad soga
+        childEnMer = new ListaThreads (enMer);  //Variable que guarda que niños se encuentran en la actividad merienda
+        limpias = new ListaThreads (limp);  //Variable que contiene cuantas bandejas limpias hay en merendero
+        sucias = new ListaThreads (suc);    //Variable que contiene cuantas bandejas sucias hay en merendero
+        childEnZc = new ListaThreads (zc);  //Variable que guarda que niños se encuentran en la zona común
+        childEnTirPrep = new ListaThreads (tirPrep);    //Variable que guarda que niño esta preparándose en la tirolina
+        childEnTir = new ListaThreads (enTir);  //Variable que guarda que niño esta dentro de la actividad tirolina
+        childEnFinTir = new ListaThreads (finTir);  //Variable que guarda que niño ha finalizado actividad tirplina
+        equipoA = new ListaThreads (a); //Variable que contiene niños que forman el equipo A en actividad soga
+        equipoB = new ListaThreads (b); //Variable que contiene niños que forman el equipo B en actividad soga
+        equiA = new ArrayList<Child>(); //Array que contiene niños que forman el equipo A en actividad soga
+        equiB = new ArrayList<Child>(); //Array que contiene niños que forman el equipo B en actividad soga
+        participantes = new ArrayList<Child>(); //Array que contiene niños estan participando en la actividad soga en momento dado 
+        niños = new ArrayList<Child>(); //Array que contiene niños que estan dentro del campamento
+        barreraSoga = new CyclicBarrier(maxJugadores + 1);  //Barrera que espera a que haya 10 niños en la actividad soga para empezar actividad (numero de jugadores + monitor)
+        hacerEquipo = new CyclicBarrier(maxJugadores + 1);  //Barrera que bloquea a los niños de soga hasta monitor forme los equipos (numero de jugadores + monitor)
+        jugar = new CyclicBarrier(maxJugadores + 1);    //Barrera que bloque a monitor de soga hasta que niñso terminen de jugar (numero de jugadores + monitor)
+        elegirGanador = new CyclicBarrier(maxJugadores + 1);    //Barrera que bloquea a los niños de soga hasta monitor elija ganador (numero de jugadores + monitor)
+        limpias.meter(" " + 0); //Inicializa cuantas bandejas limpias hay al empezar campamento
+        sucias.meter(" " + 25); //Inicializa cuantas bandejas sucias hay al empezar campamento
     }
+    
+    //Constructor vacio
+    public Campamento() throws RemoteException {}
     
     /*Método override que permite entrar en campamento a monitores*/
     public void entrar(Monitor m)
@@ -351,7 +354,11 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
             {
                 detener.comprobar();   //Ejecución se detendrá en este punto si se indica
                 subido.acquire(); //Monitor se bloquea hast aque haya niño en tirolina
-                sleep(1500 + (int)(500 *Math.random())); //Espera entre 1,5 segundos y 2 segundos para dar la señal a niño de que se tire (no especificado en enunciado)
+                sleep(1000); //Prepara al niño para tirarse de la tirolina
+                detener.comprobar(); //Punto de detención
+                log.escribir(" Monitor " + m.getMId() + " prepara al niño\n");    //Escribe estado del monitor en archivo
+                preparacion.release(); //Libera a niño que estuviese esperando a ser preparado
+                sleep(1500 + (int)(500 *Math.random())); //Espera entre 1,5 segundos y 2 segundos para dar la señal a niño de que se tire (tiempo no especificado en enunciado)
                 señal.release(); //Avisa a niño de que puede tirarse
                 m.sumar(1);    //Introduce las 10 veces que se ha realizado actividad en contador
             } 
@@ -390,9 +397,9 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
     //Método para que niños entren en el campamento(una puerta u otra segun si id es par)
     public void entrar(Child c)
     {
-        /*Si identificador del niño es par se va a la primera puerta (asignamos puertas segun id)*/
-        int num =(int) (2* Math.random());
-        if(num == 0)
+        int num =(int) (2* Math.random());  //Número random para decidir aleatoriamente por que puerta entra el niño
+        
+        if(num == 0)    //Si el número es 0 entra por la puerta izquierda
         {
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             colaEntradaIzq.meter(c.getCId());  //Introduce niño en la cola hasta que se abra puerta 
@@ -443,7 +450,7 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
                 }
             }
         }    
-        else        //Si id del monitor es impar entra por la puerta derecha
+        else        //Si número random es 1
         {
            detener.comprobar();   //Punto donde se detendrá funcionaientod el program
            colaEntradaDer.meter(c.getCId());  //Introduce niño en la cola (a efectos practicos no espera se hace para observar)
@@ -522,13 +529,13 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
       {
         switch(n)
         {
-          case 1:   //Niño a actividad soga
+            case 1:   //Niño a actividad soga
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el program
                 log.escribir(" Niño " + c.getCId() + " accede a la actividad soga\n");    //Escribe estado del niño en archivo
-                childEnSoga.meter(c.getCId());    //Niño entra en actividad soga
                 soga(c);     //Llama a función que simula actividad soga
-                 break;
-          case 2:     //Niño entra en actividad tirolina
+                break;
+                
+            case 2:     //Niño entra en actividad tirolina
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el program
                 colaTirolina.meter(c.getCId());  //Niño accede a la cola de espera de la tirolina
                 log.escribir(" Niño " + c.getCId() + " accede a la cola de espera de la actividad tirolina\n"); //Escribe estado del niño en archivo
@@ -545,11 +552,10 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el program
                 log.escribir(" Niño " + c.getCId() + " accede a la actividad tirolina\n"); //Escribe estado del niño en archivo
                 tirolina(c);  //Llama a función que simula la actividad de tirolina
-              
-              break;
+                break;
 
-          case 3:     //Niño entra en actividad merienda
-                if(c.getContActividades() >= 3) //Para merendar debe haber realizado mas o tres actividades
+            case 3:     //Niño entra en actividad merienda
+                if(c.getContMerienda() >= 3) //Para merendar debe haber realizado mas o tres actividades
                 {  
                     try 
                     {
@@ -569,13 +575,13 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
                         Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
                     }    
                 }
-              else  //Si ha realizado menos de tres actividades
-              {
+                else  //Si ha realizado menos de tres actividades
+                {
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el program
                 log.escribir(" Niño " + c.getCId() + " selecciona siguiente actividad\n"); //Escribe estado del niño en archivo
                 accederActividad(c);  //Accede a actividad distinta
-              } //Si ha hecho menos de tres actividades vuelve a llamar a la función paar elegir otra
-              break;
+                }  
+            break;
         }   
       }
     }
@@ -605,6 +611,7 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
             childEnMer.sacar(c.getCId());    //Saca a niño del merendero
             semaforoCapMer.release();   //avisa de que hay un plato sucio
             c.sumar(1);   //Aumenta en uno el contador de actividades del niño
+            c.setContMer(0); //Resetea contador de actividades para merienda
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n"); //Escribe estado del niño en archivo
             zonaComun(c);   //Tras terminar actividad niño va a zona comun  
@@ -646,14 +653,13 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             subido.release(); //Avisa a monitor que hay niño para tirarse por la tirolina
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-            log.escribir(" Niño " + c.getCId() + " se prepara para tirarse en la tirolina\n"); //Escribe estado del niño en archivo
-            sleep(1000);    //Monitor prepara al niño para tirarse
-            detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+            preparacion.acquire(); //Se bloquea hasta que monitor lo prepare
+            log.escribir(" Niño " + c.getCId() + " preparado para tirarse por la tirolina\n"); //Escribe estado del niño en archivo
             childEnTirPrep.sacar(c.getCId()); //Niño termina de prepararse
-            log.escribir(" Niño " + c.getCId() + " se tira por la tirolina\n"); //Escribe estado del niño en archivo
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             childEnTir.meter(c.getCId());    //Pasa a estado de tirarse
             señal.acquire();   //Espera señal del monitor para tirarse
+            log.escribir(" Niño " + c.getCId() + " se tira por la tirolina\n"); //Escribe estado del niño en archivo
             sleep(3000);    //Tarda 3 segundos en llegar al final
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             childEnTir.sacar(c.getCId());   //Sca a niño de estado de tirarse
@@ -666,7 +672,7 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
             log.escribir(" Niño " + c.getCId() + " se baja de la tirolina\n"); //Escribe estado del niño en archivo
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             semaforoCapTir.release();       //Libera permiso del semaforo de la tirolina
-            c.sumar(1);   //Aumenta en uno el contador de actividades del niño
+            c.sumar(1);   //Aumenta en uno el contador de actividades y de merienda del niño
             contTir++;      //Se incremente el numero de veces que se ha realizado esta actividad
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n");   //Escribe estado del niño en archivo
@@ -682,7 +688,6 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
     public void soga(Child c) 
     {
         detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-        childEnSoga.sacar(c.getCId());  //Saca a niño de la lista
         if (!finSoga) //Si hilo llega y ya hay 10 jugadores
         {
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
@@ -765,9 +770,6 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
             }
         }
     }
-
-
-    
     
     //Método para cerrar TODO el campamento
     public boolean cerrar() {
@@ -825,7 +827,6 @@ public class Campamento extends UnicastRemoteObject implements InterfazComun
     public int consultarNiño(String id) throws RemoteException {
         for(int i = 0; i < niños.size(); i++)   //Bucle recorre niños creados paar determianar de que niño es el id que buscamos
         {
-            System.out.println(id);
             if(niños.get(i).getCId().equals(id)) //Comprueba si el id corresponde a niño
             {
                 return niños.get(i).getContActividades();   //devuelve actividades realizadas por el niño

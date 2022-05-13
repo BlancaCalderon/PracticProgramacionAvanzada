@@ -10,7 +10,8 @@ import javax.swing.JTextField;
  *
  * @author blanf
  */
-public class ListaThreads {
+public class ListaThreads 
+{
     //Inicializo variables
     ArrayList<String> lista;    //Array que contiene elementos a mostrar
     JTextField tf;  //Text field dónde se mostrará la información de la lista

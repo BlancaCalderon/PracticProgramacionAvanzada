@@ -2,7 +2,6 @@
  */
 package Parte_2_Sockets;
 
-import Parte_1.*;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -13,7 +12,8 @@ import java.util.logging.Logger;
  *
  * @author blanf
  */
-public class Detener {
+public class Detener 
+{
     private boolean detenido=false;      //Determina si se cierra campamento
     private Lock cerrojo = new ReentrantLock(); //variable cerrojo 
     private Condition parar = cerrojo.newCondition();   //Varuable condition asociada al cerrojo

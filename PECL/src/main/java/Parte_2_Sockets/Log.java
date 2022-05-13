@@ -21,7 +21,8 @@ public class Log
     private DateTimeFormatter fecha = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm:ss");   //Formato que usaremos para escribir la fecha y el tiempo
 
     /*Constructor de la clase*/
-    public Log(FileWriter l) {
+    public Log(FileWriter l) 
+    {
         try 
         {
             this.log = l;

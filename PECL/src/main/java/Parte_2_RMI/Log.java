@@ -20,8 +20,10 @@ public class Log
     private DateTimeFormatter fecha = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm:ss");   //Formato que usaremos para escribir la fecha y el tiempo
 
     /*Constructor de la clase*/
-    public Log(FileWriter l) {
-        try {
+    public Log(FileWriter l) 
+    {
+        try 
+        {
             this.log = l;
             this.log = new FileWriter("evolucionCampamento.txt"); //Crea objeto file
         } 

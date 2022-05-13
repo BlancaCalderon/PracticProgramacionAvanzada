@@ -21,7 +21,8 @@ import javax.swing.JLabel;
  *
  * @author blanf
  */
-public class InterfazServidor extends javax.swing.JFrame {
+public class InterfazServidor extends javax.swing.JFrame 
+{
 
     /**
      * Creates new form NewJFrame
@@ -35,20 +36,23 @@ public class InterfazServidor extends javax.swing.JFrame {
     ImageIcon imagen, icono;
     private Registry registry;
     
-    public InterfazServidor()  {
+    public InterfazServidor()  
+    {
         initComponents();
         colocarLogo(fondo,"C:\\Users\\blanf\\OneDrive\\Documentos\\NetBeansProjects\\PECL\\src\\main\\resources\\imagenes\\bosque.jpg");
         this.setLocationRelativeTo(null);   //Situa la ventana de la interfaz en el medio
         int contActChild = 0, contActMon = 0;   //Se inicializan los contadores de actividades de los niños y monitores
 
         deten = new Detener();  //Inicializao detener
-        try {
+        try 
+        {
             camp = new Campamento(50,colaEsperaIzq,colaEsperaDer,colaEsperaTirolina,colaEntradaMerendero,dentro,monitorTir,monitoresMerendero,monitoresZC,monitorSoga,colaEntradaMerendero,colaEsperaTirolina,hilosEntran,childMerendando,bandejasLimpias,bandejasSucias,childZC,childPreparacion,childEnTirolina,childEnFinal,equipoA,equipoB,deten);
             registry = LocateRegistry.createRegistry(1099); //Registra objeto
             Naming.rebind("//localhost/Objeto", camp);    //Hace visible el objeto para los clientes
             System.out.println("Objeto registrado");    //Indica que el objeto se ha registrado
-
-        } catch (RemoteException | MalformedURLException ex) {
+        } 
+        catch (RemoteException | MalformedURLException ex) 
+        {
             Logger.getLogger(InterfazServidor.class.getName()).log(Level.SEVERE, null, ex);
         }
         
@@ -59,40 +63,49 @@ public class InterfazServidor extends javax.swing.JFrame {
             mon = new Monitor('M' + n1, camp, contActMon,deten);    //Creo monitor
             mon.start();    //Empieza ejecución de monitor
         }
+        
         //Crea hilo anónimo en el que crearé todos los hilos child que componen el sistema
-        new Thread(new Runnable() {
-            public void run() {
+        new Thread(new Runnable() 
+        {
+            public void run() 
+            {
                 //Bucle para crear los hilos niños
                 for (int i = 1; i <= 100; i++) {
-                    try {
+                    try 
+                    {
                         //Serie de condiciones para introducir 0 necesarios en los identificadores de los niños
-                        if (i < 10) {
+                        if (i < 10) 
+                        {
                             id = "N0000" + i;
                         }
-                        else if (10 <= i && i < 100) {
+                        else if (10 <= i && i < 100) 
+                        {
                             id = "N000" + i;
                         }
-                        else if (10 < i && i < 1000) {
+                        else if (10 < i && i < 1000) 
+                        {
                             id = "N00" + i;
                         }
-                        else if (1000 <= i && i < 10000) {
+                        else if (1000 <= i && i < 10000) 
+                        {
                             id = "N0" + i;
                         } 
                         else 
                         {
                             id = "N" + i;
                         }
-                        c = new Child(id, camp, contActChild, deten);  //Creo hilo niño
+                        c = new Child(id, camp, contActChild, deten, 0);  //Creo hilo niño
                         c.start();
 
                         sleep(1000 + (int) (2000 * Math.random()));    //Niños se crean cada 1 - 3 segundos
-                    } catch (InterruptedException ex) {
+                    } 
+                    catch (InterruptedException ex) 
+                    {
                         Logger.getLogger(InterfazServidor.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
             }
-        }).start(); 
-        
+        }).start();    
     }
     //Método para colocar imagen de fondo en la interfaz
     private void colocarLogo (JLabel etiqueta, String imagen) 
@@ -671,29 +684,13 @@ public class InterfazServidor extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) 
+    {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(InterfazServidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(InterfazServidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(InterfazServidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(InterfazServidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

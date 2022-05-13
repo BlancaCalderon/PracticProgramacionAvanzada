@@ -1,4 +1,4 @@
-/*Esta clase contendrá todas las entradas y actividades.*/
+/*Esta clase contiene todas las entradas y actividades simulando el funcionamiento interno del campamento.*/
 package Parte_1;
 
 import java.io.FileWriter;
@@ -19,17 +19,15 @@ import javax.swing.JTextField;
  *
  * @author blanf
  */
-public class Campamento {
-    private boolean entradaIzq = false, entradaDer= false, finSoga = true; //Variables almacenan si entradas estan abiertas
-    private int aforo, capTir = 1, capMer = 20, numLimpias = 0, numSucias = 25, numJugadores = 0, numA = 0, numB = 0, contTir = 0,contMer = 0, ganador;     //Aforo maximo del campamento y parte numérica del identificador
-    private ArrayList<Child> equiA, equiB, participantes;  //Arrays que contendrán miembros de cada equipo en actividad soga
-    private ListaThreads colaEntradaIzq, colaEntradaDer, colaTirolina, colaMerienda, dentro, monEnTirolina,monEnMerienda,monEnZonaComun, monEnSoga, childEnSoga, childEnMer,limpias,sucias,childEnZc,childEnTirPrep,childEnTir,childEnFinTir,equipoA,equipoB; //Colas de espera y niños dentro de cada actividad y de entrada
-    private Semaphore semaforoAforo, semaforoCapTir, semaforoCapMer, señal, subido,esperaTir,esperaMer, servir,limpiar; //Variable semaforo para proteger variables
-    private Lock cerrojoIzq = new ReentrantLock(); //variable cerrojo para cuando puertaIzq esta cerrada 
-    private Lock cerrojoDer = new ReentrantLock(); //variable cerrojo para cuando puerta derecha esta cerrada
-    private Condition cerradaIzq = cerrojoIzq.newCondition();   //Variable condition asociada al cerrojo de la puerta izq
-    private Condition cerradaDer = cerrojoDer.newCondition();   //Variable condition asociada al cerrojo de la puerta derecha
-    private int maxJugadores = 10;  //Numero de jugadores necesarios para jugar a actividad soga
+public class Campamento 
+{
+    private boolean entradaIzq = false, entradaDer= false, finSoga = true; 
+    private int aforo, capTir = 1, capMer = 20, numLimpias = 0, numSucias = 25, numJugadores = 0, maxJugadores = 10, numA = 0, numB = 0, contTir = 0,contMer = 0, ganador;     
+    private ArrayList<Child> equiA, equiB, participantes;  
+    private ListaThreads colaEntradaIzq,colaEntradaDer, colaTirolina, colaMerienda, dentro, monEnTirolina,monEnMerienda,monEnZonaComun, monEnSoga, childEnSoga, childEnMer,limpias,sucias,childEnZc,childEnTirPrep,childEnTir,childEnFinTir,equipoA,equipoB; 
+    private Semaphore semaforoAforo, semaforoCapTir, semaforoCapMer, señal, subido,esperaTir,servir,limpiar, preparacion; 
+    private Lock cerrojoIzq,cerrojoDer;
+    private Condition cerradaIzq, cerradaDer; 
     private CyclicBarrier barreraSoga, hacerEquipo, elegirGanador, jugar ; 
     private Detener detener;    //Para detener y reanudad ejecución del programa
     private Log log;    //Para escribir en archivo evolción de la ejecución del programa
@@ -38,46 +36,50 @@ public class Campamento {
     /*Constructor de la clase*/
     public Campamento(int aforo,JTextArea espEn1,JTextArea espEn2,JTextArea espTir,JTextArea espMer, JTextArea den, JTextField monEnTir,JTextField monEnMer,JTextField monEnZC, JTextField monEnSo,JTextArea colaMer,JTextArea colaTir, JTextArea enSoga, JTextArea enMer, JTextField limp, JTextField suc, JTextArea zc, JTextField tirPrep,JTextField enTir, JTextField finTir, JTextArea a,JTextArea b,Detener deten)
     {
-        this.aforo = aforo;
-        this.detener = deten;
+        this.aforo = aforo; //Variable que contiene aforo del campamento (50)
+        this.detener = deten;   
         this.log = new Log(file);
-        semaforoAforo = new Semaphore (aforo,true); //aforo es el número de èrmisos y true para indicar salida FIFO de la cola
-        semaforoCapTir = new Semaphore (capTir, true);
-        semaforoCapMer = new Semaphore (capMer, true);
-        esperaMer = new Semaphore (10, true);
-        esperaTir = new Semaphore (0, true);
-        subido = new Semaphore (0, true);
-        señal = new Semaphore (0, true);
-        servir = new Semaphore (numLimpias, true);
-        limpiar = new Semaphore (numSucias, true);
-        colaEntradaIzq = new ListaThreads (espEn1);
-        colaEntradaDer = new ListaThreads (espEn2);
-        colaTirolina = new ListaThreads (colaTir);
-        colaMerienda = new ListaThreads (colaMer);
-        dentro = new ListaThreads (den);
-        monEnTirolina = new ListaThreads (monEnTir);
-        monEnMerienda = new ListaThreads (monEnMer);
-        monEnZonaComun = new ListaThreads (monEnZC);
-        monEnSoga = new ListaThreads (monEnSo);
-        childEnSoga = new ListaThreads (enSoga);
-        childEnMer = new ListaThreads (enMer);
-        limpias = new ListaThreads (limp);
-        sucias = new ListaThreads (suc);
-        childEnZc = new ListaThreads (zc);
-        childEnTirPrep = new ListaThreads (tirPrep);
-        childEnTir = new ListaThreads (enTir);
-        childEnFinTir = new ListaThreads (finTir);
-        equipoA = new ListaThreads (a);
-        equipoB = new ListaThreads (b);
-        equiA = new ArrayList<Child>();
-        equiB = new ArrayList<Child>();
-        participantes = new ArrayList<Child>();
-        barreraSoga = new CyclicBarrier(maxJugadores + 1);
-        hacerEquipo = new CyclicBarrier(maxJugadores + 1);
-        jugar = new CyclicBarrier(maxJugadores + 1);
-        elegirGanador = new CyclicBarrier(maxJugadores + 1);
-        limpias.meter(" " + 0);
-        sucias.meter(" " + 25);
+        cerrojoIzq = new ReentrantLock(); //variable cerrojo para entrada por la puerta izquierda 
+        cerrojoDer = new ReentrantLock(); //variable cerrojo para entrada por la puerta derecha
+        cerradaIzq = cerrojoIzq.newCondition();   //Variable condition asociada al cerrojo de la puerta izquierda que bloquea a hilos si la puerta esta cerrada
+        cerradaDer = cerrojoDer.newCondition();   //Variable condition asociada al cerrojo de la puerta derecha que bloquea a hilos si la puerta esta cerrada
+        semaforoAforo = new Semaphore (aforo,true); //Semáforo controla que no entres más niños de lo que permite el afor, true porque es justo (FIFO)
+        semaforoCapTir = new Semaphore (capTir, true);  //semáforo que controla que no haya más de un niño dentro de la actividad (FIFO) tirolina
+        semaforoCapMer = new Semaphore (capMer, true);  //Semáforo que controla que no haya más de 20 niños en la merienda (FIFO)
+        esperaTir = new Semaphore (0, true);    //Semáforo que bloquea a niño al entrar actividad tirolina si monitor se encuentra en el descanso 
+        subido = new Semaphore (0, true);   //Semáforo para indicar al monitor que hay un niño dentro de la actividad tirolina para que comience a prepararle
+        señal = new Semaphore (0, true);    //Semáforo que bloquea a niño en tirolina hasta que monitor le de la señal
+        servir = new Semaphore (0, true);   //Semáforo controla que monitores no limpien más platos de los que están sucios
+        limpiar = new Semaphore (numSucias, true);  //Semáforo controla que niños no cojan bandejas sucias en actividad merienda
+        preparacion = new Semaphore (0, true); //Semáforo que bloquea a niño en tirolina hasta que monitor lo prepara
+        colaEntradaIzq = new ListaThreads (espEn1); //Variable que contiene hilos que esperan en cola de entrada de la puerta izquierda
+        colaEntradaDer = new ListaThreads (espEn2); //Variable que contiene hilos que esperan en cola de entrada de la puerta derecha
+        colaTirolina = new ListaThreads (colaTir);  //Variable que contiene niños que esperan para entrar en la actividad tirolina
+        colaMerienda = new ListaThreads (colaMer);  //Variable que contiene niños que esperan para entrar en la actividad merienda
+        dentro = new ListaThreads (den);    //Variable que guarda que hilos (monitores y niños) están dentro del campamento
+        monEnTirolina = new ListaThreads (monEnTir);    //Variable que guarda que monitor está en actividad tirolina
+        monEnMerienda = new ListaThreads (monEnMer);    //Variable que guarda que monitores se encuentran en actividad merienda
+        monEnZonaComun = new ListaThreads (monEnZC);    //Variable que guarda que monitores se encuentran en la zona común en un momento dado 
+        monEnSoga = new ListaThreads (monEnSo);         //Variable que guarda que monitor esta en actividad soga
+        childEnSoga = new ListaThreads (enSoga);    //Variable que guarda que niños se encuentran en la actividad soga
+        childEnMer = new ListaThreads (enMer);  //Variable que guarda que niños se encuentran en la actividad merienda
+        limpias = new ListaThreads (limp);  //Variable que contiene cuantas bandejas limpias hay en merendero
+        sucias = new ListaThreads (suc);    //Variable que contiene cuantas bandejas sucias hay en merendero
+        childEnZc = new ListaThreads (zc);  //Variable que guarda que niños se encuentran en la zona común
+        childEnTirPrep = new ListaThreads (tirPrep);    //Variable que guarda que niño esta preparándose en la tirolina
+        childEnTir = new ListaThreads (enTir);  //Variable que guarda que niño esta dentro de la actividad tirolina
+        childEnFinTir = new ListaThreads (finTir);  //Variable que guarda que niño ha finalizado actividad tirplina
+        equipoA = new ListaThreads (a); //Variable que contiene niños que forman el equipo A en actividad soga
+        equipoB = new ListaThreads (b); //Variable que contiene niños que forman el equipo B en actividad soga
+        equiA = new ArrayList<Child>(); //Array que contiene niños que forman el equipo A en actividad soga
+        equiB = new ArrayList<Child>(); //Array que contiene niños que forman el equipo B en actividad soga
+        participantes = new ArrayList<Child>(); //Array que contiene niños estan participando en la actividad soga en momento dado 
+        barreraSoga = new CyclicBarrier(maxJugadores + 1);  //Barrera que espera a que haya 10 niños en la actividad soga para empezar actividad (numero de jugadores + monitor)
+        hacerEquipo = new CyclicBarrier(maxJugadores + 1);  //Barrera que bloquea a los niños de soga hasta monitor forme los equipos (numero de jugadores + monitor)
+        jugar = new CyclicBarrier(maxJugadores + 1);    //Barrera que bloque a monitor de soga hasta que niñso terminen de jugar (numero de jugadores + monitor)
+        elegirGanador = new CyclicBarrier(maxJugadores + 1);    //Barrera que bloquea a los niños de soga hasta monitor elija ganador (numero de jugadores + monitor)
+        limpias.meter(" " + 0); //Inicializa cuantas bandejas limpias hay al empezar campamento
+        sucias.meter(" " + 25); //Inicializa cuantas bandejas sucias hay al empezar campamento
         
     }
     
@@ -96,25 +98,25 @@ public class Campamento {
                 
                     if(!entradaIzq)
                     {
-                    try 
-                    {
-                        detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-                        sleep(500 + (int) (1000* Math.random()));      //Monitor tarda entre 0.5 y 1 segundo en abrir la puerta
-                        entradaIzq = true;          //Monitor abre entrada
-                        log.escribir(" Monitor " + m.getMId() + " abre puerta izquierda\n");    //Escribe estado del monitor en archivo
-                        cerradaIzq.signalAll();     //Libera hilos que estuviesen esperando en la cola de la puerta izquierda
-                        detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-                        colaEntradaIzq.sacar(m.getMId());            //Sacamos a monitor de la cola de espera          
-                        dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento 
-                    } 
-                    catch (InterruptedException ex) 
-                    {
-                        Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
-                    }
+                        try 
+                        {
+                            detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                            sleep(500 + (int) (1000* Math.random()));      //Monitor tarda entre 0.5 y 1 segundo en abrir la puerta
+                            entradaIzq = true;          //Monitor abre entrada
+                            log.escribir(" Monitor " + m.getMId() + " abre puerta izquierda\n");    //Escribe estado del monitor en archivo
+                            cerradaIzq.signalAll();     //Libera hilos que estuviesen esperando en la cola de la puerta izquierda
+                            detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                            colaEntradaIzq.sacar(m.getMId());            //Sacamos a monitor de la cola de espera          
+                            dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento 
+                        } 
+                        catch (InterruptedException ex) 
+                        {
+                            Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                     }
                     else
                     {
-                        detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                       detener.comprobar();   //Punto donde se detendrá funcionaiento del programa
                        colaEntradaIzq.sacar(m.getMId());            //Sacamos a monitor de la cola de espera    
                        log.escribir(" Monitor " + m.getMId() + " entra por la puerta izquierda\n"); //Escribe estado del monitor en archivo
                        dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento 
@@ -143,31 +145,31 @@ public class Campamento {
                 {
                     cerrojoDer.lock();     //Cierra cerrojo puertaDer
                 
-                   if(!entradaDer)
-                   {
-                    try 
+                    if(!entradaDer)
                     {
-                        detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-                        sleep(500 + (int) (1000* Math.random()));      //Monitor tarda entre 0.5 y 1 segundo en abrir la puerta
-                        entradaDer = true;          //Monitor abre entrada
-                        log.escribir(" Monitor " + m.getMId() + " abre puerta derecha\n"); //Escribe estado del monitor en archivo
-                        cerradaDer.signalAll();     //Libera hilos que estuviesen esperando en la cola de la puerta derecha
-                        detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
-                        colaEntradaDer.sacar(m.getMId());            //Sacamos a monitor de la cola de espera          
-                        dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento 
-                    } 
-                    catch (InterruptedException ex) 
-                    {
-                        Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
+                        try 
+                        {
+                            detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                            sleep(500 + (int) (1000* Math.random()));      //Monitor tarda entre 0.5 y 1 segundo en abrir la puerta
+                            entradaDer = true;          //Monitor abre entrada
+                            log.escribir(" Monitor " + m.getMId() + " abre puerta derecha\n"); //Escribe estado del monitor en archivo
+                            cerradaDer.signalAll();     //Libera hilos que estuviesen esperando en la cola de la puerta derecha
+                            detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                            colaEntradaDer.sacar(m.getMId());            //Sacamos a monitor de la cola de espera          
+                            dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento 
+                        } 
+                        catch (InterruptedException ex) 
+                        {
+                            Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                     }
-                   }
-                   else
-                   {
+                    else
+                    {
                        detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
                        colaEntradaDer.sacar(m.getMId());            //Sacamos a monitor de la cola de espera     
                        log.escribir(" Monitor " + m.getMId() + " entra por la puerta derecha\n"); //Escribe estado del monitor en archivo
                        dentro.meter(m.getMId());                  //Llamamos a meter para indicar que ha entrado monitor en el campamento      
-                   }
+                    }
                 }
                 finally
                 {
@@ -201,40 +203,43 @@ public class Campamento {
       detener.comprobar();  //Punto de detención de la ejecución
       switch(num)
       {
-        case 1:   //Monitor a actividad soga
+        case 1:   //Monitor accede a actividad soga
             detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
             log.escribir(" Monitor " + m.getMId() + " accede a actividad soga\n");  //Escribe estado del monitor en archivo
             monEnSoga.meter(m.getMId());    //Monitor accede a actividad soga
             soga(m,num);    //Llama a función soga accediendo monitor
             break;
+            
         case 2:     //Monitor entra en actividad tirolina
             detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
             log.escribir(" Monitor " + m.getMId() + " accede a actividad tirolina\n");  //Escribe estado del monitor en archivo
             monEnTirolina.meter(m.getMId());    //Monitor accede a actividad tirolina
             tirolina(m,num);    //Llama a función tirolina accediendo monitor
             break;
+            
         case 3:     //Monitor entra en actividad merienda
             detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
             log.escribir(" Monitor " + m.getMId() + " accede a actividad merienda\n");  //Escribe estado del monitor en archivo
             monEnMerienda.meter(m.getMId());    //Accede monitor a actividad merienda
             merienda(m,num);    //Se llama a función merienda
             break;
+            
         case 4:     //Monitor entra en actividad merienda
             detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
             log.escribir(" Monitor " + m.getMId() + " accede a actividad merienda\n"); //Escribe estado del monitor en archivo
             monEnMerienda.meter(m.getMId());    //Accede monitor a función merienda
             merienda(m,num);    //Se llama a función merienda
             break;    
-      }     
+       }     
     }
     
     //Método para simular el funcionamiento de la merienda por parte de los monitores
     public void merienda (Monitor m, int n) 
     {
-        contMer = 0;    //Contador guarda numero de platos limpios servidos reseteandose csda vez que monitores vuelven del descanso
-        
-        for (int i = 0; i < 10; i ++)           {
-            try //Bucle comprueba si monitor ha servido 10 platos
+        //Bucle comprueba si monitor ha servido 10 platos
+        for (int i = 0; i < 10; i ++)           
+        {
+            try 
             {
                 detener.comprobar();   //Se detiene ejecución del programa en este punto
                 limpiar.acquire();  //monitor se bloquea si no hay platos que lavar
@@ -268,16 +273,20 @@ public class Campamento {
     //Método simula actividad soga para los monitores
     public void soga(Monitor m, int n)
     {
-        for (int i = 0; i < 10; i++)         {
-            try //Bucle controla que cuando monitor haga 10 veces esta actividad se vaya al descanso
+        //Bucle controla que cuando monitor haga 10 veces esta actividad se vaya al descanso
+        for (int i = 0; i < 10; i++)         
+        {
+            try 
             {
                 detener.comprobar();  //Ejecución se detendrá en este punto si se indica
                 barreraSoga.await();    //Bloquea a monitor hasta que hay 10 niños en la actividad
-                detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
+                detener.comprobar();   //Punto donde se detendrá funcionaiento del programa
+                
                 while(!participantes.isEmpty()) //Mientras la lista de participantes no este vacia hace equipos
                 {
                     int num = (int) (2 *Math.random()); //Random para formar los equipos
-                    if(num == 0 && numA < 5 || numB == 5)    //si identificador del niño es par y equipo A no esta acompleto
+                    
+                    if(num == 0 && numA < 5 || numB == 5)    //si identificador del niño es par y equipo A no esta acompleto o si equipo B ya esta completo se introduce niños en el Equipo a
                     {
                         detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
                         log.escribir(" Niño " + participantes.get(0).getCId() + " se mete en el quipo A\n"); //Escribe estado del niño en archivo
@@ -296,6 +305,7 @@ public class Campamento {
                         participantes.remove(0); //Saca de la lista a niño introducido en equipo
                     } 
                 }
+                
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
                 hacerEquipo.await(); //Bloquea a niños hasta que los equipos esten formados
                 log.escribir(" Monitor ha formado equipos\n");
@@ -305,7 +315,8 @@ public class Campamento {
                 log.escribir(" Ha terminado competición soga\n");
                 ganador = (int)(2 *Math.random());  //Selecciona equipo ganador aleatoriamente
                 String text = " "; //Variable donde guardaremos que niños ganan actividad
-                for (int j = 0; j < 5; j ++)    //Bucle para imprimir niños que ganan actividad
+                
+                for (int j = 0; j < 5; j ++)    //Bucle para imprimir en log que niños han ganado la actividad
                 {
                     if(ganador == 0)    //Si gana equipo A
                     {
@@ -316,6 +327,7 @@ public class Campamento {
                         text = text + " " + equiB.get(j).getCId();
                     }
                 }
+                
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
                 elegirGanador.await();  //Libera a niños cuando monitor elije ganador   
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
@@ -327,6 +339,7 @@ public class Campamento {
                 Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
             }  
         }
+        
         detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
         log.escribir(" Monitor " + m.getMId() + " se va al descanso\n");    //Escribe estado del monitor en archivo
         monEnSoga.sacar(m.getMId());    //Se saca monitor de la actividad
@@ -337,12 +350,16 @@ public class Campamento {
     public void tirolina(Monitor m, int n)
     {
         esperaTir.release(10); //Libera permisos para que niños puede entrar en actividad
+        //Se hace bucle mientras monitor no haya realizado 10 veces la actividad
         for(int i = 0; i < 10; i++)         
         {
-            try //Se hace bucle mientras monitor no haya realizado 10 veces la actividad
+            try 
             {
                 detener.comprobar();   //Ejecución se detendrá en este punto si se indica
-                subido.acquire(); //Monitor se bloquea hast aque haya niño en tirolina
+                subido.acquire(); //Monitor se bloquea hasta que haya niño en tirolina
+                sleep(1000); //Prepara a niño en tirolina
+                log.escribir(" Monitor " + m.getMId() + " prepara a niño para tirarse en la tirolina\n"); //Escribe estado en archivo
+                preparacion.release();  //Desbloquea a niño que estaba esperando a que monitor le preparará
                 sleep(1500 + (int)(500 *Math.random())); //Espera entre 1,5 segundos y 2 segundos para dar la señal a niño de que se tire (no especificado en enunciado)
                 señal.release(); //Avisa a niño de que puede tirarse
                 m.sumar(1);    //Introduce las 10 veces que se ha realizado actividad en contador
@@ -352,6 +369,7 @@ public class Campamento {
                 Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
+        
         detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
         esperaTir.drainPermits();   //Bloquea a niños hasta que vuelva monitor
         log.escribir(" Monitor " + m.getMId() + " se va al descanso\n");    //Escribe estado del monitor en archivo
@@ -382,9 +400,9 @@ public class Campamento {
     //Método para que niños entren en el campamento(una puerta u otra segun si id es par)
     public void entrar(Child c)
     {
-        /*Si identificador del niño es par se va a la primera puerta (asignamos puertas segun id)*/
-        int num =(int) (2* Math.random());
-        if(num == 0)
+        int num =(int) (2* Math.random());  //Se usa random entre 0 y 1 para seleccionar aleatoriamente a que puerta va acada niño
+        
+        if(num == 0)    //Si random es 0 niño accede por la puerta izquierda
         {
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             colaEntradaIzq.meter(c.getCId());  //Introduce niño en la cola hasta que se abra puerta 
@@ -433,10 +451,10 @@ public class Campamento {
                 }
             }
         }    
-        else        //Si id del monitor es impar entra por la puerta derecha
+        else        //Si número random es 1 niño intenta acceder por la puerta derecha
         {
-           detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-           colaEntradaDer.meter(c.getCId());  //Introduce niño en la cola (a efectos practicos no espera se hace para observar)
+           detener.comprobar();   //Punto donde se detendrá funcionaiento del programa
+           colaEntradaDer.meter(c.getCId());  //Introduce niño en la cola de espera de entrada derecha
            log.escribir(" Niño " + c.getCId() + " intenta entrar al campamento por la puerta derecha \n"); //Escribe estado del niño en archivo
            if(!entradaDer)    /*Si puerta de la entrada derecha esta abierta*/
             {
@@ -500,6 +518,7 @@ public class Campamento {
     {
       int n = 1 + (int) (3 *Math.random()); //random  1 - 3 para determinar actividad que va a realizar
       detener.comprobar(); //Ejecución se detendrá en este punto si se indica
+      
       if(c.getContActividades() == 15)    //Si niños realiza 15 actividades sale del campamento
       {
           detener.comprobar();   //Punto donde se detendrá funcionaientod el program
@@ -509,19 +528,19 @@ public class Campamento {
       {
         switch(n)
         {
-          case 1:   //Niño a actividad soga
+          case 1:   //Niño intenta acceder a actividad soga
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el program
                 log.escribir(" Niño " + c.getCId() + " accede a la actividad soga\n");    //Escribe estado del niño en archivo
-                childEnSoga.meter(c.getCId());    //Niño entra en actividad soga
                 soga(c);     //Llama a función que simula actividad soga
-                 break;
+                break;
+                
           case 2:     //Niño entra en actividad tirolina
-                detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+                detener.comprobar();   //Punto donde se detendrá funcionaiento del programa
                 colaTirolina.meter(c.getCId());  //Niño accede a la cola de espera de la tirolina
                 log.escribir(" Niño " + c.getCId() + " accede a la cola de espera de la actividad tirolina\n"); //Escribe estado del niño en archivo
                 try 
                 {
-                    semaforoCapTir.acquire();   //Adquiere permiso de la acpacidad de actividad tirolina
+                    semaforoCapTir.acquire();   //Adquiere permiso de la capacidad de actividad tirolina ( si ya hay un niño en actividad se bloquea hasta que salga)
                 } 
                 catch (InterruptedException ex) 
                 {
@@ -532,11 +551,10 @@ public class Campamento {
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el program
                 log.escribir(" Niño " + c.getCId() + " accede a la actividad tirolina\n"); //Escribe estado del niño en archivo
                 tirolina(c);  //Llama a función que simula la actividad de tirolina
-              
-              break;
+                break;
 
-          case 3:     //Niño entra en actividad merienda
-                if(c.getContActividades() >= 3) //Para merendar debe haber realizado mas o tres actividades
+          case 3:     //Niño intenta entrar en actividad merienda
+                if(c.getContMerienda() >= 3) //Para merendar debe haber realizado mas o tres actividades
                 {  
                     try 
                     {
@@ -548,7 +566,7 @@ public class Campamento {
                         colaMerienda.sacar(c.getCId()); //Saca al nió de la cola de espera
                         childEnMer.meter(c.getCId());         //Mete a niño en lista de niños que estan merendando
                         log.escribir(" Niño " + c.getCId() + " accede a la actividad merienda\n"); //Escribe estado del niño en archivo
-                        detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+                        detener.comprobar();   //Punto donde se detendrá funcionamiento del programa
                         merienda(c);                 //Llama a función merienda para simular actividad
                     } 
                     catch (InterruptedException ex) 
@@ -556,12 +574,12 @@ public class Campamento {
                         Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
                     }    
                 }
-              else  //Si ha realizado menos de tres actividades
-              {
+                else  //Si ha realizado menos de tres actividades
+                {
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el program
                 log.escribir(" Niño " + c.getCId() + " selecciona siguiente actividad\n"); //Escribe estado del niño en archivo
                 accederActividad(c);  //Accede a actividad distinta
-              } //Si ha hecho menos de tres actividades vuelve a llamar a la función paar elegir otra
+                }
               break;
         }   
       }
@@ -592,6 +610,7 @@ public class Campamento {
             childEnMer.sacar(c.getCId());    //Saca a niño del merendero
             semaforoCapMer.release();   //avisa de que hay un plato sucio
             c.sumar(1);   //Aumenta en uno el contador de actividades del niño
+            c.setContMer(0); //Pone el contador de merienda a 0
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n"); //Escribe estado del niño en archivo
             zonaComun(c);   //Tras terminar actividad niño va a zona comun  
@@ -633,14 +652,14 @@ public class Campamento {
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             subido.release(); //Avisa a monitor que hay niño para tirarse por la tirolina
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-            log.escribir(" Niño " + c.getCId() + " se prepara para tirarse en la tirolina\n"); //Escribe estado del niño en archivo
-            sleep(1000);    //Monitor prepara al niño para tirarse
+            preparacion.acquire(); //Niño se bloque hasta que monitor le prepara
+            log.escribir(" Niño " + c.getCId() + " preparado para tirarse por la tirolina\n"); //Escribe estado del niño en archivo
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             childEnTirPrep.sacar(c.getCId()); //Niño termina de prepararse
-            log.escribir(" Niño " + c.getCId() + " se tira por la tirolina\n"); //Escribe estado del niño en archivo
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             childEnTir.meter(c.getCId());    //Pasa a estado de tirarse
             señal.acquire();   //Espera señal del monitor para tirarse
+            log.escribir(" Niño " + c.getCId() + " se tira por la tirolina\n"); //Escribe estado del niño en archivo
             sleep(3000);    //Tarda 3 segundos en llegar al final
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program
             childEnTir.sacar(c.getCId());   //Sca a niño de estado de tirarse
@@ -668,22 +687,21 @@ public class Campamento {
     //Método simula funcionamiento de la actividad soga para los niños
     public void soga(Child c) 
     {
-        
         detener.comprobar();   //Punto donde se detendrá ejecución del programa
-        detener.comprobar();   //Punto donde se detendrá funcionaientod el program
-        childEnSoga.sacar(c.getCId());  //Saca a niño de la lista
-        if (!finSoga) //Si hilo llega y ya hay 10 jugadores
+        if (!finSoga) //Si niño llega y ya hay 10 jugadores
         {
-            detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+            detener.comprobar();   //Punto donde se detendrá funcionaientod el programa
             log.escribir(" Niño " + c.getCId() + " selecciona otra actividad ya que no hay hueco en actividad soga\n"); //Escribe estado del niño en archivo
             accederActividad(c);  //No espera y se va a otra actividad
-        } else //Introduce al niño ene quipo correspondiente
+        } 
+        else //Niño entra en la actividad
         {
-            detener.comprobar();   //Punto donde se detendrá funcionaientod el program
+            detener.comprobar();   //Punto donde se detendrá funcionamiento del programa
             participantes.add(c);   //Añade a niño a lista de participantes
             numJugadores++; //Aumenta le número de jugadores
             childEnSoga.meter(c.getCId());  //Introduce niño en actividad soga
-            try {
+            try 
+            {
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el program
                 barreraSoga.await();    //Espera a que lleguen 10 niños
                 detener.comprobar();   //Punto donde se detendrá funcionaientod el program
@@ -720,7 +738,8 @@ public class Campamento {
                     log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n");   //Escribe estado del niño en archivo
                     detener.comprobar();   //Punto donde se detendrá funcionaientod el program
                     zonaComun(c); //Tras terminar actividad niños van a zona comun
-                } else //Si niño estaba en el equipo B
+                } 
+                else //Si niño estaba en el equipo B
                 {
                     detener.comprobar();   //Punto donde se detendrá funcionaientod el program
                     log.escribir(" Niño " + c.getCId() + " ha perdido competición soga\n"); //Escribe estado del niño en archivo
@@ -743,16 +762,17 @@ public class Campamento {
                     log.escribir(" Niño " + c.getCId() + " se va a la zona comun\n"); //Escribe estado del niño en archivo
                     zonaComun(c); //Tras terminar actividad niños van a zona comun
                 }
-            } catch (InterruptedException | BrokenBarrierException ex) {
+            } 
+            catch (InterruptedException | BrokenBarrierException ex) 
+            {
                 Logger.getLogger(Campamento.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
     
-    
-    
     //Método para cerrar TODO el campamento
-    public boolean cerrar() {
+    public boolean cerrar() 
+    {
         if(entradaIzq || entradaDer)    //Si una de las dos entradas estan abiertas las cierra
         {
             detener.comprobar();   //Punto donde se detendrá funcionaientod el program

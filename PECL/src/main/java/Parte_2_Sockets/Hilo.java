@@ -13,7 +13,8 @@ import java.util.logging.Logger;
  *
  * @author blanf
  */
-public class Hilo extends Thread {
+public class Hilo extends Thread 
+{
     private int num, consulta, tam;
     private Campamento camp;
     private String text, id;
@@ -23,7 +24,8 @@ public class Hilo extends Thread {
     private boolean fin = true;
 
     //Constructor
-    public Hilo(Socket conexion, Campamento c) {
+    public Hilo(Socket conexion, Campamento c) 
+    {
         this.conexion = conexion;
         this.camp = c;
     }
@@ -70,9 +72,8 @@ public class Hilo extends Thread {
                         salida.writeInt(tam);       //Envia resultado al cliente
                         break;
                     default:
-                        salida.writeUTF("desconectado");
-                        fin = false;
-                         
+                        salida.writeUTF("desconectado");    //Indica al cliente que se ha desconectado correctamente
+                        fin = false;    //Cambia variable para salir del while            
                 }
             }
             conexion.close(); //Cierra la consexión con el cliente   

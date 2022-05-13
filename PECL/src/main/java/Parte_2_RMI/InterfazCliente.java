@@ -21,7 +21,8 @@ import java.util.logging.Logger;
  *
  * @author blanf
  */
-public class InterfazCliente extends javax.swing.JFrame {
+public class InterfazCliente extends javax.swing.JFrame 
+{
 
     /**
      * Creates new form InterfazCliente
@@ -33,7 +34,8 @@ public class InterfazCliente extends javax.swing.JFrame {
     private String id;  //Id del niños a consultar
     private InterfazComun objeto;
     
-    public InterfazCliente() {
+    public InterfazCliente() 
+    {
         initComponents();
         colocarLogo(fondo,"C:\\Users\\blanf\\OneDrive\\Documentos\\NetBeansProjects\\PECL\\src\\main\\resources\\imagenes\\bosque.jpg");
         this.setLocationRelativeTo(null);   //Coloca ventana de la interfaz en el centro de la pantalla
@@ -141,22 +143,24 @@ public class InterfazCliente extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 174, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(numeroUsosTir, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(colaEsperaTirolina, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(numeroUsosTir, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(colaEsperaTirolina, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(158, 158, 158)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(consultarNumeroUsosTir, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(consultarColaEsperaTir))
+                    .addComponent(consultarColaEsperaTir, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(consultarNumeroUsosTir, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35))
         );
         jPanel2Layout.setVerticalGroup(
@@ -357,8 +361,8 @@ public class InterfazCliente extends javax.swing.JFrame {
                         .addGap(39, 39, 39)
                         .addComponent(errorId, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(numActividades, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                        .addComponent(numActividades, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
                         .addComponent(consultarId)))
                 .addGap(27, 27, 27))
@@ -370,8 +374,8 @@ public class InterfazCliente extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(idChild, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(idChild, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(166, 166, 166))))
         );
         jPanel4Layout.setVerticalGroup(
@@ -470,68 +474,81 @@ public class InterfazCliente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void consultarColaEsperaTirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultarColaEsperaTirActionPerformed
-        try {
+        try 
+        {
             objeto = (InterfazComun) Naming.lookup("//localhost/Objeto"); //Localiza el objeto remoto 
             resultado = objeto.consultarColaTirolina();  //Llama a método consultar tamaño de la cola de la tirolina
-            colaEsperaTirolina.setText(" " + resultado);   //escribe resultado en la interfaz
-            
-        } catch (NotBoundException | MalformedURLException | RemoteException ex) {
+            colaEsperaTirolina.setText(" " + resultado);   //escribe resultado en la interfaz   
+        } 
+        catch (NotBoundException | MalformedURLException | RemoteException ex) 
+        {
             Logger.getLogger(InterfazCliente.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_consultarColaEsperaTirActionPerformed
 
     private void consultarColaEsperaSogaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultarColaEsperaSogaActionPerformed
-        try {
+        try 
+        {
             objeto = (InterfazComun) Naming.lookup("//localhost/Objeto"); //Localiza el objeto remoto 
             resultado = objeto.consultarColaSoga();  //Llama a método consultar tamaño de la cola de la soga
             colaEsperaSoga.setText(" " + resultado);   //escribe resultado en la interfaz
             
-        } catch (NotBoundException | MalformedURLException | RemoteException ex) {
+        } 
+        catch (NotBoundException | MalformedURLException | RemoteException ex) 
+        {
             Logger.getLogger(InterfazCliente.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }//GEN-LAST:event_consultarColaEsperaSogaActionPerformed
 
     private void consularNiñosMerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consularNiñosMerActionPerformed
-        try {
+        try 
+        {
             objeto = (InterfazComun) Naming.lookup("//localhost/Objeto"); //Localiza el objeto remoto 
             resultado = objeto.consultarMerendero();  //Llama a método consultar número de niños merendando
-            niñosMerendando.setText(" " + resultado);   //escribe resultado en la interfaz
-            
-        } catch (NotBoundException | MalformedURLException | RemoteException ex) {
+            niñosMerendando.setText(" " + resultado);   //escribe resultado en la interfaz 
+        } 
+        catch (NotBoundException | MalformedURLException | RemoteException ex) 
+        {
             Logger.getLogger(InterfazCliente.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_consularNiñosMerActionPerformed
 
     private void consultarBandejasSucActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultarBandejasSucActionPerformed
-        try {
+        try 
+        {
             objeto = (InterfazComun) Naming.lookup("//localhost/Objeto"); //Localiza el objeto remoto 
             resultado2 = objeto.consultarBandejasSucias();  //Llama a método consultar número de bandejas sucias
-            bandejasSucias.setText(resultado2);   //escribe resultado en la interfaz
-            
-        } catch (NotBoundException | MalformedURLException | RemoteException ex) {
+            bandejasSucias.setText(resultado2);   //escribe resultado en la interfaz 
+        } 
+        catch (NotBoundException | MalformedURLException | RemoteException ex) 
+        {
             Logger.getLogger(InterfazCliente.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_consultarBandejasSucActionPerformed
 
     private void consultarBandejasLimpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultarBandejasLimpActionPerformed
-        try {
+        try 
+        {
             objeto = (InterfazComun) Naming.lookup("//localhost/Objeto"); //Localiza el objeto remoto 
             resultado2 = objeto.consultarBandejasLimpias();  //Llama a método consultar número de bandejas limpias
-            bandejasLimpias.setText(resultado2);   //escribe resultado en la interfaz
-            
-        } catch (NotBoundException | MalformedURLException | RemoteException ex) {
+            bandejasLimpias.setText(resultado2);   //escribe resultado en la interfaz    
+        } 
+        catch (NotBoundException | MalformedURLException | RemoteException ex) 
+        {
             Logger.getLogger(InterfazCliente.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_consultarBandejasLimpActionPerformed
 
     private void consultarNumeroUsosTirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultarNumeroUsosTirActionPerformed
-        try {
+        try 
+        {
             objeto = (InterfazComun) Naming.lookup("//localhost/Objeto"); //Localiza el objeto remoto 
             resultado = objeto.consultarVecesTirolina();  //Llama a método consultar número de usos de la tirolina
-            numeroUsosTir.setText(" " + resultado);   //escribe resultado en la interfaz
-            
-        } catch (NotBoundException | MalformedURLException | RemoteException ex) {
+            numeroUsosTir.setText(" " + resultado);   //escribe resultado en la interfaz     
+        } 
+        catch (NotBoundException | MalformedURLException | RemoteException ex) 
+        {
             Logger.getLogger(InterfazCliente.class.getName()).log(Level.SEVERE, null, ex);
         }     
     }//GEN-LAST:event_consultarNumeroUsosTirActionPerformed
@@ -572,7 +589,8 @@ public class InterfazCliente extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) 
+    {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

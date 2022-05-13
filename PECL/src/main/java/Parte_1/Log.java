@@ -20,8 +20,10 @@ public class Log
     private DateTimeFormatter fecha = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm:ss");   //Formato que usaremos para escribir la fecha y el tiempo
 
     /*Constructor de la clase*/
-    public Log(FileWriter l) {
-        try {
+    public Log(FileWriter l) 
+    {
+        try 
+        {
             this.log = l;
             this.log = new FileWriter("evolucionCampamento.txt"); //Crea objeto file
         } 
@@ -37,7 +39,7 @@ public class Log
     {
         try 
         {
-            log.write(fecha.format(LocalDateTime.now()) + texto);   //Escribe fecha y hora actual y el texto especificado
+            log.write(fecha.format(LocalDateTime.now()) + texto);   //Escribe fecha,hora,minutos y segundos actuales y el texto especificado
             log.flush();    //Guardo lo escrito en el fichero
         } 
         catch (IOException ex) 
